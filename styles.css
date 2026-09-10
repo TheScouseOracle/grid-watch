@@ -79,3 +79,4 @@ details.disc .body a{color:var(--red);}
 .tipcta .tiptext{font-size:15px;max-width:44ch;}
 .tipcta .btn{flex:none;}
 @media (max-width:480px){.tipcta .btn{width:100%;}}
+.flag.osm{background:#d8d4c6;color:#4a4638;}

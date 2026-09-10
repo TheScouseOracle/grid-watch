@@ -18,6 +18,7 @@ const el = (id) => document.getElementById(id);
 
 let CURATED = [];
 let LIVE = [];
+let OSM = [];
 
 // haversine distance in km
 function dist(aLat, aLng, bLat, bLng) {
@@ -37,14 +38,16 @@ const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": 
 
 async function loadData() {
   try {
-    const [d, p] = await Promise.all([
+    const [d, p, o] = await Promise.all([
       fetch("datacentres.json").then((r) => r.json()),
       fetch("planning.json").then((r) => r.json()).catch(() => ({ items: [] })),
+      fetch("datacentres-osm.json").then((r) => r.json()).catch(() => ({ items: [] })),
     ]);
     CURATED = (d.datacentres || []).filter((x) => Number.isFinite(x.lat) && Number.isFinite(x.lng));
     LIVE = (p.items || []).filter((x) => Number.isFinite(x.lat) && Number.isFinite(x.lng));
+    OSM = (o.items || []).filter((x) => Number.isFinite(x.lat) && Number.isFinite(x.lng));
   } catch (e) {
-    CURATED = []; LIVE = [];
+    CURATED = []; LIVE = []; OSM = [];
   }
 }
 
@@ -76,10 +79,11 @@ async function run(pcRaw) {
 
   const curated = near(CURATED);
   const live = near(LIVE);
-  render(loc, curated, live);
+  const osm = near(OSM);
+  render(loc, curated, live, osm);
 }
 
-function render(loc, curated, live) {
+function render(loc, curated, live, osm) {
   el("home").classList.add("hidden");
   el("results").classList.remove("hidden");
   window.scrollTo(0, 0);
@@ -91,9 +95,10 @@ function render(loc, curated, live) {
   if (invested > 0) {
     el("r-big").textContent = gbpShort(invested);
     el("r-say").innerHTML = `of data-centre investment is on the register near you — <b>${foreign.length} of ${curated.length}</b> ${curated.length === 1 ? "project" : "projects"} foreign-owned.`;
-  } else if (curated.length + live.length > 0) {
-    el("r-big").textContent = String(curated.length + live.length);
-    el("r-say").innerHTML = `data-centre ${curated.length + live.length === 1 ? "project or application" : "projects and applications"} sit near you. The money's not all public yet — dig in below.`;
+  } else if (curated.length + osm.length + live.length > 0) {
+    const total = curated.length + osm.length + live.length;
+    el("r-big").textContent = String(total);
+    el("r-say").innerHTML = `data-centre ${total === 1 ? "site or application" : "sites and applications"} sit near you — existing, proposed and on the register. Dig in below.`;
   } else {
     el("r-big").textContent = "0";
     el("r-say").innerHTML = `nothing on the register within ${RADIUS_KM}km yet. That's not the same as nothing coming — the live feed and register are still filling out.`;
@@ -109,7 +114,12 @@ function render(loc, curated, live) {
   lWrap.innerHTML = live.length ? live.slice(0, 25).map(liveRow).join("") :
     `<div class="empty">No recent "data centre" planning applications near you in the live feed. It refreshes daily.</div>`;
 
-  drawMap(loc, curated, live);
+  // existing sites (OpenStreetMap)
+  const oWrap = el("r-osm");
+  if (oWrap) oWrap.innerHTML = osm.length ? osm.slice(0, 25).map(osmRow).join("") :
+    `<div class="empty">No mapped existing data centres within ${RADIUS_KM}km yet — OpenStreetMap coverage grows over time.</div>`;
+
+  drawMap(loc, curated, live, osm);
   el("donate").href = DONATE_URL;
 
   // share
@@ -148,7 +158,15 @@ function liveRow(x) {
   </div>`;
 }
 
-function drawMap(loc, curated, live) {
+function osmRow(x) {
+  return `<div class="row">
+    <div class="top"><div class="nm">${esc(x.name || "Data centre")}</div><div class="dist">~${Math.round(x.km)}km</div></div>
+    <div class="op">${esc(x.operator || "Operator not listed")} <span class="flag osm">OpenStreetMap</span></div>
+    ${x.source ? `<a class="src" href="${esc(x.source)}" target="_blank" rel="noreferrer">View on map ↗</a>` : ""}
+  </div>`;
+}
+
+function drawMap(loc, curated, live, osm) {
   if (typeof L === "undefined") return; // Leaflet CDN didn't load; skip quietly
   if (!MAP) {
     MAP = L.map("map", { scrollWheelZoom: false }).setView([loc.lat, loc.lng], 9);
@@ -174,6 +192,12 @@ function drawMap(loc, curated, live) {
   live.slice(0, 40).forEach((x) => {
     L.circleMarker([x.lat, x.lng], { radius: 5, color: "#CC2A18", weight: 2, fillColor: "#ECEAE1", fillOpacity: 0.9 })
       .bindPopup(`<b>Planning application</b><br>${esc((x.description || "").slice(0, 120))}`).addTo(MARKERS);
+    bounds.push([x.lat, x.lng]);
+  });
+
+  (osm || []).slice(0, 150).forEach((x) => {
+    L.circleMarker([x.lat, x.lng], { radius: 5, color: "#6a6559", weight: 1.5, fillColor: "#b8b3a6", fillOpacity: 0.9 })
+      .bindPopup(`<b>${esc(x.name || "Data centre")}</b><br>${esc(x.operator || "")}<br><small>OpenStreetMap</small>`).addTo(MARKERS);
     bounds.push([x.lat, x.lng]);
   });
 
