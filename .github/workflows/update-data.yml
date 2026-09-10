@@ -22,11 +22,13 @@ jobs:
           python-version: "3.12"
       - name: Refresh OpenStreetMap UK data centres
         run: python scripts/update_osm.py
+      - name: Refresh England planning candidates
+        run: python scripts/update_planning.py
       - name: Commit changed datasets
         run: |
           git config user.name "grid-watch-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add datacentres-osm.json
+          git add datacentres-osm.json planning.json
           if git diff --cached --quiet; then
             echo "No data changes"
           else
