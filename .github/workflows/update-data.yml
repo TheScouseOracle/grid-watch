@@ -10,6 +10,9 @@ on:
     paths:
       - "scripts/**"
       - "requirements.txt"
+      - "app.js"
+      - "index.html"
+      - "styles.css"
       - ".github/workflows/update-data.yml"
 
 permissions:
