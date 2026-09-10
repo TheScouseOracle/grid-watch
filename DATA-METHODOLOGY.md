@@ -1,6 +1,6 @@
 # Grid Watch data methodology
 
-Grid Watch is a public-interest map of UK data-cententre infrastructure. It does **not** copy or republish proprietary data-centre directories.
+Grid Watch is a public-interest map of UK data-centre infrastructure. It does **not** copy or republish proprietary data-centre directories.
 
 ## Layers
 
@@ -13,7 +13,11 @@ OSM is a discovery/geographic layer, not proof that every site exists, is operat
 `datacentres.json` is the editorial evidence layer. A record should only be promoted here when a human-verifiable source supports it. Prefer, in order: planning authority documents; grid/network operator records; government publications; company/operator primary sources; reputable secondary reporting.
 
 ### 3. Planning layer
-`planning.json` is reserved for planning applications collected from sources that permit public reuse. A planning application is evidence of an application, **not** evidence that a data centre has been built.
+`scripts/update_planning.py` scans the official Planning Data `planning-application` dataset and writes keyword-matched candidates to `planning.json`. The dataset is licensed under the Open Government Licence v3.0 and is attributed to © Crown copyright and database right.
+
+The collector currently covers **England only**. The national planning-application specification is still in development and local planning authorities are not currently required to publish into it, so this is not a complete UK planning register. Scotland, Wales, Northern Ireland and missing English authorities require additional reusable sources.
+
+The automatic search looks for dedicated-data-centre language such as `data centre`, `data center`, `datacentre`, `hyperscale`, `server hall` and `data hall`. Matches remain **unverified planning candidates** until independently checked. A planning application is evidence of an application, **not** evidence that a data centre has been built.
 
 ### 4. Grid layer
 Grid capacity should distinguish:
