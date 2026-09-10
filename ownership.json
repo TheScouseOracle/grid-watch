@@ -1,0 +1,1898 @@
+{
+  "generated_at": "2026-09-10T07:39:31.920109+00:00",
+  "source": "Wikidata",
+  "licence": "CC0 1.0",
+  "method": "Only OSM records with explicit Wikidata identifiers are enriched; parent chains follow P749. Missing or ambiguous ownership remains unknown.",
+  "count": 83,
+  "items": [
+    {
+      "site_id": "osm-way-1161721011",
+      "source_qid": "Q456157",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q456157",
+          "name": "Amazon Web Services",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q5083",
+          "source": "https://www.wikidata.org/wiki/Q456157",
+          "country": "United States",
+          "headquarters": "Seattle"
+        },
+        {
+          "qid": "Q3884",
+          "name": "Amazon",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q5083",
+          "source": "https://www.wikidata.org/wiki/Q3884",
+          "country": "United States",
+          "headquarters": "Seattle"
+        }
+      ],
+      "ultimate_parent": "Amazon",
+      "ultimate_parent_qid": "Q3884",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-131474700",
+      "source_qid": "Q128794708",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q128794708",
+          "name": "Ark Data Centres",
+          "country_qid": "Q145",
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q128794708",
+          "country": "United Kingdom"
+        }
+      ],
+      "ultimate_parent": "Ark Data Centres",
+      "ultimate_parent_qid": "Q128794708",
+      "ultimate_parent_country": "United Kingdom",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-node-11902288339",
+      "source_qid": "Q456157",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q456157",
+          "name": "Amazon Web Services",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q5083",
+          "source": "https://www.wikidata.org/wiki/Q456157",
+          "country": "United States",
+          "headquarters": "Seattle"
+        },
+        {
+          "qid": "Q3884",
+          "name": "Amazon",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q5083",
+          "source": "https://www.wikidata.org/wiki/Q3884",
+          "country": "United States",
+          "headquarters": "Seattle"
+        }
+      ],
+      "ultimate_parent": "Amazon",
+      "ultimate_parent_qid": "Q3884",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-1270223634",
+      "source_qid": "Q456157",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q456157",
+          "name": "Amazon Web Services",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q5083",
+          "source": "https://www.wikidata.org/wiki/Q456157",
+          "country": "United States",
+          "headquarters": "Seattle"
+        },
+        {
+          "qid": "Q3884",
+          "name": "Amazon",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q5083",
+          "source": "https://www.wikidata.org/wiki/Q3884",
+          "country": "United States",
+          "headquarters": "Seattle"
+        }
+      ],
+      "ultimate_parent": "Amazon",
+      "ultimate_parent_qid": "Q3884",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-node-11902392009",
+      "source_qid": "Q456157",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q456157",
+          "name": "Amazon Web Services",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q5083",
+          "source": "https://www.wikidata.org/wiki/Q456157",
+          "country": "United States",
+          "headquarters": "Seattle"
+        },
+        {
+          "qid": "Q3884",
+          "name": "Amazon",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q5083",
+          "source": "https://www.wikidata.org/wiki/Q3884",
+          "country": "United States",
+          "headquarters": "Seattle"
+        }
+      ],
+      "ultimate_parent": "Amazon",
+      "ultimate_parent_qid": "Q3884",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-1122158384",
+      "source_qid": "Q456157",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q456157",
+          "name": "Amazon Web Services",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q5083",
+          "source": "https://www.wikidata.org/wiki/Q456157",
+          "country": "United States",
+          "headquarters": "Seattle"
+        },
+        {
+          "qid": "Q3884",
+          "name": "Amazon",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q5083",
+          "source": "https://www.wikidata.org/wiki/Q3884",
+          "country": "United States",
+          "headquarters": "Seattle"
+        }
+      ],
+      "ultimate_parent": "Amazon",
+      "ultimate_parent_qid": "Q3884",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-459025630",
+      "source_qid": "Q138447238",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q138447238",
+          "name": "CapitaLand Ascendas REIT",
+          "country_qid": "Q334",
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q138447238",
+          "country": "Singapore"
+        }
+      ],
+      "ultimate_parent": "CapitaLand Ascendas REIT",
+      "ultimate_parent_qid": "Q138447238",
+      "ultimate_parent_country": "Singapore",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-23571724",
+      "source_qid": "Q138447238",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q138447238",
+          "name": "CapitaLand Ascendas REIT",
+          "country_qid": "Q334",
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q138447238",
+          "country": "Singapore"
+        }
+      ],
+      "ultimate_parent": "CapitaLand Ascendas REIT",
+      "ultimate_parent_qid": "Q138447238",
+      "ultimate_parent_country": "Singapore",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-98134606",
+      "source_qid": "Q567477",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q567477",
+          "name": "Colt Technology Services",
+          "country_qid": "Q145",
+          "headquarters_qid": "Q84",
+          "source": "https://www.wikidata.org/wiki/Q567477",
+          "country": "United Kingdom",
+          "headquarters": "London"
+        },
+        {
+          "qid": "Q1411292",
+          "name": "Fidelity Investments",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q100",
+          "source": "https://www.wikidata.org/wiki/Q1411292",
+          "country": "United States",
+          "headquarters": "Boston"
+        }
+      ],
+      "ultimate_parent": "Fidelity Investments",
+      "ultimate_parent_qid": "Q1411292",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-787209296",
+      "source_qid": "Q16953751",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q16953751",
+          "name": "CyrusOne",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q128261",
+          "source": "https://www.wikidata.org/wiki/Q16953751",
+          "country": "United States",
+          "headquarters": "Carrollton"
+        }
+      ],
+      "ultimate_parent": "CyrusOne",
+      "ultimate_parent_qid": "Q16953751",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-984002529",
+      "source_qid": "Q16953751",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q16953751",
+          "name": "CyrusOne",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q128261",
+          "source": "https://www.wikidata.org/wiki/Q16953751",
+          "country": "United States",
+          "headquarters": "Carrollton"
+        }
+      ],
+      "ultimate_parent": "CyrusOne",
+      "ultimate_parent_qid": "Q16953751",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-221131413",
+      "source_qid": "Q16953751",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q16953751",
+          "name": "CyrusOne",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q128261",
+          "source": "https://www.wikidata.org/wiki/Q16953751",
+          "country": "United States",
+          "headquarters": "Carrollton"
+        }
+      ],
+      "ultimate_parent": "CyrusOne",
+      "ultimate_parent_qid": "Q16953751",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-705065012",
+      "source_qid": "Q16953751",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q16953751",
+          "name": "CyrusOne",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q128261",
+          "source": "https://www.wikidata.org/wiki/Q16953751",
+          "country": "United States",
+          "headquarters": "Carrollton"
+        }
+      ],
+      "ultimate_parent": "CyrusOne",
+      "ultimate_parent_qid": "Q16953751",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-665572148",
+      "source_qid": "Q16953751",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q16953751",
+          "name": "CyrusOne",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q128261",
+          "source": "https://www.wikidata.org/wiki/Q16953751",
+          "country": "United States",
+          "headquarters": "Carrollton"
+        }
+      ],
+      "ultimate_parent": "CyrusOne",
+      "ultimate_parent_qid": "Q16953751",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-34520874",
+      "source_qid": "Q5275969",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q5275969",
+          "name": "Digital Realty Trust",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q16559",
+          "source": "https://www.wikidata.org/wiki/Q5275969",
+          "country": "United States",
+          "headquarters": "Austin"
+        }
+      ],
+      "ultimate_parent": "Digital Realty Trust",
+      "ultimate_parent_qid": "Q5275969",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-27756169",
+      "source_qid": "Q5275969",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q5275969",
+          "name": "Digital Realty Trust",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q16559",
+          "source": "https://www.wikidata.org/wiki/Q5275969",
+          "country": "United States",
+          "headquarters": "Austin"
+        }
+      ],
+      "ultimate_parent": "Digital Realty Trust",
+      "ultimate_parent_qid": "Q5275969",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-23439047",
+      "source_qid": "Q5275969",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q5275969",
+          "name": "Digital Realty Trust",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q16559",
+          "source": "https://www.wikidata.org/wiki/Q5275969",
+          "country": "United States",
+          "headquarters": "Austin"
+        }
+      ],
+      "ultimate_parent": "Digital Realty Trust",
+      "ultimate_parent_qid": "Q5275969",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-191842525",
+      "source_qid": "Q5275969",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q5275969",
+          "name": "Digital Realty Trust",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q16559",
+          "source": "https://www.wikidata.org/wiki/Q5275969",
+          "country": "United States",
+          "headquarters": "Austin"
+        }
+      ],
+      "ultimate_parent": "Digital Realty Trust",
+      "ultimate_parent_qid": "Q5275969",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-320724394",
+      "source_qid": "Q5275969",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q5275969",
+          "name": "Digital Realty Trust",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q16559",
+          "source": "https://www.wikidata.org/wiki/Q5275969",
+          "country": "United States",
+          "headquarters": "Austin"
+        }
+      ],
+      "ultimate_parent": "Digital Realty Trust",
+      "ultimate_parent_qid": "Q5275969",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-447245008",
+      "source_qid": "Q5275969",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q5275969",
+          "name": "Digital Realty Trust",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q16559",
+          "source": "https://www.wikidata.org/wiki/Q5275969",
+          "country": "United States",
+          "headquarters": "Austin"
+        }
+      ],
+      "ultimate_parent": "Digital Realty Trust",
+      "ultimate_parent_qid": "Q5275969",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-447320367",
+      "source_qid": "Q5275969",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q5275969",
+          "name": "Digital Realty Trust",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q16559",
+          "source": "https://www.wikidata.org/wiki/Q5275969",
+          "country": "United States",
+          "headquarters": "Austin"
+        }
+      ],
+      "ultimate_parent": "Digital Realty Trust",
+      "ultimate_parent_qid": "Q5275969",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-270426364",
+      "source_qid": "Q5275969",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q5275969",
+          "name": "Digital Realty Trust",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q16559",
+          "source": "https://www.wikidata.org/wiki/Q5275969",
+          "country": "United States",
+          "headquarters": "Austin"
+        }
+      ],
+      "ultimate_parent": "Digital Realty Trust",
+      "ultimate_parent_qid": "Q5275969",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-702784280",
+      "source_qid": "Q851641",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q851641",
+          "name": "Equinix",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q505549",
+          "source": "https://www.wikidata.org/wiki/Q851641",
+          "country": "United States",
+          "headquarters": "Redwood City"
+        }
+      ],
+      "ultimate_parent": "Equinix",
+      "ultimate_parent_qid": "Q851641",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-225909388",
+      "source_qid": "Q851641",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q851641",
+          "name": "Equinix",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q505549",
+          "source": "https://www.wikidata.org/wiki/Q851641",
+          "country": "United States",
+          "headquarters": "Redwood City"
+        }
+      ],
+      "ultimate_parent": "Equinix",
+      "ultimate_parent_qid": "Q851641",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-705064992",
+      "source_qid": "Q851641",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q851641",
+          "name": "Equinix",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q505549",
+          "source": "https://www.wikidata.org/wiki/Q851641",
+          "country": "United States",
+          "headquarters": "Redwood City"
+        }
+      ],
+      "ultimate_parent": "Equinix",
+      "ultimate_parent_qid": "Q851641",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-712277377",
+      "source_qid": "Q851641",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q851641",
+          "name": "Equinix",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q505549",
+          "source": "https://www.wikidata.org/wiki/Q851641",
+          "country": "United States",
+          "headquarters": "Redwood City"
+        }
+      ],
+      "ultimate_parent": "Equinix",
+      "ultimate_parent_qid": "Q851641",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-27618500",
+      "source_qid": "Q851641",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q851641",
+          "name": "Equinix",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q505549",
+          "source": "https://www.wikidata.org/wiki/Q851641",
+          "country": "United States",
+          "headquarters": "Redwood City"
+        }
+      ],
+      "ultimate_parent": "Equinix",
+      "ultimate_parent_qid": "Q851641",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-225909390",
+      "source_qid": "Q851641",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q851641",
+          "name": "Equinix",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q505549",
+          "source": "https://www.wikidata.org/wiki/Q851641",
+          "country": "United States",
+          "headquarters": "Redwood City"
+        }
+      ],
+      "ultimate_parent": "Equinix",
+      "ultimate_parent_qid": "Q851641",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-86528807",
+      "source_qid": "Q851641",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q851641",
+          "name": "Equinix",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q505549",
+          "source": "https://www.wikidata.org/wiki/Q851641",
+          "country": "United States",
+          "headquarters": "Redwood City"
+        }
+      ],
+      "ultimate_parent": "Equinix",
+      "ultimate_parent_qid": "Q851641",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-712277376",
+      "source_qid": "Q851641",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q851641",
+          "name": "Equinix",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q505549",
+          "source": "https://www.wikidata.org/wiki/Q851641",
+          "country": "United States",
+          "headquarters": "Redwood City"
+        }
+      ],
+      "ultimate_parent": "Equinix",
+      "ultimate_parent_qid": "Q851641",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-735444062",
+      "source_qid": "Q851641",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q851641",
+          "name": "Equinix",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q505549",
+          "source": "https://www.wikidata.org/wiki/Q851641",
+          "country": "United States",
+          "headquarters": "Redwood City"
+        }
+      ],
+      "ultimate_parent": "Equinix",
+      "ultimate_parent_qid": "Q851641",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-1481564428",
+      "source_qid": "Q851641",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q851641",
+          "name": "Equinix",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q505549",
+          "source": "https://www.wikidata.org/wiki/Q851641",
+          "country": "United States",
+          "headquarters": "Redwood City"
+        }
+      ],
+      "ultimate_parent": "Equinix",
+      "ultimate_parent_qid": "Q851641",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-45131691",
+      "source_qid": "Q851641",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q851641",
+          "name": "Equinix",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q505549",
+          "source": "https://www.wikidata.org/wiki/Q851641",
+          "country": "United States",
+          "headquarters": "Redwood City"
+        }
+      ],
+      "ultimate_parent": "Equinix",
+      "ultimate_parent_qid": "Q851641",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-459613192",
+      "source_qid": "Q851641",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q851641",
+          "name": "Equinix",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q505549",
+          "source": "https://www.wikidata.org/wiki/Q851641",
+          "country": "United States",
+          "headquarters": "Redwood City"
+        }
+      ],
+      "ultimate_parent": "Equinix",
+      "ultimate_parent_qid": "Q851641",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-node-12303136063",
+      "source_qid": "Q851641",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q851641",
+          "name": "Equinix",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q505549",
+          "source": "https://www.wikidata.org/wiki/Q851641",
+          "country": "United States",
+          "headquarters": "Redwood City"
+        }
+      ],
+      "ultimate_parent": "Equinix",
+      "ultimate_parent_qid": "Q851641",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-node-12303136064",
+      "source_qid": "Q851641",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q851641",
+          "name": "Equinix",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q505549",
+          "source": "https://www.wikidata.org/wiki/Q851641",
+          "country": "United States",
+          "headquarters": "Redwood City"
+        }
+      ],
+      "ultimate_parent": "Equinix",
+      "ultimate_parent_qid": "Q851641",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-364385695",
+      "source_qid": "Q193326",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q193326",
+          "name": "Goldman Sachs",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q116002",
+          "source": "https://www.wikidata.org/wiki/Q193326",
+          "country": "United States",
+          "headquarters": "200 West Street"
+        }
+      ],
+      "ultimate_parent": "Goldman Sachs",
+      "ultimate_parent_qid": "Q193326",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-179698364",
+      "source_qid": "Q138447238",
+      "source_role": "owner",
+      "chain": [
+        {
+          "qid": "Q138447238",
+          "name": "CapitaLand Ascendas REIT",
+          "country_qid": "Q334",
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q138447238",
+          "country": "Singapore"
+        }
+      ],
+      "ultimate_parent": "CapitaLand Ascendas REIT",
+      "ultimate_parent_qid": "Q138447238",
+      "ultimate_parent_country": "Singapore",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-1046859137",
+      "source_qid": "Q882107",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q882107",
+          "name": "Ionos",
+          "country_qid": "Q183",
+          "headquarters_qid": "Q632991",
+          "source": "https://www.wikidata.org/wiki/Q882107",
+          "country": "Germany",
+          "headquarters": "Montabaur"
+        },
+        {
+          "qid": "Q322579",
+          "name": "United Internet",
+          "country_qid": "Q183",
+          "headquarters_qid": "Q632991",
+          "source": "https://www.wikidata.org/wiki/Q322579",
+          "country": "Germany",
+          "headquarters": "Montabaur"
+        }
+      ],
+      "ultimate_parent": "United Internet",
+      "ultimate_parent_qid": "Q322579",
+      "ultimate_parent_country": "Germany",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-1493499783",
+      "source_qid": "Q1673079",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q1673079",
+          "name": "Iron Mountain Incorporated",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q100",
+          "source": "https://www.wikidata.org/wiki/Q1673079",
+          "country": "United States",
+          "headquarters": "Boston"
+        }
+      ],
+      "ultimate_parent": "Iron Mountain Incorporated",
+      "ultimate_parent_qid": "Q1673079",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-166407577",
+      "source_qid": "Q851641",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q851641",
+          "name": "Equinix",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q505549",
+          "source": "https://www.wikidata.org/wiki/Q851641",
+          "country": "United States",
+          "headquarters": "Redwood City"
+        }
+      ],
+      "ultimate_parent": "Equinix",
+      "ultimate_parent_qid": "Q851641",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-699790674",
+      "source_qid": "Q128597000",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q128597000",
+          "name": "Kao Data",
+          "country_qid": "Q145",
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q128597000",
+          "country": "United Kingdom"
+        }
+      ],
+      "ultimate_parent": "Kao Data",
+      "ultimate_parent_qid": "Q128597000",
+      "ultimate_parent_country": "United Kingdom",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-1305758728",
+      "source_qid": "Q128597000",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q128597000",
+          "name": "Kao Data",
+          "country_qid": "Q145",
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q128597000",
+          "country": "United Kingdom"
+        }
+      ],
+      "ultimate_parent": "Kao Data",
+      "ultimate_parent_qid": "Q128597000",
+      "ultimate_parent_country": "United Kingdom",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-222789497",
+      "source_qid": "Q128597000",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q128597000",
+          "name": "Kao Data",
+          "country_qid": "Q145",
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q128597000",
+          "country": "United Kingdom"
+        }
+      ],
+      "ultimate_parent": "Kao Data",
+      "ultimate_parent_qid": "Q128597000",
+      "ultimate_parent_country": "United Kingdom",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-447245009",
+      "source_qid": "Q128597000",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q128597000",
+          "name": "Kao Data",
+          "country_qid": "Q145",
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q128597000",
+          "country": "United Kingdom"
+        }
+      ],
+      "ultimate_parent": "Kao Data",
+      "ultimate_parent_qid": "Q128597000",
+      "ultimate_parent_country": "United Kingdom",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-459600829",
+      "source_qid": "Q5063092",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q5063092",
+          "name": "Lumen Technologies",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q947115",
+          "source": "https://www.wikidata.org/wiki/Q5063092",
+          "country": "United States",
+          "headquarters": "Monroe"
+        }
+      ],
+      "ultimate_parent": "Lumen Technologies",
+      "ultimate_parent_qid": "Q5063092",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-59191365",
+      "source_qid": "Q138447238",
+      "source_role": "owner",
+      "chain": [
+        {
+          "qid": "Q138447238",
+          "name": "CapitaLand Ascendas REIT",
+          "country_qid": "Q334",
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q138447238",
+          "country": "Singapore"
+        }
+      ],
+      "ultimate_parent": "CapitaLand Ascendas REIT",
+      "ultimate_parent_qid": "Q138447238",
+      "ultimate_parent_country": "Singapore",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-node-13179027944",
+      "source_qid": "Q2283",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q2283",
+          "name": "Microsoft",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q223718",
+          "source": "https://www.wikidata.org/wiki/Q2283",
+          "country": "United States",
+          "headquarters": "Redmond"
+        }
+      ],
+      "ultimate_parent": "Microsoft",
+      "ultimate_parent_qid": "Q2283",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-1213266502",
+      "source_qid": "Q2283",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q2283",
+          "name": "Microsoft",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q223718",
+          "source": "https://www.wikidata.org/wiki/Q2283",
+          "country": "United States",
+          "headquarters": "Redmond"
+        }
+      ],
+      "ultimate_parent": "Microsoft",
+      "ultimate_parent_qid": "Q2283",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-17663535",
+      "source_qid": "Q139890258",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q139890258",
+          "name": "nLighten",
+          "country_qid": "Q55",
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q139890258",
+          "country": "Netherlands"
+        }
+      ],
+      "ultimate_parent": "nLighten",
+      "ultimate_parent_qid": "Q139890258",
+      "ultimate_parent_country": "Netherlands",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-256764286",
+      "source_qid": "Q139890258",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q139890258",
+          "name": "nLighten",
+          "country_qid": "Q55",
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q139890258",
+          "country": "Netherlands"
+        }
+      ],
+      "ultimate_parent": "nLighten",
+      "ultimate_parent_qid": "Q139890258",
+      "ultimate_parent_country": "Netherlands",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-891871959",
+      "source_qid": "Q139890258",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q139890258",
+          "name": "nLighten",
+          "country_qid": "Q55",
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q139890258",
+          "country": "Netherlands"
+        }
+      ],
+      "ultimate_parent": "nLighten",
+      "ultimate_parent_qid": "Q139890258",
+      "ultimate_parent_country": "Netherlands",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-57977045",
+      "source_qid": "Q139890258",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q139890258",
+          "name": "nLighten",
+          "country_qid": "Q55",
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q139890258",
+          "country": "Netherlands"
+        }
+      ],
+      "ultimate_parent": "nLighten",
+      "ultimate_parent_qid": "Q139890258",
+      "ultimate_parent_country": "Netherlands",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-711646220",
+      "source_qid": "Q139890258",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q139890258",
+          "name": "nLighten",
+          "country_qid": "Q55",
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q139890258",
+          "country": "Netherlands"
+        }
+      ],
+      "ultimate_parent": "nLighten",
+      "ultimate_parent_qid": "Q139890258",
+      "ultimate_parent_country": "Netherlands",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-220442829",
+      "source_qid": "Q139890258",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q139890258",
+          "name": "nLighten",
+          "country_qid": "Q55",
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q139890258",
+          "country": "Netherlands"
+        }
+      ],
+      "ultimate_parent": "nLighten",
+      "ultimate_parent_qid": "Q139890258",
+      "ultimate_parent_country": "Netherlands",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-558958575",
+      "source_qid": "Q139890258",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q139890258",
+          "name": "nLighten",
+          "country_qid": "Q55",
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q139890258",
+          "country": "Netherlands"
+        }
+      ],
+      "ultimate_parent": "nLighten",
+      "ultimate_parent_qid": "Q139890258",
+      "ultimate_parent_country": "Netherlands",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-182622783",
+      "source_qid": "Q1054787",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q1054787",
+          "name": "NTT, Inc.",
+          "country_qid": "Q17",
+          "headquarters_qid": "Q1332496",
+          "source": "https://www.wikidata.org/wiki/Q1054787",
+          "country": "Japan",
+          "headquarters": "Ōtemachi"
+        }
+      ],
+      "ultimate_parent": "NTT, Inc.",
+      "ultimate_parent_qid": "Q1054787",
+      "ultimate_parent_country": "Japan",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-825504801",
+      "source_qid": "Q1054787",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q1054787",
+          "name": "NTT, Inc.",
+          "country_qid": "Q17",
+          "headquarters_qid": "Q1332496",
+          "source": "https://www.wikidata.org/wiki/Q1054787",
+          "country": "Japan",
+          "headquarters": "Ōtemachi"
+        }
+      ],
+      "ultimate_parent": "NTT, Inc.",
+      "ultimate_parent_qid": "Q1054787",
+      "ultimate_parent_country": "Japan",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-447245005",
+      "source_qid": "Q1054787",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q1054787",
+          "name": "NTT, Inc.",
+          "country_qid": "Q17",
+          "headquarters_qid": "Q1332496",
+          "source": "https://www.wikidata.org/wiki/Q1054787",
+          "country": "Japan",
+          "headquarters": "Ōtemachi"
+        }
+      ],
+      "ultimate_parent": "NTT, Inc.",
+      "ultimate_parent_qid": "Q1054787",
+      "ultimate_parent_country": "Japan",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-55873731",
+      "source_qid": "Q138441246",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q138441246",
+          "name": "Redcentric",
+          "country_qid": "Q145",
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q138441246",
+          "country": "United Kingdom"
+        }
+      ],
+      "ultimate_parent": "Redcentric",
+      "ultimate_parent_qid": "Q138441246",
+      "ultimate_parent_country": "United Kingdom",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-93845197",
+      "source_qid": "Q138441246",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q138441246",
+          "name": "Redcentric",
+          "country_qid": "Q145",
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q138441246",
+          "country": "United Kingdom"
+        }
+      ],
+      "ultimate_parent": "Redcentric",
+      "ultimate_parent_qid": "Q138441246",
+      "ultimate_parent_country": "United Kingdom",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-23571722",
+      "source_qid": "Q334204",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q334204",
+          "name": "Morgan Stanley",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q60",
+          "source": "https://www.wikidata.org/wiki/Q334204",
+          "country": "United States",
+          "headquarters": "New York City"
+        }
+      ],
+      "ultimate_parent": "Morgan Stanley",
+      "ultimate_parent_qid": "Q334204",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-15516422",
+      "source_qid": "Q2033167",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q2033167",
+          "name": "Sky UK",
+          "country_qid": "Q145",
+          "headquarters_qid": "Q2432955",
+          "source": "https://www.wikidata.org/wiki/Q2033167",
+          "country": "United Kingdom",
+          "headquarters": "Isleworth"
+        },
+        {
+          "qid": "Q918390",
+          "name": "Sky Group",
+          "country_qid": "Q145",
+          "headquarters_qid": "Q2432955",
+          "source": "https://www.wikidata.org/wiki/Q918390",
+          "country": "United Kingdom",
+          "headquarters": "Isleworth"
+        },
+        {
+          "qid": "Q1113804",
+          "name": "Comcast",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q1345",
+          "source": "https://www.wikidata.org/wiki/Q1113804",
+          "country": "United States",
+          "headquarters": "Philadelphia"
+        }
+      ],
+      "ultimate_parent": "Comcast",
+      "ultimate_parent_qid": "Q1113804",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-178312270",
+      "source_qid": "Q487494",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q487494",
+          "name": "Tesco",
+          "country_qid": "Q145",
+          "headquarters_qid": "Q19789",
+          "source": "https://www.wikidata.org/wiki/Q487494",
+          "country": "United Kingdom",
+          "headquarters": "Welwyn Garden City"
+        }
+      ],
+      "ultimate_parent": "Tesco",
+      "ultimate_parent_qid": "Q487494",
+      "ultimate_parent_country": "United Kingdom",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-100299967",
+      "source_qid": "Q138439830",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q138439830",
+          "name": "Stellanor",
+          "country_qid": "Q145",
+          "headquarters_qid": "Q84",
+          "source": "https://www.wikidata.org/wiki/Q138439830",
+          "country": "United Kingdom",
+          "headquarters": "London"
+        }
+      ],
+      "ultimate_parent": "Stellanor",
+      "ultimate_parent_qid": "Q138439830",
+      "ultimate_parent_country": "United Kingdom",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-44107140",
+      "source_qid": "Q138439830",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q138439830",
+          "name": "Stellanor",
+          "country_qid": "Q145",
+          "headquarters_qid": "Q84",
+          "source": "https://www.wikidata.org/wiki/Q138439830",
+          "country": "United Kingdom",
+          "headquarters": "London"
+        }
+      ],
+      "ultimate_parent": "Stellanor",
+      "ultimate_parent_qid": "Q138439830",
+      "ultimate_parent_country": "United Kingdom",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-206625804",
+      "source_qid": "Q3517302",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q3517302",
+          "name": "Telehouse Europe",
+          "country_qid": "Q145",
+          "headquarters_qid": "Q84",
+          "source": "https://www.wikidata.org/wiki/Q3517302",
+          "country": "United Kingdom",
+          "headquarters": "London"
+        },
+        {
+          "qid": "Q971946",
+          "name": "KDDI",
+          "country_qid": "Q17",
+          "headquarters_qid": "Q214051",
+          "source": "https://www.wikidata.org/wiki/Q971946",
+          "country": "Japan",
+          "headquarters": "Chiyoda"
+        },
+        {
+          "qid": "Q745099",
+          "name": "Kyocera",
+          "country_qid": "Q17",
+          "headquarters_qid": "Q1197771",
+          "source": "https://www.wikidata.org/wiki/Q745099",
+          "country": "Japan",
+          "headquarters": "Fushimi-ku"
+        }
+      ],
+      "ultimate_parent": "Kyocera",
+      "ultimate_parent_qid": "Q745099",
+      "ultimate_parent_country": "Japan",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-206625800",
+      "source_qid": "Q3517302",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q3517302",
+          "name": "Telehouse Europe",
+          "country_qid": "Q145",
+          "headquarters_qid": "Q84",
+          "source": "https://www.wikidata.org/wiki/Q3517302",
+          "country": "United Kingdom",
+          "headquarters": "London"
+        },
+        {
+          "qid": "Q971946",
+          "name": "KDDI",
+          "country_qid": "Q17",
+          "headquarters_qid": "Q214051",
+          "source": "https://www.wikidata.org/wiki/Q971946",
+          "country": "Japan",
+          "headquarters": "Chiyoda"
+        },
+        {
+          "qid": "Q745099",
+          "name": "Kyocera",
+          "country_qid": "Q17",
+          "headquarters_qid": "Q1197771",
+          "source": "https://www.wikidata.org/wiki/Q745099",
+          "country": "Japan",
+          "headquarters": "Fushimi-ku"
+        }
+      ],
+      "ultimate_parent": "Kyocera",
+      "ultimate_parent_qid": "Q745099",
+      "ultimate_parent_country": "Japan",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-497956675",
+      "source_qid": "Q3517302",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q3517302",
+          "name": "Telehouse Europe",
+          "country_qid": "Q145",
+          "headquarters_qid": "Q84",
+          "source": "https://www.wikidata.org/wiki/Q3517302",
+          "country": "United Kingdom",
+          "headquarters": "London"
+        },
+        {
+          "qid": "Q971946",
+          "name": "KDDI",
+          "country_qid": "Q17",
+          "headquarters_qid": "Q214051",
+          "source": "https://www.wikidata.org/wiki/Q971946",
+          "country": "Japan",
+          "headquarters": "Chiyoda"
+        },
+        {
+          "qid": "Q745099",
+          "name": "Kyocera",
+          "country_qid": "Q17",
+          "headquarters_qid": "Q1197771",
+          "source": "https://www.wikidata.org/wiki/Q745099",
+          "country": "Japan",
+          "headquarters": "Fushimi-ku"
+        }
+      ],
+      "ultimate_parent": "Kyocera",
+      "ultimate_parent_qid": "Q745099",
+      "ultimate_parent_country": "Japan",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-193806160",
+      "source_qid": "Q3517302",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q3517302",
+          "name": "Telehouse Europe",
+          "country_qid": "Q145",
+          "headquarters_qid": "Q84",
+          "source": "https://www.wikidata.org/wiki/Q3517302",
+          "country": "United Kingdom",
+          "headquarters": "London"
+        },
+        {
+          "qid": "Q971946",
+          "name": "KDDI",
+          "country_qid": "Q17",
+          "headquarters_qid": "Q214051",
+          "source": "https://www.wikidata.org/wiki/Q971946",
+          "country": "Japan",
+          "headquarters": "Chiyoda"
+        },
+        {
+          "qid": "Q745099",
+          "name": "Kyocera",
+          "country_qid": "Q17",
+          "headquarters_qid": "Q1197771",
+          "source": "https://www.wikidata.org/wiki/Q745099",
+          "country": "Japan",
+          "headquarters": "Fushimi-ku"
+        }
+      ],
+      "ultimate_parent": "Kyocera",
+      "ultimate_parent_qid": "Q745099",
+      "ultimate_parent_country": "Japan",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-34160179",
+      "source_qid": "Q3517302",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q3517302",
+          "name": "Telehouse Europe",
+          "country_qid": "Q145",
+          "headquarters_qid": "Q84",
+          "source": "https://www.wikidata.org/wiki/Q3517302",
+          "country": "United Kingdom",
+          "headquarters": "London"
+        },
+        {
+          "qid": "Q971946",
+          "name": "KDDI",
+          "country_qid": "Q17",
+          "headquarters_qid": "Q214051",
+          "source": "https://www.wikidata.org/wiki/Q971946",
+          "country": "Japan",
+          "headquarters": "Chiyoda"
+        },
+        {
+          "qid": "Q745099",
+          "name": "Kyocera",
+          "country_qid": "Q17",
+          "headquarters_qid": "Q1197771",
+          "source": "https://www.wikidata.org/wiki/Q745099",
+          "country": "Japan",
+          "headquarters": "Fushimi-ku"
+        }
+      ],
+      "ultimate_parent": "Kyocera",
+      "ultimate_parent_qid": "Q745099",
+      "ultimate_parent_country": "Japan",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-460246772",
+      "source_qid": "Q138447238",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q138447238",
+          "name": "CapitaLand Ascendas REIT",
+          "country_qid": "Q334",
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q138447238",
+          "country": "Singapore"
+        }
+      ],
+      "ultimate_parent": "CapitaLand Ascendas REIT",
+      "ultimate_parent_qid": "Q138447238",
+      "ultimate_parent_country": "Singapore",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-460244923",
+      "source_qid": "Q138358768",
+      "source_role": "owner",
+      "chain": [
+        {
+          "qid": "Q138358768",
+          "name": "Galaxy Data Centers",
+          "country_qid": null,
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q138358768"
+        }
+      ],
+      "ultimate_parent": "Galaxy Data Centers",
+      "ultimate_parent_qid": "Q138358768",
+      "ultimate_parent_country": null,
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-460244928",
+      "source_qid": "Q138358768",
+      "source_role": "owner",
+      "chain": [
+        {
+          "qid": "Q138358768",
+          "name": "Galaxy Data Centers",
+          "country_qid": null,
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q138358768"
+        }
+      ],
+      "ultimate_parent": "Galaxy Data Centers",
+      "ultimate_parent_qid": "Q138358768",
+      "ultimate_parent_country": null,
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-460244927",
+      "source_qid": "Q138358768",
+      "source_role": "owner",
+      "chain": [
+        {
+          "qid": "Q138358768",
+          "name": "Galaxy Data Centers",
+          "country_qid": null,
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q138358768"
+        }
+      ],
+      "ultimate_parent": "Galaxy Data Centers",
+      "ultimate_parent_qid": "Q138358768",
+      "ultimate_parent_country": null,
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-1452591984",
+      "source_qid": "Q133440987",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q133440987",
+          "name": "Vantage Data Centers",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q16554",
+          "source": "https://www.wikidata.org/wiki/Q133440987",
+          "country": "United States",
+          "headquarters": "Denver"
+        }
+      ],
+      "ultimate_parent": "Vantage Data Centers",
+      "ultimate_parent_qid": "Q133440987",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-1452591985",
+      "source_qid": "Q133440987",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q133440987",
+          "name": "Vantage Data Centers",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q16554",
+          "source": "https://www.wikidata.org/wiki/Q133440987",
+          "country": "United States",
+          "headquarters": "Denver"
+        }
+      ],
+      "ultimate_parent": "Vantage Data Centers",
+      "ultimate_parent_qid": "Q133440987",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-26794336",
+      "source_qid": "Q133440987",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q133440987",
+          "name": "Vantage Data Centers",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q16554",
+          "source": "https://www.wikidata.org/wiki/Q133440987",
+          "country": "United States",
+          "headquarters": "Denver"
+        }
+      ],
+      "ultimate_parent": "Vantage Data Centers",
+      "ultimate_parent_qid": "Q133440987",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-1072007436",
+      "source_qid": "Q133440987",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q133440987",
+          "name": "Vantage Data Centers",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q16554",
+          "source": "https://www.wikidata.org/wiki/Q133440987",
+          "country": "United States",
+          "headquarters": "Denver"
+        }
+      ],
+      "ultimate_parent": "Vantage Data Centers",
+      "ultimate_parent_qid": "Q133440987",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-1072007403",
+      "source_qid": "Q133440987",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q133440987",
+          "name": "Vantage Data Centers",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q16554",
+          "source": "https://www.wikidata.org/wiki/Q133440987",
+          "country": "United States",
+          "headquarters": "Denver"
+        }
+      ],
+      "ultimate_parent": "Vantage Data Centers",
+      "ultimate_parent_qid": "Q133440987",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-1198641381",
+      "source_qid": "Q133440987",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q133440987",
+          "name": "Vantage Data Centers",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q16554",
+          "source": "https://www.wikidata.org/wiki/Q133440987",
+          "country": "United States",
+          "headquarters": "Denver"
+        }
+      ],
+      "ultimate_parent": "Vantage Data Centers",
+      "ultimate_parent_qid": "Q133440987",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-1481464835",
+      "source_qid": "Q133440987",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q133440987",
+          "name": "Vantage Data Centers",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q16554",
+          "source": "https://www.wikidata.org/wiki/Q133440987",
+          "country": "United States",
+          "headquarters": "Denver"
+        }
+      ],
+      "ultimate_parent": "Vantage Data Centers",
+      "ultimate_parent_qid": "Q133440987",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-33503496",
+      "source_qid": "Q7921966",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q7921966",
+          "name": "Verne Global",
+          "country_qid": "Q189",
+          "headquarters_qid": "Q84",
+          "source": "https://www.wikidata.org/wiki/Q7921966",
+          "country": "Iceland",
+          "headquarters": "London"
+        }
+      ],
+      "ultimate_parent": "Verne Global",
+      "ultimate_parent_qid": "Q7921966",
+      "ultimate_parent_country": "Iceland",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "updated": "2026-09-10T07:39:07.998552+00:00",
+  "nation": "Scotland",
+  "source": "https://data.spatialhub.scot/en/dataset/planning_applications_official-is",
+  "licence": "Open Government Licence v3.0",
+  "coverage": "Official Scotland planning-application dataset; publisher states all 34 planning authorities provide data daily.",
+  "access_status": "auth-key-required",
+  "access_note": "This dataset is openly licensed, but Spatial Hub requires a free logged-in account/access key for machine downloads. Configure repository secret SPATIALHUB_AUTHKEY to activate it. No unlicensed fallback is used.",
+  "count": 0,
+  "items": []
+}
