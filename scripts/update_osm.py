@@ -2,7 +2,9 @@
 """Refresh the UK OpenStreetMap data-centre layer for Grid Watch.
 
 Uses the public Overpass API and only OSM features whose tags explicitly mark
-a data centre. Output is intentionally descriptive rather than editorial.
+a data centre. Output is descriptive rather than editorial. Where contributors
+have supplied Wikidata identifiers, they are preserved for open CC0 ownership
+enrichment in a separate step.
 """
 import json
 import time
@@ -53,6 +55,11 @@ def status(tags):
     return "Mapped existing site"
 
 
+def qid(value):
+    value = (value or "").strip()
+    return value if value.startswith("Q") and value[1:].isdigit() else None
+
+
 def main():
     raw = fetch()
     rows = []
@@ -73,6 +80,10 @@ def main():
             "name": tags.get("name") or tags.get("operator") or "Data centre",
             "operator": tags.get("operator"),
             "owner": tags.get("owner"),
+            "operator_wikidata": qid(tags.get("operator:wikidata")),
+            "owner_wikidata": qid(tags.get("owner:wikidata")),
+            "brand_wikidata": qid(tags.get("brand:wikidata")),
+            "wikidata": qid(tags.get("wikidata")),
             "ref": tags.get("ref"),
             "status": status(tags),
             "lat": lat,
@@ -82,7 +93,7 @@ def main():
             "source": f"https://www.openstreetmap.org/{osm_type}/{osm_id}",
             "source_type": "OpenStreetMap",
             "licence": "ODbL 1.0",
-            "verified": False,
+            "verified": False
         })
     rows.sort(key=lambda x: ((x.get("name") or "").lower(), x["id"]))
     payload = {
@@ -91,7 +102,7 @@ def main():
         "licence": "ODbL 1.0 — © OpenStreetMap contributors",
         "coverage_note": "UK-wide community-mapped data-centre features. Coverage is substantial but not guaranteed complete.",
         "count": len(rows),
-        "items": rows,
+        "items": rows
     }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Wrote {len(rows)} OSM records to {OUT}")
