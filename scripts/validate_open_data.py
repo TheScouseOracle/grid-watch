@@ -16,7 +16,7 @@ def read(name):
 
 
 def licence_ok(value):
-    return bool(value) and any(str(value).startswith(x) or x in str(value) for x in ALLOWED)
+    return bool(value) and any(token in str(value) for token in ALLOWED)
 
 
 def coord_ok(item):
@@ -25,10 +25,9 @@ def coord_ok(item):
 
 
 def check_items(name, obj, require_coords=True):
-    if not licence_ok(obj.get("licence", "Open Government Licence v3.0") if name.startswith("planning-") else obj.get("licence")):
-        # planning.json is a merger and has per-nation licences instead of one top-level licence
-        if name != "planning.json":
-            raise SystemExit(f"{name}: missing/unsupported top-level open licence")
+    top = obj.get("licence")
+    if name != "planning.json" and not licence_ok(top):
+        raise SystemExit(f"{name}: missing/unsupported top-level open licence: {top!r}")
     items = obj.get("items")
     if not isinstance(items, list):
         raise SystemExit(f"{name}: items is not a list")
@@ -48,7 +47,33 @@ def check_items(name, obj, require_coords=True):
             raise SystemExit(f"{name}: item {ident or i} has invalid/out-of-UK coordinates")
 
 
+def validate_allowlist():
+    src = read("sources/open-data-sources.json")
+    enabled = [s for s in src.get("sources", []) if s.get("enabled")]
+    if not enabled:
+        raise SystemExit("Source allowlist contains no enabled sources")
+    for source in enabled:
+        # postcodes.io is a transient lookup service. Its source code is MIT and
+        # its upstream datasets have source-specific open/public licences, so it
+        # is documented but not ingested into generated repository datasets.
+        if source.get("id") == "postcodes-io":
+            if "MIT" not in str(source.get("licence")):
+                raise SystemExit("postcodes.io source licence is not documented")
+            continue
+        if not licence_ok(source.get("licence")):
+            raise SystemExit(f"Enabled source {source.get('id')} has no supported explicit open licence")
+        if not source.get("licence_url"):
+            raise SystemExit(f"Enabled source {source.get('id')} has no licence URL")
+    # Guardrails: these gaps must stay disabled until an explicit compatible
+    # licence is recorded in the allowlist.
+    by_id = {s.get("id"): s for s in src.get("sources", [])}
+    for guarded in ("neso-ea-register", "wales-national-planning"):
+        if by_id.get(guarded, {}).get("enabled"):
+            raise SystemExit(f"{guarded} cannot be enabled without a separately verified compatible licence")
+
+
 def main():
+    validate_allowlist()
     osm = read("datacentres-osm.json")
     grid = read("grid.json")
     planning = read("planning.json")
@@ -60,8 +85,6 @@ def main():
     check_items("planning.json", planning)
     check_items("ownership.json", ownership, require_coords=False)
 
-    # v2's curated register must not silently reintroduce ordinary webpages or
-    # proprietary directory records. Any future entry needs an explicit open licence.
     for item in curated.get("datacentres", []):
         if not licence_ok(item.get("licence")):
             raise SystemExit(f"datacentres.json: curated item {item.get('name')} lacks a supported open licence")
