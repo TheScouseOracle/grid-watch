@@ -43,6 +43,8 @@ jobs:
       - name: Refresh England OGL planning candidates
         run: python scripts/update_planning.py
       - name: Refresh Scotland OGL planning candidates
+        env:
+          SPATIALHUB_AUTHKEY: ${{ secrets.SPATIALHUB_AUTHKEY }}
         run: python scripts/update_scotland_planning.py
       - name: Refresh Northern Ireland OGL planning candidates
         run: python scripts/update_ni_planning.py
