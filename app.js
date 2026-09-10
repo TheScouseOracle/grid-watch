@@ -1,11 +1,11 @@
 // Grid Watch — browser client
-const DONATE_URL="#";
+const DONATE_URL="https://buymeacoffee.com/TheScouseOracle";
 const TIP_URL="";
-const TIP_EMAIL="tips@example.com";
+const TIP_EMAIL="dailysigns333@gmail.com";
 const RADIUS_KM=45;
 let MAP=null,MARKERS=null,CURATED=[],LIVE=[],OSM=[],GRID=[],OWNERSHIP=new Map(),GRID_CONTEXT=null;
 const el=id=>document.getElementById(id);
-const esc=s=>String(s??"").replace(/[&<>\"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const esc=s=>String(s??"").replace(/[&<>\"]/g,c=>({"&":"&amp;","<":"&lt;","&gt;":"&gt;",'"':"&quot;"}[c])||c);
 function dist(a,b,c,d){const R=6371,r=x=>x*Math.PI/180,p=r(c-a),q=r(d-b),s=Math.sin(p/2)**2+Math.cos(r(a))*Math.cos(r(c))*Math.sin(q/2)**2;return 2*R*Math.asin(Math.sqrt(s));}
 function money(n){if(n==null)return null;if(n>=1e9)return `£${(n/1e9).toFixed(n%1e9?1:0)}bn`;if(n>=1e6)return `£${Math.round(n/1e6)}m`;return `£${Number(n).toLocaleString("en-GB")}`;}
 async function loadData(){try{const[d,p,o,g,w]=await Promise.all([fetch("datacentres.json").then(r=>r.json()).catch(()=>({datacentres:[]})),fetch("planning.json").then(r=>r.json()).catch(()=>({items:[]})),fetch("datacentres-osm.json").then(r=>r.json()).catch(()=>({items:[]})),fetch("grid.json").then(r=>r.json()).catch(()=>({items:[],national_context:null})),fetch("ownership.json").then(r=>r.json()).catch(()=>({items:[]}))]);CURATED=(d.datacentres||[]).filter(x=>Number.isFinite(x.lat)&&Number.isFinite(x.lng));LIVE=(p.items||[]).filter(x=>Number.isFinite(x.lat)&&Number.isFinite(x.lng));OSM=(o.items||[]).filter(x=>Number.isFinite(x.lat)&&Number.isFinite(x.lng));GRID=(g.items||[]).filter(x=>Number.isFinite(x.lat)&&Number.isFinite(x.lng));GRID_CONTEXT=g.national_context||null;OWNERSHIP=new Map((w.items||[]).map(x=>[x.site_id,x]));}catch(e){CURATED=[];LIVE=[];OSM=[];GRID=[];OWNERSHIP=new Map();GRID_CONTEXT=null;}}
