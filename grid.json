@@ -1,0 +1,17 @@
+{
+  "generated_at": null,
+  "coverage_note": "This file is refreshed automatically. It maps 132 kV+ substations from OpenStreetMap. A nearby substation does not prove a data centre is connected to it.",
+  "source": "OpenStreetMap via Overpass API",
+  "licence": "ODbL 1.0 — © OpenStreetMap contributors",
+  "count": 0,
+  "national_context": {
+    "as_of": "2026-07-29",
+    "demand_connection_applications_gw": 125,
+    "data_centre_component_at_least_gw": 80,
+    "previous_demand_connection_applications_gw": 41,
+    "interpretation": "These are demand-connection applications/queue figures, not current electricity consumption and not a forecast that every project will be built.",
+    "source": "https://www.ofgem.gov.uk/press-release/ofgem-acts-free-grid-capacity-tackling-speculative-data-centre-projects",
+    "source_name": "Ofgem"
+  },
+  "items": []
+}
