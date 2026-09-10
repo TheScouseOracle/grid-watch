@@ -59,9 +59,93 @@
       "status": "Published criteria",
       "title": "AI Growth Zones are designed around power and planning access",
       "summary": "The government's AI Growth Zone application material says the programme is intended to unlock AI-enabled data centres and supporting infrastructure by improving access to power and providing planning support.",
-      "claim_limit": "A location appearing near a data centre does not automatically mean it is inside an AI Growth Zone. Grid Watch will only label individual sites as zone-linked when an open source explicitly supports that link.",
-      "source": "https://www.gov.uk/government/publications/ai-growth-zones/ai-growth-zones-open-for-applications",
+      "claim_limit": "A location appearing near a data centre does not automatically mean it is inside an AI Growth Zone. Grid Watch only labels individual sites as zone-linked when an open source explicitly supports that link.",
+      "source": "https://www.gov.uk/government/publications/ai-growth-zones",
       "source_label": "GOV.UK — AI Growth Zones"
+    },
+    {
+      "id": "aigz-culham",
+      "category": "Announced AI Growth Zone",
+      "icon": "🧠",
+      "scope": "Culham, Oxfordshire",
+      "status": "Announced",
+      "title": "Culham AI Growth Zone",
+      "summary": "Government identified Culham in Oxfordshire as the first AI Growth Zone, centred on the UK Atomic Energy Authority campus and intended to accelerate AI data-centre development and supporting infrastructure.",
+      "claim_limit": "The zone designation does not mean every mapped data centre within the wider Oxfordshire area receives every support mechanism.",
+      "source": "https://www.gov.uk/government/news/investors-and-local-authorities-gear-up-as-ai-growth-zone-delivery-gathers-speed",
+      "source_label": "GOV.UK — Culham / Oxfordshire announcement"
+    },
+    {
+      "id": "aigz-north-east",
+      "category": "Announced AI Growth Zone",
+      "icon": "🧠",
+      "scope": "Blyth/Cambois and Cobalt Park, North East England",
+      "status": "Announced September 2025",
+      "title": "North East AI Growth Zone",
+      "summary": "Government announced an AI Growth Zone anchored by sites around Blyth/Cambois in Northumberland and Cobalt Park in North Tyneside, with the aim of creating one of Europe's major data-centre hubs.",
+      "claim_limit": "Regional designation is not proof that every nearby data-centre project receives direct public funding or a specific grid connection advantage.",
+      "source": "https://www.gov.uk/government/news/north-east-england-set-for-billions-in-investment-and-thousands-of-jobs-as-uk-and-us-ink-tech-partnership",
+      "source_label": "GOV.UK — North East AI Growth Zone"
+    },
+    {
+      "id": "aigz-north-wales",
+      "category": "Announced AI Growth Zone",
+      "icon": "🧠",
+      "scope": "North Wales / Wylfa",
+      "status": "Announced November 2025",
+      "title": "North Wales AI Growth Zone",
+      "summary": "Government announced a North Wales AI Growth Zone with potential links to future power infrastructure around Wylfa and large-scale AI data-centre development.",
+      "claim_limit": "Potential future energy supply and zone status do not prove a particular nearby data centre is connected to Wylfa or has received a subsidy.",
+      "source": "https://www.gov.uk/government/news/ai-growth-zones-to-create-thousands-of-jobs-and-unlock-up-to-100-billion-in-investment-as-new-site-confirmed-for-north-wales",
+      "source_label": "GOV.UK — North Wales AI Growth Zone"
+    },
+    {
+      "id": "aigz-south-wales",
+      "category": "Announced AI Growth Zone",
+      "icon": "🧠",
+      "scope": "South Wales / Bridgend",
+      "status": "Announced November 2025",
+      "title": "South Wales AI Growth Zone",
+      "summary": "Government announced a South Wales AI Growth Zone including development at the former Ford Bridgend Engine Plant as part of a wider package of AI investment.",
+      "claim_limit": "The announcement is regional/programme evidence and does not prove every nearby mapped site receives the same support.",
+      "source": "https://www.gov.uk/government/news/ai-to-power-national-renewal-as-government-announces-billions-of-additional-investment-and-new-plans-to-boost-uk-businesses-jobs-and-innovation",
+      "source_label": "GOV.UK — South Wales AI Growth Zone"
+    },
+    {
+      "id": "aigz-lanarkshire",
+      "category": "Announced AI Growth Zone",
+      "icon": "🧠",
+      "scope": "Lanarkshire, Scotland",
+      "status": "Announced January 2026",
+      "title": "Lanarkshire AI Growth Zone",
+      "summary": "Government announced Lanarkshire as Scotland's AI Growth Zone. The announcement states the status remains conditional on delivery against agreed milestones and legal and regulatory requirements.",
+      "claim_limit": "The government's jobs and investment figures for this zone were supplied by the developer; they are not an independent estimate of realised economic benefit.",
+      "source": "https://www.gov.uk/government/news/more-than-3400-jobs-and-targeted-support-for-local-communities-to-help-tackle-the-cost-of-living-as-lanarkshire-named-latest-ai-growth-zone",
+      "source_label": "GOV.UK — Lanarkshire AI Growth Zone"
+    },
+    {
+      "id": "investment-zone-tax-reliefs",
+      "category": "Tax-zone framework",
+      "icon": "🧾",
+      "scope": "Designated Investment Zone tax sites",
+      "status": "Legislated geographic tax sites",
+      "title": "Investment Zone tax reliefs",
+      "summary": "Eligible businesses within designated Investment Zone tax sites can access reliefs including Business Rates, Stamp Duty Land Tax, Employer National Insurance Contributions, Enhanced Structures and Buildings Allowance and Enhanced Capital Allowances.",
+      "claim_limit": "Being near an Investment Zone is not enough. Grid Watch must confirm that a project sits inside a designated tax-site boundary before presenting tax-site eligibility, and eligibility is still not proof that a business claimed a particular relief.",
+      "source": "https://www.gov.uk/guidance/investment-zones-in-england",
+      "source_label": "GOV.UK — Investment Zones in England"
+    },
+    {
+      "id": "investment-zone-maps",
+      "category": "Tax-zone geography",
+      "icon": "🗺️",
+      "scope": "Published UK Investment Zone tax sites",
+      "status": "Official maps available",
+      "title": "Official tax-site boundary maps exist",
+      "summary": "HMRC publishes official maps for designated Investment Zone tax sites, including locations in the East Midlands, Flintshire and Wrexham, Glasgow City Region, Liverpool City Region, North East, North East of Scotland and West Midlands.",
+      "claim_limit": "The map collection is evidence of designated tax areas; it is not evidence that a particular data centre occupies one until the site location is checked against the legal boundary.",
+      "source": "https://www.gov.uk/government/collections/maps-of-investment-zones-and-investment-zone-tax-sites",
+      "source_label": "GOV.UK — Investment Zone tax-site maps"
     }
   ]
 }
