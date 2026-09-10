@@ -4,10 +4,19 @@
     {
       "id": "osm",
       "name": "OpenStreetMap",
-      "purpose": ["data-centre locations", "high-voltage substations"],
+      "purpose": ["data-centre locations", "high-voltage substations", "base-map tiles"],
       "licence": "ODbL 1.0",
       "licence_url": "https://www.openstreetmap.org/copyright",
       "enabled": true
+    },
+    {
+      "id": "postcodes-io",
+      "name": "Postcodes.io",
+      "purpose": ["postcode geocoding"],
+      "licence": "MIT software; underlying GB postcode data uses OS OpenData and listed open/public statistical datasets",
+      "licence_url": "https://postcodes.io/docs/licences/",
+      "enabled": true,
+      "coverage_note": "Northern Ireland postcode data carries separate ONSPD/LPS terms; Grid Watch only uses the public lookup response transiently for user searches and does not redistribute a postcode database."
     },
     {
       "id": "planning-data-england",
@@ -44,6 +53,23 @@
       "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
       "enabled": true,
       "coverage_note": "Only used when an OSM feature carries an explicit Wikidata identifier. Missing ownership stays unknown."
+    },
+    {
+      "id": "ofgem",
+      "name": "Ofgem",
+      "purpose": ["national electricity demand-connection context"],
+      "licence": "Open Government Licence for Crown copyright material unless otherwise indicated",
+      "licence_url": "https://www.ofgem.gov.uk/c-ofgem-2026",
+      "enabled": true,
+      "coverage_note": "Only Ofgem-authored Crown-copyright text/data is reused; third-party material is excluded."
+    },
+    {
+      "id": "neso-ea-register",
+      "name": "NESO Existing Agreement Register",
+      "purpose": ["potential future contracted/Gate 2 demand evidence"],
+      "licence": null,
+      "enabled": false,
+      "coverage_note": "NESO has a general Open Data Licence and publicly publishes the EA Register, but Grid Watch will not ingest this spreadsheet until the specific register's reuse licence is explicitly verified as compatible."
     },
     {
       "id": "wales-national-planning",
