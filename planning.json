@@ -1,5 +1,75 @@
 {
-  "updated": null,
-  "note": "This file is overwritten daily by the GitHub Action (.github/workflows/update-planning.yml), which pulls live 'data centre' planning applications from PlanIt. Until the Action runs once, this is empty.",
-  "items": []
+  "_comment": "CURATED REGISTER — verified 10 Sep 2026. Your editorial layer. Add/verify entries here; every entry carries a real source URL.",
+  "datacentres": [
+    {
+      "name": "Waltham Cross data centre",
+      "operator": "Google (Alphabet)",
+      "country": "United States",
+      "ownership": "US",
+      "investment_gbp": 790000000,
+      "est_mw": null,
+      "status": "Operational (opened Sept 2025)",
+      "area": "Waltham Cross, Hertfordshire (EN8 8XH)",
+      "lat": 51.6860,
+      "lng": -0.0330,
+      "source": "https://www.googlecloudpresscorner.com/2025-09-16-Google-Opens-Waltham-Cross-Data-Centre-as-Part-of-Two-year-GBP5-Billion-Investment-in-the-UK-to-Help-Power-its-AI-Economy",
+      "note": "~£790m ($1bn) for this 33-acre site (announced Jan 2024). Separate from Google's wider two-year £5bn UK programme — keep the two figures distinct."
+    },
+    {
+      "name": "Cambois / Blyth AI data centre",
+      "operator": "Blackstone (QTS)",
+      "country": "United States",
+      "ownership": "US",
+      "investment_gbp": 10000000000,
+      "est_mw": 720,
+      "status": "In development (phase 1 approved Dec 2025)",
+      "area": "Cambois, Blyth, Northumberland",
+      "lat": 55.1470,
+      "lng": -1.5300,
+      "source": "https://www.silicon.co.uk/cloud/datacenter/blackstone-qts-data-centre-northumberland-627813",
+      "note": "~£10bn. 10 halls (~72MW each, ~720MW total) over ~133 acres on the former Britishvolt site; billed as Europe's largest; final phase possibly 2035."
+    },
+    {
+      "name": "UK data centre programme",
+      "operator": "Amazon Web Services",
+      "country": "United States",
+      "ownership": "US",
+      "investment_gbp": 8000000000,
+      "est_mw": null,
+      "status": "Ongoing (2024-2028)",
+      "area": "London and Manchester regions (multiple sites)",
+      "lat": 51.5074,
+      "lng": -0.1278,
+      "source": "https://www.costar.com/article/2118565802/amazon-plans-8-billion-uk-data-centres-investment-drive",
+      "note": "£8bn over five years (2024-2028) building and operating data centres. Location shown is regional, not a single site."
+    },
+    {
+      "name": "Skelton Grange hyperscale campus",
+      "operator": "Microsoft",
+      "country": "United States",
+      "ownership": "US",
+      "investment_gbp": 4000000000,
+      "est_mw": null,
+      "status": "Consented (planning approved April 2026)",
+      "area": "Skelton Grange, Leeds, West Yorkshire",
+      "lat": 53.7670,
+      "lng": -1.4970,
+      "source": "https://www.constructionenquirer.com/2026/04/27/go-ahead-for-microsofts-4bn-leeds-data-hub-push/",
+      "note": "Microsoft campus on former Skelton Grange power station site; ~500,000 sq ft across three halls; ~£4bn inward investment estimated on completion, off a £106.6m land deal with Harworth."
+    },
+    {
+      "name": "Cockenzie hyperscale (former coal store)",
+      "operator": "Sustainable Development Capital (SDCL)",
+      "country": "United Kingdom",
+      "ownership": "UK",
+      "investment_gbp": null,
+      "est_mw": null,
+      "status": "Early stage (preferred supplier named Oct 2025)",
+      "area": "Cockenzie, East Lothian, Scotland (EH32 9SD)",
+      "lat": 55.9680,
+      "lng": -2.9700,
+      "source": "https://www.datacenterdynamics.com/en/news/data-center-planned-at-former-coal-store-in-east-lothian-scotland/",
+      "note": "London-based UK firm SDCL named preferred supplier for a potential JV with East Lothian Council; very early stage, planning and consultation to come. Eventual operator TBC — could be a US hyperscaler."
+    }
+  ]
 }
