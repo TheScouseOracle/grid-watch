@@ -14,10 +14,11 @@
   <section id="home" class="hero">
     <div class="kicker">Who's plugging into your patch?</div>
     <h1>Britain's data-centre buildout, mapped</h1>
-    <p>Search your postcode to explore data-centre locations, planning activity, open ownership links and nearby high-voltage infrastructure. The automated database only ingests data with an explicit open licence or public-domain dedication.</p>
-    <div class="field"><input id="pc" type="text" placeholder="Your postcode, e.g. L19 3PF" aria-label="Enter your postcode" autocomplete="postal-code" /><button class="btn" id="go">Explore my area</button></div>
+    <p>Enter a UK postcode to explore openly mapped data centres, major electricity infrastructure and planning activity around that area. Grid Watch is a discovery and investigation tool: a map marker is a starting point for checking the evidence, not proof that different sites are connected.</p>
+    <div class="context"><b>📍 Search by postcode</b><br>Enter a full UK postcode below. The hotspot buttons underneath are ready-made examples; typing a city name on its own will not search yet.</div>
+    <div class="field"><input id="pc" type="text" placeholder="Full UK postcode, e.g. L19 3PF" aria-label="Enter a full UK postcode" autocomplete="postal-code" /><button class="btn" id="go">Explore my area</button></div>
     <div id="msg" class="msg hidden"></div>
-    <div class="examples"><b>🔥 Explore major UK data-centre hotspots:</b> <button data-pc="SL1 1XW">Slough</button> · <button data-pc="E14 5AB">London Docklands</button> · <button data-pc="M1 1AE">Manchester</button> · <button data-pc="NP20 1PA">Newport</button></div>
+    <div class="examples"><b>🔥 Or explore major UK data-centre hotspots:</b> <button data-pc="SL1 1XW">Slough</button> · <button data-pc="E14 5AB">London Docklands</button> · <button data-pc="M1 1AE">Manchester</button> · <button data-pc="NP20 1PA">Newport</button></div>
     <div class="context"><b>How to read power figures:</b> ⚡ Connected/operational means evidence supports a live site; 🔌 Contracted/accepted means a connection has been secured but is not current consumption; 🟡 Proposed/requested is a project or application figure; ◌ Estimated is explicitly an estimate.</div>
 
     <div class="sec"><h2>Open planning activity</h2><div class="subhead">England: MHCLG Planning Data (OGL). Scotland: the official Improvement Service Spatial Hub dataset is OGL, but its machine download currently requires an access key; Grid Watch declares that gap unless access is configured. Northern Ireland: OpenDataNI annual planning dataset (OGL). Wales: no national machine-readable planning feed with a verified open licence has been identified, so Grid Watch does not scrape unlicensed registers. Search your postcode above to see planning activity around you.</div></div>
