@@ -1,36 +1,55 @@
 # Grid Watch data methodology
 
-Grid Watch is a public-interest map of UK data-centre infrastructure. It does **not** copy or republish proprietary data-centre directories.
+Grid Watch is a public-interest map of UK data-centre infrastructure. **The v2 automated data layers ingest only data with an explicit open licence or public-domain dedication.** Proprietary directories, paywalled databases and unlicensed council scraping are excluded.
 
-## Layers
+The machine-readable allowlist lives at `sources/open-data-sources.json`.
 
-### 1. OpenStreetMap discovery layer
-`scripts/update_osm.py` queries UK OpenStreetMap features explicitly tagged as data centres and writes `datacentres-osm.json`. This layer is refreshed automatically and is attributed to © OpenStreetMap contributors under ODbL 1.0.
+## 1. Data-centre discovery — OpenStreetMap
 
-OSM is a discovery/geographic layer, not proof that every site exists, is operational, or has a particular capacity. Coverage can contain omissions or contributor errors.
+`scripts/update_osm.py` queries UK OpenStreetMap features explicitly tagged as data centres and writes `datacentres-osm.json`. OpenStreetMap data is ODbL 1.0 and requires attribution to © OpenStreetMap contributors.
 
-### 2. Curated evidence register
-`datacentres.json` is the editorial evidence layer. A record should only be promoted here when a human-verifiable source supports it. Prefer, in order: planning authority documents; grid/network operator records; government publications; company/operator primary sources; reputable secondary reporting.
+OSM is a discovery/geographic layer, not proof that every site exists, is operational, or has a particular capacity. Coverage may contain omissions or contributor errors.
 
-### 3. Planning layer
-`scripts/update_planning.py` scans the official Planning Data `planning-application` dataset and writes keyword-matched candidates to `planning.json`. The dataset is licensed under the Open Government Licence v3.0 and is attributed to © Crown copyright and database right.
+## 2. Ownership — Wikidata CC0
 
-The collector currently covers **England only**. The national planning-application specification is still in development and local planning authorities are not currently required to publish into it, so this is not a complete UK planning register. Scotland, Wales, Northern Ireland and missing English authorities require additional reusable sources.
+`scripts/update_ownership.py` builds `ownership.json` from **explicit Wikidata identifiers already attached to OSM objects**. Grid Watch does not guess a corporate identity from a similar-looking company name. Parent chains follow Wikidata property P749 and remain visibly labelled as Wikidata-derived open linked data.
 
-The automatic search looks for dedicated-data-centre language such as `data centre`, `data center`, `datacentre`, `hyperscale`, `server hall` and `data hall`. Matches remain **unverified planning candidates** until independently checked. A planning application is evidence of an application, **not** evidence that a data centre has been built.
+Wikidata is CC0. Missing or ambiguous ownership remains unknown rather than being filled from proprietary corporate-intelligence products.
 
-### 4. Grid layer
-Grid capacity should distinguish:
-- **Connected / operational** — evidence supports actual connection or operation.
-- **Contracted / accepted** — a grid connection has been secured/accepted but is not evidence of current consumption.
-- **Proposed / requested** — a planning, developer or connection figure; not current consumption.
-- **Estimated** — an editorial estimate and visibly labelled as such.
+## 3. Planning — open-government datasets only
 
-## Evidence fields
-For curated records, use fields such as `source`, `source_type`, `last_verified`, `power_mw`, `power_status`, `power_basis`, `operator`, `owner`, `ultimate_owner`, `ownership_country`, `planning_ref`, `planning_url`, `grid_operator`, and `confidence` when evidence exists. Unknown values stay `null`; Grid Watch does not infer missing facts merely to fill a card.
+The planning layer is assembled from nation-specific open sources and merged by `scripts/merge_planning.py`.
+
+- **England:** MHCLG Planning Data `planning-application` dataset — Open Government Licence v3.0. Its national specification remains in development and authority coverage is incomplete.
+- **Scotland:** Improvement Service Spatial Hub, `Planning Applications: Official - Scotland` — Open Government Licence. The publisher states that all 34 Scottish planning authorities supply data.
+- **Northern Ireland:** Department for Infrastructure / OpenDataNI annual planning dataset — Open Government Licence. This is validated but annual, not a live daily feed.
+- **Wales:** no national machine-readable planning-application feed with a clearly verified open licence has been identified. Grid Watch therefore publishes this as a coverage gap instead of scraping council registers whose reuse terms have not been verified.
+
+Planning collectors search for dedicated-data-centre language such as `data centre`, `data center`, `datacentre`, `hyperscale`, `server hall` and `data hall`. Matches remain **planning candidates**, not verified built sites.
+
+Where an openly licensed planning description itself contains a number such as `40 MW`, `60 MVA` or `132 kV`, Grid Watch may surface that as **power mentioned in planning text**. This is not automatically interpreted as actual consumption, contracted capacity, or a confirmed connection.
+
+## 4. Electricity infrastructure — OpenStreetMap + open government context
+
+`scripts/update_grid.py` maps OpenStreetMap substations at 132 kV and above. This gives geographic electricity-infrastructure context across Great Britain without pretending a nearby substation is a data centre's confirmed connection point.
+
+National demand-connection context is separately attributed to Ofgem. Queue/application figures are not presented as present-day electricity consumption.
+
+Grid Watch distinguishes four power states whenever evidence exists:
+
+- **Connected / operational** — evidence supports a live connection or operating facility.
+- **Contracted / accepted** — a connection has been secured or accepted but is not evidence of current consumption.
+- **Proposed / requested** — a planning, project or connection-request figure.
+- **Estimated** — a derived estimate, always labelled as such.
+
+## 5. Strict-open verified register
+
+`datacentres.json` is retained as a verified/editorial layer, but v2 only permits a record to be promoted there when the underlying reusable evidence is itself under an explicitly compatible open licence. The older hand-curated entries are intentionally not carried into the strict-open branch because their supporting pages were not open-data datasets.
 
 ## Completeness
-The goal is broad UK coverage by combining independent open/public sources. No public source can guarantee a complete list of every private, edge, enterprise, operational and proposed data centre. Grid Watch therefore publishes source provenance and a last-updated date rather than claiming a definitive statutory register.
+
+Open-data-only does **not** mean complete. No single statutory UK register lists every private, edge, enterprise, operating and proposed data centre. Grid Watch therefore reports source provenance, licensing and coverage gaps instead of claiming 100% market coverage.
 
 ## Reuse and attribution
-Respect the licence and terms of every upstream source. Do not scrape or wholesale-copy proprietary directories. Keep attribution visible wherever a licence requires it.
+
+Respect upstream licence terms and attribution. Do not wholesale-copy proprietary data-centre directories. ODbL-derived content remains attributed to OpenStreetMap; government planning datasets retain Crown/authority attribution where required; Wikidata-derived ownership is marked CC0.
