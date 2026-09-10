@@ -29,8 +29,15 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
       - name: Install open-source dependencies
         run: pip install -r requirements.txt
+      - name: Check collector syntax
+        run: python -m py_compile scripts/*.py
+      - name: Check frontend syntax
+        run: node --check app.js
       - name: Refresh OpenStreetMap UK data centres
         run: python scripts/update_osm.py
       - name: Refresh England OGL planning candidates
@@ -45,6 +52,8 @@ jobs:
         run: python scripts/update_ownership.py
       - name: Refresh open electricity infrastructure
         run: python scripts/update_grid.py
+      - name: Enforce strict open-data policy
+        run: python scripts/validate_open_data.py
       - name: Commit changed datasets
         run: |
           git config user.name "grid-watch-bot"
