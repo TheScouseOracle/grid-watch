@@ -4,98 +4,44 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Grid Watch — The Scouse Oracle</title>
-<meta name="description" content="Put your postcode in and see the data centres being built around you: who owns them, what they're worth, and what they're pulling from the grid." />
+<meta name="description" content="Search your postcode to explore openly licensed UK data-centre, planning, ownership and electricity-infrastructure data." />
 <link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
 <div class="wrap">
-  <div class="mast">
-    <div class="brand">THE SCOUSE <b>ORACLE</b> <span>· grid watch</span></div>
-    <div class="ribbon">Free · reader-funded · a guide, not gospel</div>
-  </div>
-
-  <!-- HOME -->
+  <div class="mast"><div class="brand">THE SCOUSE <b>ORACLE</b> <span>· grid watch</span></div><div class="ribbon">Free · open-data only · evidence-led</div></div>
   <section id="home" class="hero">
     <div class="kicker">Who's plugging into your patch?</div>
-    <h1>They're building it near you</h1>
-    <p>Foreign-owned data centres are landing across the UK — pulling power your grid was meant to give to homes. Put your postcode in and see what's coming to your patch: who owns it, what it's worth, and what it wants from the grid.</p>
-    <div class="field">
-      <input id="pc" type="text" placeholder="Your postcode, e.g. L19 3PF" aria-label="Enter your postcode" autocomplete="postal-code" />
-      <button class="btn" id="go">Show me what's coming</button>
-    </div>
+    <h1>Britain's data-centre buildout, mapped</h1>
+    <p>Search your postcode to explore data-centre locations, planning activity, open ownership links and nearby high-voltage infrastructure. The automated database only ingests data with an explicit open licence or public-domain dedication.</p>
+    <div class="field"><input id="pc" type="text" placeholder="Your postcode, e.g. L19 3PF" aria-label="Enter your postcode" autocomplete="postal-code" /><button class="btn" id="go">Explore my area</button></div>
     <div id="msg" class="msg hidden"></div>
     <div class="examples">Try: <button data-pc="EN8 7DP">Waltham Cross</button> · <button data-pc="NE24 1AF">Blyth</button> · <button data-pc="LS1 1UR">Leeds</button> · <button data-pc="L1 8JQ">Liverpool</button></div>
+    <div class="context"><b>How to read power figures:</b> ⚡ Connected/operational means evidence supports a live site; 🔌 Contracted/accepted means a connection has been secured but is not current consumption; 🟡 Proposed/requested is a project or application figure; ◌ Estimated is explicitly an estimate.</div>
   </section>
-
-  <!-- RESULTS -->
   <section id="results" class="hidden">
-    <div class="hero" style="padding:20px 0 0">
-      <div class="verdict">
-        <div class="lead" id="r-lead"></div>
-        <div class="bignum" id="r-big"></div>
-        <div class="say" id="r-say"></div>
-      </div>
-      <div class="context">
-        <b>The national picture:</b> around 140 proposed data-centre schemes now seek roughly 50GW of grid power — about equal to Britain's entire peak demand — and a single large AI facility can draw as much as 100,000 homes. Grid connection applications jumped 460% in six months.
-        <a href="https://www.theregister.com/2026/03/12/uk_datacenter_grid_priority/" target="_blank" rel="noreferrer">Source</a>
-      </div>
-    </div>
-
+    <div class="hero" style="padding:20px 0 0"><div class="verdict"><div class="lead" id="r-lead"></div><div class="bignum" id="r-big"></div><div class="say" id="r-say"></div></div><div class="context"><b>Read the evidence, not just the number.</b> Planning, operating sites, open ownership links and electricity infrastructure are separate layers. A nearby substation or a proposed MW figure does not prove a live connection.</div></div>
     <div id="map"></div>
-
-    <div class="sec">
-      <h2>On the register near you</h2>
-      <div class="subhead">Known projects from The Scouse Oracle's curated register, closest first.</div>
-      <div id="r-curated"></div>
-    </div>
-
-    <div class="sec">
-      <h2>Existing sites near you</h2>
-      <div class="subhead">Data centres already mapped on OpenStreetMap, closest first. Coverage is community-built and incomplete.</div>
-      <div id="r-osm"></div>
-    </div>
-
-    <div class="sec">
-      <h2>Live planning activity</h2>
-      <div class="subhead" id="r-live-sub">Recent "data centre" planning applications near you, pulled from council portals via PlanIt.</div>
-      <div id="r-live"></div>
-    </div>
-
-    <div class="tipcta">
-      <div class="tiptext"><b>Know one we've missed?</b> This tool is built on tips. If there's a data centre going up near you — or a whisper of one — send it over and it goes on the register.</div>
-      <button class="btn" id="tip">Tip us a data centre</button>
-    </div>
-
-    <div class="support">
-      <h3>No paywall. Never will be.</h3>
-      <p>This stays free for everyone. It runs on donations — I'm funding the first month myself; after that, it's readers like you who keep the lights on.</p>
-      <div class="supbtns">
-        <a class="btn give" id="donate" href="#" target="_blank" rel="noreferrer">♥ Chip in to keep it running</a>
-        <button class="btn ghost" id="share">Share this</button>
-      </div>
-    </div>
-
-    <div class="actions">
-      <button class="btn ghost" id="again">Check another postcode</button>
-    </div>
+    <div class="sec"><h2>Open-evidence verified register</h2><div class="subhead">Only records whose reusable evidence meets the strict open-data policy can appear here.</div><div id="r-curated"></div></div>
+    <div class="sec"><h2>Electricity infrastructure near you</h2><div class="subhead">Mapped 132 kV+ substations near your postcode. Proximity does not prove a data centre is connected to a particular substation.</div><div id="r-grid-context"></div><div id="r-grid"></div></div>
+    <div class="sec"><h2>Open map sites near you</h2><div class="subhead">Data-centre features from OpenStreetMap (ODbL). Where the map supplies an explicit Wikidata ID, Grid Watch can add a CC0 ownership chain without guessing identities.</div><div id="r-osm"></div></div>
+    <div class="sec"><h2>Open planning activity</h2><div class="subhead" id="r-live-sub">England: MHCLG Planning Data (OGL). Scotland: the official Improvement Service Spatial Hub dataset is OGL, but its machine download currently requires an access key; Grid Watch declares that gap unless access is configured. Northern Ireland: OpenDataNI annual planning dataset (OGL). Wales: no national machine-readable planning feed with a verified open licence has been identified, so Grid Watch does not scrape unlicensed registers.</div><div id="r-live"></div></div>
+    <div class="tipcta"><div class="tiptext"><b>Found an open dataset we've missed?</b> Send the dataset and its licence. Records are not copied from proprietary directories.</div><button class="btn" id="tip">Send open-data evidence</button></div>
+    <div class="support"><h3>Turn the research into action.</h3><p>My resources include template letters, MP correspondence, consultation questions and evidence packs designed to help you ask better questions, request records and challenge decisions using the democratic tools available to you.</p><div class="supbtns"><a class="btn give" href="https://payhip.com/CosmicLuminary" target="_blank" rel="noreferrer">📄 Open The Scouse Oracle resources</a></div></div>
+    <div class="support"><h3>Help keep Grid Watch independent.</h3><p>Grid Watch is free to use and built as a public-interest project. If this map or the wider research helps you follow what is being built, who owns it and how it connects to public infrastructure, you can directly support the time, research and upkeep needed to keep it growing and openly available.</p><div class="supbtns"><a class="btn give" id="donate" href="https://buymeacoffee.com/TheScouseOracle" target="_blank" rel="noreferrer">☕ Support the research</a><button class="btn ghost" id="share">Share Grid Watch</button></div></div>
+    <div class="actions"><button class="btn ghost" id="again">Check another postcode</button></div>
   </section>
-
-  <!-- DISCLAIMER (always visible) -->
-  <details class="disc">
-    <summary>Where this data comes from — read me</summary>
-    <div class="body">
-      <p><b>This is a guide, not a definitive record.</b> It's assembled from public sources, it's incomplete, and it's a live picture of a fast-moving story — figures, owners and plans change. Always check the linked official source before relying on any number.</p>
-      <p><b>The register</b> (known projects) is compiled and maintained by The Scouse Oracle from public reporting, company announcements, local authority planning portals, national grid connection data and Find a Tender. Ownership flags are an editorial judgement about where a company is headquartered or controlled.</p>
-      <p><b>Live planning activity</b> is pulled automatically each day from <a href="https://www.planit.org.uk" target="_blank" rel="noreferrer">PlanIt</a>, which aggregates planning applications from 400+ UK councils. These are raw, unverified applications — a filing is not a built data centre. Each links back to the official council record.</p>
-      <p><b>Existing sites</b> are drawn from <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> (&copy; OpenStreetMap contributors, ODbL) — a community map, so coverage is partial and grows over time. Each links back to its map record.</p>
-      <p><b>Locations and distances</b> are approximate; postcodes are geocoded via <a href="https://postcodes.io" target="_blank" rel="noreferrer">postcodes.io</a>. Investment figures are announced headline amounts, not local costs. Nothing here says any single project has raised your own bill.</p>
-    </div>
-  </details>
-
-  <div class="foot"><b>The Scouse Oracle · Grid Watch</b> — independent, reader-funded public-interest journalism. A living guide to who's plugging into Britain's grid.</div>
+  <details class="disc"><summary>Methodology, licences and limitations</summary><div class="body">
+    <p><b>Strict open-data policy:</b> the v2 automated database ingests only data with an explicit open licence or public-domain dedication. It does not wholesale-copy commercial data-centre directories, paywalled databases or council registers whose reuse terms have not been verified.</p>
+    <p><b>OpenStreetMap:</b> © OpenStreetMap contributors, ODbL. Community mapping can be incomplete or wrong. Data-centre and 132 kV+ substation layers refresh automatically.</p>
+    <p><b>Ownership:</b> Wikidata CC0 is used only where an OSM record contains an explicit Wikidata identifier. Parent-company links are open linked data, not a claim that Wikidata is legally authoritative.</p>
+    <p><b>Planning:</b> England and Northern Ireland are currently collected from explicitly OGL datasets. Scotland's official dataset is also OGL, but its automated download is access-key gated unless configured. Wales remains a declared national planning-data gap under this strict policy. A filing is evidence of an application, not evidence of construction or operation.</p>
+    <p><b>Power:</b> numbers found in open planning descriptions are shown as text mentions until their meaning is established. Connected, contracted, proposed and estimated values are not interchangeable.</p>
+    <p><b>Completeness:</b> open-data-only does not mean a complete market register. No single statutory UK dataset lists every private, edge, enterprise, operating and proposed data centre. Grid Watch publishes coverage gaps rather than inventing certainty.</p>
+    <p><b>Locations:</b> distances are approximate and postcodes are geocoded using <a href="https://postcodes.io" target="_blank" rel="noreferrer">postcodes.io</a>. Full methodology and source licences are documented in the repository.</p>
+  </div></details>
+  <div class="foot"><b>The Scouse Oracle · Grid Watch</b> — open-data public-interest mapping of Britain's data-centre and electricity buildout.</div>
 </div>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="app.js"></script>
-</body>
-</html>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="app.js"></script>
+</body></html>

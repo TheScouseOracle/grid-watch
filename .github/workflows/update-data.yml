@@ -1,0 +1,72 @@
+name: Refresh Grid Watch open data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 4 * * *"
+  push:
+    branches:
+      - build/grid-watch-v2
+    paths:
+      - "scripts/**"
+      - "requirements.txt"
+      - "app.js"
+      - "index.html"
+      - "styles.css"
+      - ".github/workflows/update-data.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: grid-watch-data-refresh-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install open-source dependencies
+        run: pip install -r requirements.txt
+      - name: Check collector syntax
+        run: python -m py_compile scripts/*.py
+      - name: Check frontend syntax
+        run: node --check app.js
+      - name: Refresh OpenStreetMap UK data centres
+        run: python scripts/update_osm.py
+      - name: Refresh England OGL planning candidates
+        run: python scripts/update_planning.py
+      - name: Refresh Scotland OGL planning candidates
+        env:
+          SPATIALHUB_AUTHKEY: ${{ secrets.SPATIALHUB_AUTHKEY }}
+        run: python scripts/update_scotland_planning.py
+      - name: Refresh Northern Ireland OGL planning candidates
+        run: python scripts/update_ni_planning.py
+      - name: Merge open planning layers
+        run: python scripts/merge_planning.py
+      - name: Refresh CC0 ownership enrichment
+        run: python scripts/update_ownership.py
+      - name: Refresh open electricity infrastructure
+        run: python scripts/update_grid.py
+      - name: Enforce strict open-data policy
+        run: python scripts/validate_open_data.py
+      - name: Commit changed datasets
+        run: |
+          git config user.name "grid-watch-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add datacentres-osm.json planning.json planning-england.json planning-scotland.json planning-ni.json ownership.json grid.json
+          if git diff --cached --quiet; then
+            echo "No data changes"
+          else
+            git commit -m "data: refresh Grid Watch open datasets"
+            git push
+          fi

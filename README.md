@@ -1,47 +1,65 @@
 # Grid Watch — The Scouse Oracle
 
-A free, reader-funded tool: put in a UK postcode and see the data centres being
-built around you — who owns them, what they're worth, and the live planning
-applications on your patch. Hosted entirely on GitHub. No paid backend.
+Grid Watch is a free public-interest map of UK data-centre infrastructure, planning activity, open ownership links and nearby high-voltage electricity infrastructure.
 
-## How it works
+## Strict open-data policy
 
-- **The site** (`index.html`, `assets/`) is static, so GitHub Pages serves it for free.
-  In the browser it geocodes the postcode via the free [postcodes.io](https://postcodes.io),
-  then matches it against two data files by distance.
-- **The register** (`data/datacentres.json`) is *your* curated list of known projects.
-  This is the bit you own and grow — your editorial value.
-- **The live feed** (`data/planning.json`) is refreshed **daily by a GitHub Action**
-  (`.github/workflows/update-planning.yml`), which runs `scripts/pull-planning.mjs`
-  to pull recent "data centre" planning applications from [PlanIt](https://www.planit.org.uk)
-  (400+ UK councils). This runs on GitHub's servers, so there's no browser/CORS problem.
+The **v2 automated database only ingests data with an explicit open licence or public-domain dedication**. It does not scrape or republish proprietary data-centre directories, paywalled databases or council registers whose reuse terms have not been verified.
 
-## Deploy (about 5 minutes)
+See [`sources/open-data-sources.json`](sources/open-data-sources.json) and [`DATA-METHODOLOGY.md`](DATA-METHODOLOGY.md).
 
-1. Create a new GitHub repo and upload these files (keep the folder structure).
-2. **Settings → Pages →** Source: *Deploy from a branch*, Branch: `main`, Folder: `/ (root)`. Save.
-3. Your site goes live at `https://<your-username>.github.io/<repo>/` within a minute or two.
-4. **Actions tab →** enable workflows if prompted → open *Update planning feed* → **Run workflow**
-   once to populate the live feed immediately (otherwise it first runs on the daily schedule).
+## Current layers
 
-That's it. It'll refresh itself every day from then on.
+- **Data-centre locations:** OpenStreetMap via Overpass — ODbL 1.0.
+- **Ownership enrichment:** Wikidata — CC0; only when an OSM object supplies an explicit Wikidata ID. No name guessing.
+- **Planning — England:** MHCLG Planning Data — Open Government Licence v3.0.
+- **Planning — Scotland:** Improvement Service Spatial Hub official planning applications — Open Government Licence.
+- **Planning — Northern Ireland:** Department for Infrastructure / OpenDataNI annual planning dataset — Open Government Licence.
+- **Planning — Wales:** no national machine-readable planning-application feed with a clearly verified open licence has yet been identified, so this is published as a coverage gap rather than filled by unlicensed scraping.
+- **Electricity infrastructure:** OpenStreetMap 132 kV+ substations — ODbL 1.0.
+- **National grid-demand context:** attributed government/regulator context is kept separate from site-level connection evidence.
 
-## Make it yours
+## Automatic refresh
 
-- **Donation link:** open `assets/app.js`, set `DONATE_URL` to your Ko-fi / Stripe /
-  PayPal / Substack page. (There's also a link in `index.html`.)
-- **Add projects:** edit `data/datacentres.json`. Each entry wants a name, operator,
-  ownership (`US`/`UK`…), an approximate `lat`/`lng`, and a real `source` URL.
-- **Widen the net:** in `scripts/pull-planning.mjs` change `KEYWORD` or `DAYS`.
-- **Change "near you":** `RADIUS_KM` at the top of `assets/app.js`.
+`.github/workflows/update-data.yml` runs the collectors and regenerates the public JSON layers:
 
-## Honesty / limits (also shown to readers on the page)
+- `scripts/update_osm.py`
+- `scripts/update_planning.py`
+- `scripts/update_scotland_planning.py`
+- `scripts/update_ni_planning.py`
+- `scripts/merge_planning.py`
+- `scripts/update_ownership.py`
+- `scripts/update_grid.py`
 
-This is a **guide, not a definitive record**. The register is incomplete and the
-story moves fast. The live feed is raw, unverified applications — a filing is not
-a built data centre. Investment figures are announced headline amounts, not local
-costs, and nothing here claims a single project raised anyone's bill. Every item
-links back to its official source; verify before you publish a figure.
+Generated data files include:
 
-Data sources: PlanIt (planning applications), postcodes.io (geocoding), plus your
-own reporting, company announcements, grid-connection data and Find a Tender.
+- `datacentres-osm.json`
+- `planning-england.json`
+- `planning-scotland.json`
+- `planning-ni.json`
+- `planning.json`
+- `ownership.json`
+- `grid.json`
+
+## Site behaviour
+
+The browser uses postcodes.io to geocode a UK postcode and calculates nearby records within the configured radius. Data-centre records, planning candidates and grid infrastructure are deliberately shown as **different evidence layers**.
+
+A nearby substation does not prove a data-centre connection. A planning application's MW/MVA/kV text does not automatically prove consumption or contracted capacity. Grid Watch distinguishes, where evidence exists:
+
+- **Connected / operational**
+- **Contracted / accepted**
+- **Proposed / requested**
+- **Estimated**
+
+## Coverage and confidence
+
+Grid Watch is not a statutory register and does not claim 100% market coverage. No single open UK dataset lists every private, enterprise, edge, operating and proposed data centre. The project aims for the broadest defensible coverage possible while publishing source provenance, licensing and known gaps.
+
+## GitHub Pages
+
+Serve the repository from the `main` branch and `/ (root)` in **Settings → Pages**. The site is static and requires no paid backend.
+
+## Attribution
+
+OpenStreetMap-derived layers: © OpenStreetMap contributors, ODbL 1.0. Government planning datasets retain their OGL/Crown or publisher attribution as applicable. Wikidata-derived ownership enrichment is CC0.
