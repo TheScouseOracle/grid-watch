@@ -1,0 +1,5 @@
+{
+  "updated": null,
+  "note": "This file is overwritten daily by the GitHub Action (.github/workflows/update-planning.yml), which pulls live 'data centre' planning applications from PlanIt. Until the Action runs once, this is empty.",
+  "items": []
+}

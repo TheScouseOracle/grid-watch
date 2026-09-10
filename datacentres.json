@@ -1,0 +1,75 @@
+{
+  "_comment": "CURATED REGISTER — your editorial layer and your moat. Add/verify entries here. lat/lng may be approximate (town-level is fine). ownership: 'US' or 'UK' etc. investment_gbp in pounds (number) or null. Every entry should carry a real source URL. These starter entries come from public reporting (Sep 2024 - Mar 2026) and should be re-checked before you rely on any figure.",
+  "datacentres": [
+    {
+      "name": "Waltham Cross data centre",
+      "operator": "Google (Alphabet)",
+      "country": "United States",
+      "ownership": "US",
+      "investment_gbp": 790000000,
+      "est_mw": null,
+      "status": "Operational (opened 2025)",
+      "area": "Waltham Cross, Hertfordshire",
+      "lat": 51.6860,
+      "lng": -0.0330,
+      "source": "https://www.costar.com/article/86432021",
+      "note": "~£790m construction cost, 33-acre site, part of Google's wider £5bn UK programme."
+    },
+    {
+      "name": "Cambois / Blyth AI data centre",
+      "operator": "Blackstone (QTS)",
+      "country": "United States",
+      "ownership": "US",
+      "investment_gbp": 10000000000,
+      "est_mw": null,
+      "status": "In development",
+      "area": "Cambois, Blyth, Northumberland",
+      "lat": 55.1470,
+      "lng": -1.5300,
+      "source": "https://www.ukreiif.com/sector/construction-technology/news",
+      "note": "~£10bn announced; on former Britishvolt site; ~4,000 jobs incl. construction."
+    },
+    {
+      "name": "UK data centre programme",
+      "operator": "Amazon Web Services",
+      "country": "United States",
+      "ownership": "US",
+      "investment_gbp": 8000000000,
+      "est_mw": null,
+      "status": "Ongoing (2024 onwards)",
+      "area": "London region (multiple sites)",
+      "lat": 51.5074,
+      "lng": -0.1278,
+      "source": "https://www.ukreiif.com/sector/construction-technology/news",
+      "note": "£8bn over five years announced 2024. Location shown is regional, not a single site."
+    },
+    {
+      "name": "Leeds hyperscale campus",
+      "operator": "Microsoft (with Harworth)",
+      "country": "United States",
+      "ownership": "US",
+      "investment_gbp": null,
+      "est_mw": null,
+      "status": "Consented / in development",
+      "area": "Leeds, West Yorkshire",
+      "lat": 53.8008,
+      "lng": -1.5491,
+      "source": "https://www.creherald.com/google-unveils-1bn-uk-data-centre-investment/",
+      "note": "Harworth + Microsoft hyperscale campus backing reported 2026. Figures to confirm."
+    },
+    {
+      "name": "Cockenzie hyperscale (former coal store)",
+      "operator": "Sustainable Development Capital (SDCL)",
+      "country": "United Kingdom",
+      "ownership": "UK",
+      "investment_gbp": null,
+      "est_mw": null,
+      "status": "Early stage / preferred supplier",
+      "area": "Cockenzie, East Lothian, Scotland",
+      "lat": 55.9680,
+      "lng": -2.9700,
+      "source": "https://baxtel.com/news/data-centers/united-kingdom",
+      "note": "UK investment firm selected as preferred supplier for a potential hyperscale site at a former coal store."
+    }
+  ]
+}
