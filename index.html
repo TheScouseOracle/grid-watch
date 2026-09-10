@@ -30,11 +30,24 @@
   </section>
   <section id="results" class="hidden">
     <div class="hero" style="padding:20px 0 0"><div class="verdict"><div class="lead" id="r-lead"></div><div class="bignum" id="r-big"></div><div class="say" id="r-say"></div></div><div class="context"><b>Read the evidence, not just the number.</b> Planning, operating sites, open ownership links and electricity infrastructure are separate layers. A nearby substation or a proposed MW figure does not prove a live connection.</div></div>
+
+    <div class="sec">
+      <h2>👀 What am I looking at?</h2>
+      <div class="subhead">Grid Watch puts different kinds of infrastructure and evidence on one map. <b>They do not all mean the same thing.</b></div>
+      <div class="context"><b>🖥️ DATA CENTRE</b><br>A building or site containing computer servers and digital infrastructure. Some are relatively small; others are huge campuses. A data-centre marker does not, by itself, tell you how much electricity the site uses.</div>
+      <div class="context"><b>⚡ ELECTRICITY SUBSTATION — this is NOT a data centre.</b><br>Think of a substation as a major junction in the electricity network. It helps switch, transform and move electricity around the grid. Grid Watch shows larger 132 kV+ substations because large data centres can require substantial grid capacity. <b>A nearby substation does not prove it supplies a nearby data centre.</b></div>
+      <div class="context"><b>🏗️ PLANNING ACTIVITY</b><br>This means something relevant has appeared in an openly licensed planning dataset. It does not mean it has been built. It may be proposed, awaiting a decision, approved, refused or otherwise recorded in planning data.</div>
+      <div class="context"><b>🔗 OWNERSHIP EVIDENCE</b><br>Where the open data contains an explicit organisation identifier, Grid Watch can follow open ownership or parent-organisation links. I do not guess a company simply because a name looks similar.</div>
+      <div class="context"><b>🔎 So what am I actually looking for?</b><br>Don't look at one dot and jump to a conclusion. Look for the pattern. What becomes interesting is when evidence starts joining up: <b>data-centre proposal → planning application → power requirement → grid infrastructure → ownership → construction → operation.</b></div>
+      <div class="context"><b>👁️ What can I keep an eye on?</b><br>Watch for new planning applications, extensions to existing sites, new substations or electricity infrastructure, large proposed MW figures, changes in ownership, construction starting on proposed sites, and projects moving from <b>proposed → contracted → connected</b>.</div>
+      <div class="context"><b>The Scouse Oracle rule:</b> The map is the starting point of the investigation — not the conclusion.</div>
+    </div>
+
     <div id="map"></div>
     <div class="sec"><h2>Open-evidence verified register</h2><div class="subhead">Only records whose reusable evidence meets the strict open-data policy can appear here.</div><div id="r-curated"></div></div>
-    <div class="sec"><h2>Electricity infrastructure near you</h2><div class="subhead">Mapped 132 kV+ substations near your postcode. Proximity does not prove a data centre is connected to a particular substation.</div><div id="r-grid-context"></div><div id="r-grid"></div></div>
-    <div class="sec"><h2>Open map sites near you</h2><div class="subhead">Data-centre features from OpenStreetMap (ODbL). Where the map supplies an explicit Wikidata ID, Grid Watch can add a CC0 ownership chain without guessing identities.</div><div id="r-osm"></div></div>
-    <div class="sec"><h2>Open planning activity near you</h2><div class="subhead" id="r-live-sub">Open-licensed planning records matching the data-centre discovery terms around your postcode.</div><div id="r-live"></div></div>
+    <div class="sec"><h2>⚡ Electricity infrastructure near you</h2><div class="subhead"><b>These are substations, not data centres.</b> Grid Watch maps 132 kV+ substations near your postcode. Proximity does not prove a data centre is connected to a particular substation.</div><div id="r-grid-context"></div><div id="r-grid"></div></div>
+    <div class="sec"><h2>🖥️ Open map data-centre sites near you</h2><div class="subhead">These are data-centre features from OpenStreetMap (ODbL). Sites can range in scale. Where the map supplies an explicit Wikidata ID, Grid Watch can add a CC0 ownership chain without guessing identities.</div><div id="r-osm"></div></div>
+    <div class="sec"><h2>🏗️ Open planning activity near you</h2><div class="subhead" id="r-live-sub">Open-licensed planning records matching the data-centre discovery terms around your postcode. A planning record is not proof that a project has been built.</div><div id="r-live"></div></div>
     <div class="actions"><button class="btn ghost" id="again">Check another postcode</button></div>
   </section>
   <details class="disc"><summary>Methodology, licences and limitations</summary><div class="body">
