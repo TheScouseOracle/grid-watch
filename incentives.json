@@ -1,0 +1,67 @@
+{
+  "updated": "2026-09-10",
+  "licence": "Open Government Licence v3.0",
+  "layer_name": "Public support & incentives",
+  "items": [
+    {
+      "id": "aigz-grid-priority",
+      "category": "Grid access",
+      "icon": "⚡",
+      "scope": "AI Growth Zones",
+      "status": "Government policy",
+      "title": "Priority and accelerated grid connections",
+      "summary": "Government policy says strategic demand projects and AI Growth Zones will be prioritised for available electricity-network capacity. Data-centre projects inside AI Growth Zones qualify for the Connections Accelerator Service.",
+      "claim_limit": "This does not mean every data centre receives priority, and it does not prove that a particular project has received a connection.",
+      "source": "https://www.gov.uk/government/publications/delivering-ai-growth-zones/delivering-ai-growth-zones",
+      "source_label": "GOV.UK — Delivering AI Growth Zones"
+    },
+    {
+      "id": "aigz-energy-support",
+      "category": "Energy support",
+      "icon": "🔌",
+      "scope": "Eligible AI Growth Zone projects",
+      "status": "Planned from April 2027, subject to implementation",
+      "title": "Targeted electricity-price support",
+      "summary": "Government policy proposes electricity-cost reductions for eligible AI Growth Zone data centres of up to £24/MWh in Scotland, £16/MWh in Cumbria and £14/MWh in the North East.",
+      "claim_limit": "These are maximum policy figures for eligible projects, not evidence that a particular site is receiving a discount today.",
+      "source": "https://www.gov.uk/government/publications/delivering-ai-growth-zones/delivering-ai-growth-zones",
+      "source_label": "GOV.UK — Delivering AI Growth Zones"
+    },
+    {
+      "id": "aigz-planning-support",
+      "category": "Planning",
+      "icon": "🏗️",
+      "scope": "AI data centres / AI Growth Zones",
+      "status": "Government policy",
+      "title": "Planning support and reduced barriers",
+      "summary": "Government policy sets out planning reforms intended to prioritise AI data centres, streamline consent processes and protect land for AI Growth Zones.",
+      "claim_limit": "Planning support is not the same as planning permission, and it does not prove a data-centre proposal takes priority over housing in an individual local decision.",
+      "source": "https://www.gov.uk/government/publications/delivering-ai-growth-zones/delivering-ai-growth-zones",
+      "source_label": "GOV.UK — Delivering AI Growth Zones"
+    },
+    {
+      "id": "aigz-public-finance",
+      "category": "Public finance",
+      "icon": "💷",
+      "scope": "AI Growth Zones",
+      "status": "Available for viable projects to explore",
+      "title": "Public-sector finance can help unlock private investment",
+      "summary": "Government policy says the National Wealth Fund and UK Export Finance will look to support the AI Growth Zone programme and explore viable data-centre projects within growth zones.",
+      "claim_limit": "This is a programme-level commitment. It is not evidence that a named project has received public money unless a project-specific award is separately identified.",
+      "source": "https://www.gov.uk/government/publications/delivering-ai-growth-zones/delivering-ai-growth-zones",
+      "source_label": "GOV.UK — Delivering AI Growth Zones"
+    },
+    {
+      "id": "aigz-entry-criteria",
+      "category": "Zone criteria",
+      "icon": "📍",
+      "scope": "AI Growth Zone applications",
+      "status": "Published criteria",
+      "title": "AI Growth Zones are designed around power and planning access",
+      "summary": "The government's AI Growth Zone application material says the programme is intended to unlock AI-enabled data centres and supporting infrastructure by improving access to power and providing planning support.",
+      "claim_limit": "A location appearing near a data centre does not automatically mean it is inside an AI Growth Zone. Grid Watch will only label individual sites as zone-linked when an open source explicitly supports that link.",
+      "source": "https://www.gov.uk/government/publications/ai-growth-zones/ai-growth-zones-open-for-applications",
+      "source_label": "GOV.UK — AI Growth Zones"
+    }
+  ]
+}
