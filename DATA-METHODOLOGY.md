@@ -21,7 +21,7 @@ Wikidata is CC0. Missing or ambiguous ownership remains unknown rather than bein
 The planning layer is assembled from nation-specific open sources and merged by `scripts/merge_planning.py`.
 
 - **England:** MHCLG Planning Data `planning-application` dataset — Open Government Licence v3.0. Its national specification remains in development and authority coverage is incomplete.
-- **Scotland:** Improvement Service Spatial Hub, `Planning Applications: Official - Scotland` — Open Government Licence. The publisher states that all 34 Scottish planning authorities supply data.
+- **Scotland:** Improvement Service Spatial Hub, `Planning Applications: Official - Scotland` — Open Government Licence. The publisher states that all 34 Scottish planning authorities supply data. The publisher currently gates machine downloads behind an access key. Grid Watch supports `SPATIALHUB_AUTHKEY`; if no key is configured, the generated Scotland file declares the access gap and remains empty rather than falling back to an unlicensed source.
 - **Northern Ireland:** Department for Infrastructure / OpenDataNI annual planning dataset — Open Government Licence. This is validated but annual, not a live daily feed.
 - **Wales:** no national machine-readable planning-application feed with a clearly verified open licence has been identified. Grid Watch therefore publishes this as a coverage gap instead of scraping council registers whose reuse terms have not been verified.
 
@@ -34,6 +34,8 @@ Where an openly licensed planning description itself contains a number such as `
 `scripts/update_grid.py` maps OpenStreetMap substations at 132 kV and above. This gives geographic electricity-infrastructure context across Great Britain without pretending a nearby substation is a data centre's confirmed connection point.
 
 National demand-connection context is separately attributed to Ofgem. Queue/application figures are not presented as present-day electricity consumption.
+
+NESO publishes useful connection material and has an Open Data Licence, but Grid Watch does **not** ingest a particular NESO register merely because NESO has a general open-data policy. Each machine-readable register must have its own reuse basis verified first. The Existing Agreement Register therefore remains disabled in the source allowlist until that check is complete. The TEC Register is not used as a data-centre demand register because Transmission Entry Capacity concerns export/generation-side capacity.
 
 Grid Watch distinguishes four power states whenever evidence exists:
 
