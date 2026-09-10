@@ -4,7 +4,11 @@
     {
       "id": "osm",
       "name": "OpenStreetMap",
-      "purpose": ["data-centre locations", "high-voltage substations", "base-map tiles"],
+      "purpose": [
+        "data-centre locations",
+        "high-voltage substations",
+        "base-map tiles"
+      ],
       "licence": "ODbL 1.0",
       "licence_url": "https://www.openstreetmap.org/copyright",
       "enabled": true
@@ -12,7 +16,9 @@
     {
       "id": "postcodes-io",
       "name": "Postcodes.io",
-      "purpose": ["postcode geocoding"],
+      "purpose": [
+        "postcode geocoding"
+      ],
       "licence": "MIT software; underlying GB postcode data uses OS OpenData and listed open/public statistical datasets",
       "licence_url": "https://postcodes.io/docs/licences/",
       "enabled": true,
@@ -21,7 +27,9 @@
     {
       "id": "planning-data-england",
       "name": "Planning Data (MHCLG)",
-      "purpose": ["England planning applications"],
+      "purpose": [
+        "England planning applications"
+      ],
       "licence": "Open Government Licence v3.0",
       "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
       "enabled": true,
@@ -30,7 +38,9 @@
     {
       "id": "spatial-hub-scotland",
       "name": "Improvement Service Spatial Hub",
-      "purpose": ["Scotland planning applications"],
+      "purpose": [
+        "Scotland planning applications"
+      ],
       "licence": "Open Government Licence v3.0",
       "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
       "enabled": true,
@@ -39,7 +49,9 @@
     {
       "id": "opendatani-planning",
       "name": "OpenDataNI / Department for Infrastructure",
-      "purpose": ["Northern Ireland annual planning applications"],
+      "purpose": [
+        "Northern Ireland annual planning applications"
+      ],
       "licence": "Open Government Licence v3.0",
       "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
       "enabled": true,
@@ -48,7 +60,9 @@
     {
       "id": "wikidata",
       "name": "Wikidata",
-      "purpose": ["open ownership and parent-organisation enrichment"],
+      "purpose": [
+        "open ownership and parent-organisation enrichment"
+      ],
       "licence": "CC0 1.0",
       "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
       "enabled": true,
@@ -57,7 +71,9 @@
     {
       "id": "ofgem",
       "name": "Ofgem",
-      "purpose": ["national electricity demand-connection context"],
+      "purpose": [
+        "national electricity demand-connection context"
+      ],
       "licence": "Open Government Licence for Crown copyright material unless otherwise indicated",
       "licence_url": "https://www.ofgem.gov.uk/c-ofgem-2026",
       "enabled": true,
@@ -66,7 +82,9 @@
     {
       "id": "neso-ea-register",
       "name": "NESO Existing Agreement Register",
-      "purpose": ["potential future contracted/Gate 2 demand evidence"],
+      "purpose": [
+        "potential future contracted/Gate 2 demand evidence"
+      ],
       "licence": null,
       "enabled": false,
       "coverage_note": "NESO has a general Open Data Licence and publicly publishes the EA Register, but Grid Watch will not ingest this spreadsheet until the specific register's reuse licence is explicitly verified as compatible."
@@ -74,10 +92,23 @@
     {
       "id": "wales-national-planning",
       "name": "Wales national planning applications",
-      "purpose": ["Wales planning applications"],
+      "purpose": [
+        "Wales planning applications"
+      ],
       "licence": null,
       "enabled": false,
       "coverage_note": "No national, machine-readable planning-application feed with a clearly verified open licence has been identified. Grid Watch will not scrape or republish unlicensed council registers to fill this gap."
+    },
+    {
+      "id": "ea-water-framework",
+      "name": "Environment Agency — National Framework for Water Resources 2025, section 9.4",
+      "purpose": [
+        "general water-resource context; no site or supplier matching"
+      ],
+      "licence": "Open Government Licence v3.0",
+      "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "enabled": true,
+      "coverage_note": "Publication states England and Wales. Only Crown-authored text is summarised; third-party material is excluded. No site-level assessment is inferred."
     }
   ]
 }

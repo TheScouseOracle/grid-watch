@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "items": [],
+  "water_context": [
+    {
+      "id": "ea-water-data-centres",
+      "title": "Water use and data-centre planning",
+      "scope": "National framework — England and Wales; not a site assessment",
+      "summary": "The Environment Agency explains that cooling choices and location matter for water demand. It identifies gaps in data-centre water-use information and calls for demand to be considered in regional water planning.",
+      "claim_limit": "This does not identify this site's supplier, water use, cooling technology, local water pressure or permission to abstract water.",
+      "source_id": "ea-water-framework",
+      "source": "https://www.gov.uk/government/publications/national-framework-for-water-resources-2025-water-for-growth-nature-and-a-resilient-future/9-taking-action-on-other-significant-water-using-sectors-and-emerging-demands-national-framework-for-water-resources-2025",
+      "source_label": "Environment Agency — water for data centres, section 9.4",
+      "licence": "Open Government Licence v3.0 — © Crown copyright 2026",
+      "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "checked": "2026-09-10"
+    }
+  ]
+}
