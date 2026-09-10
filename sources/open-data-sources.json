@@ -1,0 +1,57 @@
+{
+  "policy": "Grid Watch automated layers ingest only sources with an explicit open-data licence or public-domain dedication. Proprietary directories and unlicensed council scraping are excluded.",
+  "sources": [
+    {
+      "id": "osm",
+      "name": "OpenStreetMap",
+      "purpose": ["data-centre locations", "high-voltage substations"],
+      "licence": "ODbL 1.0",
+      "licence_url": "https://www.openstreetmap.org/copyright",
+      "enabled": true
+    },
+    {
+      "id": "planning-data-england",
+      "name": "Planning Data (MHCLG)",
+      "purpose": ["England planning applications"],
+      "licence": "Open Government Licence v3.0",
+      "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "enabled": true,
+      "coverage_note": "National specification remains in development; authority coverage is not complete."
+    },
+    {
+      "id": "spatial-hub-scotland",
+      "name": "Improvement Service Spatial Hub",
+      "purpose": ["Scotland planning applications"],
+      "licence": "Open Government Licence v3.0",
+      "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "enabled": true,
+      "coverage_note": "Official planning application dataset; all Scottish planning authorities supply data according to the publisher."
+    },
+    {
+      "id": "opendatani-planning",
+      "name": "OpenDataNI / Department for Infrastructure",
+      "purpose": ["Northern Ireland annual planning applications"],
+      "licence": "Open Government Licence v3.0",
+      "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "enabled": true,
+      "coverage_note": "Validated annual dataset; less current than a live planning portal."
+    },
+    {
+      "id": "wikidata",
+      "name": "Wikidata",
+      "purpose": ["open ownership and parent-organisation enrichment"],
+      "licence": "CC0 1.0",
+      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "enabled": true,
+      "coverage_note": "Only used when an OSM feature carries an explicit Wikidata identifier. Missing ownership stays unknown."
+    },
+    {
+      "id": "wales-national-planning",
+      "name": "Wales national planning applications",
+      "purpose": ["Wales planning applications"],
+      "licence": null,
+      "enabled": false,
+      "coverage_note": "No national, machine-readable planning-application feed with a clearly verified open licence has been identified. Grid Watch will not scrape or republish unlicensed council registers to fill this gap."
+    }
+  ]
+}
