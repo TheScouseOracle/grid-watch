@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 """Collect Scotland planning candidates from the Improvement Service Spatial Hub.
 
-The dataset is published as Open Data under the UK Open Government Licence, but
-Spatial Hub's download service currently gates machine downloads behind an
-AuthKey. The key controls access, not the data licence. If no key is configured,
-Grid Watch writes an explicit zero-record access gap instead of scraping another
-source or pretending coverage exists.
+The dataset is Open Government Licence data, but Spatial Hub requires a free
+account/access key for machine downloads. If no key is configured, Grid Watch
+publishes an explicit access gap and never substitutes an unlicensed source.
 """
 import csv
 import io
@@ -30,15 +28,13 @@ BNG_TO_WGS84 = Transformer.from_crs("EPSG:27700", "EPSG:4326", always_xy=True)
 
 
 def with_auth(url):
-    if not AUTHKEY:
-        return url
     sep = "&" if "?" in url else "?"
     return f"{url}{sep}" + urllib.parse.urlencode({"authKey": AUTHKEY})
 
 
 def get_bytes(url):
     req = urllib.request.Request(with_auth(url), headers={"User-Agent": UA, "Accept": "application/json,text/csv,*/*"})
-    with urllib.request.urlopen(req, timeout=180) as r:
+    with urllib.request.urlopen(req, timeout=90) as r:
         return r.read(), r.headers.get("Content-Type", "")
 
 
@@ -48,7 +44,6 @@ def get_json(url):
 
 
 def find_resource_url():
-    # Package metadata itself is public and tells us the current resource URL.
     pkg = get_json(PACKAGE)
     if not pkg.get("success"):
         raise RuntimeError("Spatial Hub package lookup failed")
@@ -57,8 +52,7 @@ def find_resource_url():
         if r.get("id") == POINT_RESOURCE_ID and r.get("url"):
             return r["url"]
     for r in resources:
-        name = (r.get("name") or "").lower()
-        if "point" in name and r.get("url"):
+        if "point" in (r.get("name") or "").lower() and r.get("url"):
             return r["url"]
     raise RuntimeError("No official Scotland planning point resource found")
 
@@ -164,6 +158,11 @@ def write(items, access_status, note=None):
 
 
 def main():
+    if not AUTHKEY:
+        write([], "auth-key-required", "This dataset is openly licensed, but Spatial Hub requires a free logged-in account/access key for machine downloads. Configure repository secret SPATIALHUB_AUTHKEY to activate it. No unlicensed fallback is used.")
+        print("Scotland open planning layer declared as access-key gap; no unlicensed fallback used")
+        return
+
     try:
         try:
             rows = rows_from_datastore()
@@ -172,11 +171,7 @@ def main():
         if rows is None:
             rows = rows_from_resource(find_resource_url())
     except Exception as exc:
-        if not AUTHKEY:
-            write([], "auth-key-required", "The dataset is openly licensed, but Spatial Hub returned an access error for machine download. Configure the repository secret SPATIALHUB_AUTHKEY to activate this open-data layer; no substitute unlicensed source is used.")
-            print(f"Scotland open dataset is licence-compatible but download is access-key gated: {exc}")
-            return
-        raise
+        raise RuntimeError(f"Scotland open-data download failed with configured key: {exc}") from exc
 
     items = []
     seen = set()
