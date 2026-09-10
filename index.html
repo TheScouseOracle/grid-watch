@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Grid Watch — The Scouse Oracle</title>
-<meta name="description" content="Search your postcode to explore openly licensed UK data-centre, planning, ownership and electricity-infrastructure data." />
+<meta name="description" content="Search your postcode to explore openly licensed UK data-centre, planning, ownership, electricity-infrastructure and public-support evidence." />
 <link rel="stylesheet" href="styles.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
@@ -14,12 +14,14 @@
   <section id="home" class="hero">
     <div class="kicker">Who's plugging into your patch?</div>
     <h1>Britain's data-centre buildout, mapped</h1>
-    <p>Enter a UK postcode to explore openly mapped data centres, major electricity infrastructure and planning activity around that area. Grid Watch is a discovery and investigation tool: a map marker is a starting point for checking the evidence, not proof that different sites are connected.</p>
+    <p>Enter a UK postcode to explore openly mapped data centres, major electricity infrastructure, planning activity and public-support evidence around that area. Grid Watch is a discovery and investigation tool: a map marker is a starting point for checking the evidence, not proof that different sites are connected.</p>
     <div class="context"><b>📍 Search by postcode</b><br>Enter a full UK postcode below. The hotspot buttons underneath are ready-made examples; typing a city name on its own will not search yet.</div>
     <div class="field"><input id="pc" type="text" placeholder="Full UK postcode, e.g. L19 3PF" aria-label="Enter a full UK postcode" autocomplete="postal-code" /><button class="btn" id="go">Explore my area</button></div>
     <div id="msg" class="msg hidden"></div>
     <div class="examples"><b>🔥 Or explore major UK data-centre hotspots:</b> <button data-pc="SL1 1XW">Slough</button> · <button data-pc="E14 5AB">London Docklands</button> · <button data-pc="M1 1AE">Manchester</button> · <button data-pc="NP20 1PA">Newport</button></div>
     <div class="context"><b>How to read power figures:</b> ⚡ Connected/operational means evidence supports a live site; 🔌 Contracted/accepted means a connection has been secured but is not current consumption; 🟡 Proposed/requested is a project or application figure; ◌ Estimated is explicitly an estimate.</div>
+
+    <div class="sec"><h2>💷 Public support & incentives</h2><div class="subhead">Grid Watch now also tracks open government evidence on mechanisms that can support data-centre and AI Growth Zone development — including grid access, energy-price support, planning measures and public finance. Programme-level support is kept separate from proof that an individual project received it.</div></div>
 
     <div class="sec"><h2>Open planning activity</h2><div class="subhead">England: MHCLG Planning Data (OGL). Scotland: the official Improvement Service Spatial Hub dataset is OGL, but its machine download currently requires an access key; Grid Watch declares that gap unless access is configured. Northern Ireland: OpenDataNI annual planning dataset (OGL). Wales: no national machine-readable planning feed with a verified open licence has been identified, so Grid Watch does not scrape unlicensed registers. Search your postcode above to see planning activity around you.</div></div>
 
@@ -39,7 +41,7 @@
   </section>
   <section id="results" class="hidden">
     <div class="actions"><button type="button" class="btn ghost" id="back-home">← Back to Grid Watch home</button></div>
-    <div class="hero" style="padding:20px 0 0"><div class="verdict"><div class="lead" id="r-lead"></div><div class="bignum" id="r-big"></div><div class="say" id="r-say"></div></div><div class="context"><b>Read the evidence, not just the number.</b> Planning, operating sites, open ownership links and electricity infrastructure are separate layers. A nearby substation or a proposed MW figure does not prove a live connection.</div></div>
+    <div class="hero" style="padding:20px 0 0"><div class="verdict"><div class="lead" id="r-lead"></div><div class="bignum" id="r-big"></div><div class="say" id="r-say"></div></div><div class="context"><b>Read the evidence, not just the number.</b> Planning, operating sites, open ownership links, public-support policy and electricity infrastructure are separate layers. A nearby substation or a proposed MW figure does not prove a live connection.</div></div>
 
     <div class="sec">
       <h2>👀 What am I looking at?</h2>
@@ -48,8 +50,9 @@
       <div class="context"><b>⚡ ELECTRICITY SUBSTATION — this is NOT a data centre.</b><br>Think of a substation as a major junction in the electricity network. It helps switch, transform and move electricity around the grid. Grid Watch shows larger 132 kV+ substations because large data centres can require substantial grid capacity. <b>A nearby substation does not prove it supplies a nearby data centre.</b></div>
       <div class="context"><b>🏗️ PLANNING ACTIVITY</b><br>This means something relevant has appeared in an openly licensed planning dataset. It does not mean it has been built. It may be proposed, awaiting a decision, approved, refused or otherwise recorded in planning data.</div>
       <div class="context"><b>🔗 OWNERSHIP EVIDENCE</b><br>Where the open data contains an explicit organisation identifier, Grid Watch can follow open ownership or parent-organisation links. I do not guess a company simply because a name looks similar.</div>
-      <div class="context"><b>🔎 So what am I actually looking for?</b><br>Don't look at one dot and jump to a conclusion. Look for the pattern. What becomes interesting is when evidence starts joining up: <b>data-centre proposal → planning application → power requirement → grid infrastructure → ownership → construction → operation.</b></div>
-      <div class="context"><b>👁️ What can I keep an eye on?</b><br>Watch for new planning applications, extensions to existing sites, new substations or electricity infrastructure, large proposed MW figures, changes in ownership, construction starting on proposed sites, and projects moving from <b>proposed → contracted → connected</b>.</div>
+      <div class="context"><b>💷 PUBLIC SUPPORT & INCENTIVES</b><br>This layer tracks documented government mechanisms that can support data-centre and AI Growth Zone development. A national policy or eligible scheme does <b>not</b> prove that a particular nearby project received money, a tax break, planning permission or a priority grid connection.</div>
+      <div class="context"><b>🔎 So what am I actually looking for?</b><br>Don't look at one dot and jump to a conclusion. Look for the pattern. What becomes interesting is when evidence starts joining up: <b>data-centre proposal → planning application → power requirement → grid infrastructure → ownership → public support → construction → operation.</b></div>
+      <div class="context"><b>👁️ What can I keep an eye on?</b><br>Watch for new planning applications, extensions to existing sites, new substations or electricity infrastructure, large proposed MW figures, documented public support, changes in ownership, construction starting on proposed sites, and projects moving from <b>proposed → contracted → connected</b>.</div>
       <div class="context"><b>The Scouse Oracle rule:</b> The map is the starting point of the investigation — not the conclusion.</div>
     </div>
 
@@ -58,6 +61,7 @@
     <div class="sec"><h2>⚡ Electricity infrastructure near you</h2><div class="subhead"><b>These are substations, not data centres.</b> Grid Watch maps 132 kV+ substations near your postcode. Proximity does not prove a data centre is connected to a particular substation.</div><div id="r-grid-context"></div><div id="r-grid"></div></div>
     <div class="sec"><h2>🖥️ Open map data-centre sites near you</h2><div class="subhead">These are data-centre features from OpenStreetMap (ODbL). Sites can range in scale. Where the map supplies an explicit Wikidata ID, Grid Watch can add a CC0 ownership chain without guessing identities.</div><div id="r-osm"></div></div>
     <div class="sec"><h2>🏗️ Open planning activity near you</h2><div class="subhead" id="r-live-sub">Open-licensed planning records matching the data-centre discovery terms around your postcode. A planning record is not proof that a project has been built.</div><div id="r-live"></div></div>
+    <div class="sec"><h2>💷 Public support & incentives</h2><div class="subhead">Official open-government evidence on mechanisms supporting AI Growth Zone and data-centre development. This layer separates general policy from evidence of support to a specific project.</div><div id="r-incentive-context"></div><div id="r-incentives"></div></div>
     <div class="actions"><button class="btn ghost" id="again">Check another postcode</button></div>
   </section>
   <details class="disc"><summary>Methodology, licences and limitations</summary><div class="body">
@@ -65,11 +69,12 @@
     <p><b>OpenStreetMap:</b> © OpenStreetMap contributors, ODbL. Community mapping can be incomplete or wrong. Data-centre and 132 kV+ substation layers refresh automatically.</p>
     <p><b>Ownership:</b> Wikidata CC0 is used only where an OSM record contains an explicit Wikidata identifier. Parent-company links are open linked data, not a claim that Wikidata is legally authoritative.</p>
     <p><b>Planning:</b> England and Northern Ireland are currently collected from explicitly OGL datasets. Scotland's official dataset is also OGL, but its automated download is access-key gated unless configured. Wales remains a declared national planning-data gap under this strict policy. A filing is evidence of an application, not evidence of construction or operation.</p>
+    <p><b>Public support & incentives:</b> programme-level policy is sourced from official OGL government publications. Grid Watch does not infer that a particular project received a subsidy, tax relief, planning advantage or grid priority merely because it is nearby or potentially eligible. Project-level support will only be labelled when an open source explicitly establishes it.</p>
     <p><b>Power:</b> numbers found in open planning descriptions are shown as text mentions until their meaning is established. Connected, contracted, proposed and estimated values are not interchangeable.</p>
     <p><b>Completeness:</b> open-data-only does not mean a complete market register. No single statutory UK dataset lists every private, edge, enterprise, operating and proposed data centre. Grid Watch publishes coverage gaps rather than inventing certainty.</p>
     <p><b>Locations:</b> distances are approximate and postcodes are geocoded using <a href="https://postcodes.io" target="_blank" rel="noreferrer">postcodes.io</a>. Full methodology and source licences are documented in the repository.</p>
   </div></details>
-  <div class="foot"><b>The Scouse Oracle · Grid Watch</b> — open-data public-interest mapping of Britain's data-centre and electricity buildout.</div>
+  <div class="foot"><b>The Scouse Oracle · Grid Watch</b> — open-data public-interest mapping of Britain's data-centre, electricity and public-support buildout.</div>
 </div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="app.js"></script>
 </body></html>
