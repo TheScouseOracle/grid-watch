@@ -40,7 +40,9 @@ jobs:
       - name: Check collector syntax
         run: python -m py_compile scripts/*.py
       - name: Check frontend syntax
-        run: node --check app.js
+        run: |
+          node --check app.js
+          node --check investigation.js
       - name: Refresh OpenStreetMap UK data centres
         run: python scripts/update_osm.py
       - name: Refresh England OGL planning candidates
@@ -59,6 +61,10 @@ jobs:
         run: python scripts/update_grid.py
       - name: Enforce strict open-data policy
         run: python scripts/validate_open_data.py
+      - name: Check site investigations against refreshed records
+        run: |
+          node scripts/check_frontend.cjs
+          node scripts/check_navigation.cjs
       - name: Commit changed datasets
         run: |
           git config user.name "grid-watch-bot"

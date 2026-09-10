@@ -58,6 +58,18 @@ Grid Watch is not a statutory register and does not claim 100% market coverage. 
 
 ## GitHub Pages
 
+Each data-centre card and map popup now offers **Investigate this site**. The investigation opens five expandable sections, retains source attribution and missing-evidence states, and offers back navigation. Water starts with general open Environment Agency evidence, with no guessed site supplier or demand. The evidence profile measures availability only, never risk. See the methodology for the extensible evidence format.
+
+This is a buildless static site. Before publishing, run:
+
+```text
+python scripts/validate_open_data.py
+node scripts/check_frontend.cjs
+node scripts/check_navigation.cjs
+```
+
+The `Validate Grid Watch` workflow runs these checks on branches and pull requests without collecting or changing data. Develop on a separate branch, require a successful validation run, then merge to `main`. The existing Pages version remains available during development. The scheduled data refresh also checks investigations before committing updated data.
+
 Serve the repository from the `main` branch and `/ (root)` in **Settings → Pages**. The site is static and requires no paid backend.
 
 ## Attribution
