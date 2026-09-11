@@ -797,13 +797,13 @@
     "generate": 10305,
     "transmit": 15598
   },
-  "generated_at": "2026-09-11T08:46:54.917293+00:00",
+  "generated_at": "2026-09-11T08:52:29.050711+00:00",
   "repd_download": "https://assets.publishing.service.gov.uk/media/6a6cbdc00c36759b5ccaa305/REPD_Publication_Q2_2026.csv",
   "osm_snapshots": {
-    "England": "2026-09-11T08:39:56Z",
-    "Scotland": "2026-09-11T08:42:01Z",
-    "Wales": "2026-09-11T08:45:01Z",
-    "Northern Ireland": "2026-09-11T08:45:01Z"
+    "England": "2026-09-11T08:47:02Z",
+    "Scotland": "2026-09-11T08:50:01Z",
+    "Wales": "2026-09-11T08:50:01Z",
+    "Northern Ireland": "2026-09-11T08:51:02Z"
   },
   "omitted": {
     "unrecognised_country": 1,
