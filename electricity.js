@@ -29,7 +29,7 @@
     document.getElementById('electricity-list').innerHTML=enabled?categories.filter(cat=>selected.has(cat[0])).map(cat=>{const rows=all.filter(x=>x.category===cat[0]),limit=limits[cat[0]];return `<details class="disc" data-category="${cat[0]}"><summary>${cat[1]} · ${rows.length} records</summary><div class="body">${rows.length?rows.slice(0,limit).map(x=>`<div class="row"><p>~${Math.round(x.km)} km from search</p>${detail(x)}</div>`).join(''):'<p>No records in this area match the selected stage. This does not establish absence.</p>'}${rows.length>limit?`<p>Showing the nearest ${limit} of ${rows.length} records. All matching records are on the map.</p><button class="btn ghost" type="button" data-more="${cat[0]}">Show 50 more</button>`:''}</div></details>`;}).join(''):'';
     if(!enabled||!map)return;
     L.circleMarker([loc.lat,loc.lng],{radius:6,color:'#1b1712',fillOpacity:1}).bindPopup('Search location').addTo(group);
-    for(const x of shown){const color=categories.find(c=>c[0]===x.category)[3],tentative=['proposed','construction'].includes(x.stage),old=['closed','inactive'].includes(x.stage);const style={color,weight:3,opacity:old?.45:.8,dashArray:tentative?'6 5':null};const marker=x.geometry?.length>1?L.polyline(x.geometry,style):L.circleMarker([x.lat,x.lng],{radius:7,color,fillColor:color,fillOpacity:old?.15:.7,dashArray:tentative?'3 3':null});marker.bindPopup(detail(x)).addTo(group);}
+    for(const x of shown){const color=categories.find(c=>c[0]===x.category)[3],tentative=['proposed','construction'].includes(x.stage),old=['closed','inactive'].includes(x.stage);const style={color,weight:3,opacity:old ? .45 : .8,dashArray:tentative?'6 5':null};const marker=x.geometry?.length>1?L.polyline(x.geometry,style):L.circleMarker([x.lat,x.lng],{radius:7,color,fillColor:color,fillOpacity:old ? .15 : .7,dashArray:tentative?'3 3':null});marker.bindPopup(detail(x)).addTo(group);}
   }
   async function loadRegion(){
     if(!ctx||!enabled)return;const ticket=++revision,context=ctx,manifest=context.data.electricity;
@@ -38,7 +38,7 @@
     const area=searchBounds(context.loc),shards=(manifest.shards||[]).filter(s=>overlaps(s.bounds,area));
     const results=await Promise.all(shards.map(async s=>{
       if(!/^electricity\/[a-zA-Z0-9_-]+\.json$/.test(s.path))return {error:true};
-      try{if(!cache.has(s.path))cache.set(s.path,(async()=>{const r=await fetch(s.path);if(!r.ok)throw new Error('download');const v=await r.json();if(!Array.isArray(v.items)||v.items.length!==s.count||!v.items.every(validRecord))throw new Error('schema');return v.items;})());return {items:await cache.get(s.path)};}catch{cache.delete(s.path);return {error:true};}
+      try{if(!cache.has(s.path))cache.set(s.path,(async()=>{const r=await fetch(s.path,{signal:AbortSignal.timeout(30000)});if(!r.ok)throw new Error('download');const v=await r.json();if(!Array.isArray(v.items)||v.items.length!==s.count||!v.items.every(validRecord))throw new Error('schema');return v.items;})());return {items:await cache.get(s.path)};}catch{cache.delete(s.path);return {error:true};}
     }));
     if(ticket!==revision||ctx!==context||!enabled)return;
     regional=results.flatMap(r=>r.items||[]);failed=results.some(r=>r.error);loading=false;paint();

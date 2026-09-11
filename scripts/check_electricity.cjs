@@ -7,7 +7,7 @@ async function main(){
  const layer=()=>({bindPopup(html){this.html=html;return this;},addTo(){rendered.push(this.html);return this;}});
  const record=(id,category,stage='unknown')=>({id,name:id,category,type:category,stage,status:stage,lat:51,lng:1,source:'https://example.org/source'});
  const payloads={'electricity/kent.json':[record('solar','generate','operational'),record('battery','store','proposed'),{...record('crossing route','transmit'),lat:55,lng:1,geometry:[[50,1],[60,1]]}]};
- const context={URL,console,Date,document:{getElementById:id=>els.get(id)},L:{layerGroup:()=>group,circleMarker:layer,polyline:layer},fetch:async path=>{calls.push(path);if(path==='electricity/slow.json')await new Promise(r=>release=r);if(fail)throw Error('offline');return {ok:true,json:async()=>({items:payloads[path]||[]})};}};
+ const context={URL,console,Date,AbortSignal,document:{getElementById:id=>els.get(id)},L:{layerGroup:()=>group,circleMarker:layer,polyline:layer},fetch:async path=>{calls.push(path);if(path==='electricity/slow.json')await new Promise(r=>release=r);if(fail)throw Error('offline');return {ok:true,json:async()=>({items:payloads[path]||[]})};}};
  vm.createContext(context);vm.runInContext(fs.readFileSync('electricity.js','utf8'),context);
  const E=context.GridElectricity;E.init();
  const shard=(path,bounds,count)=>({path:'electricity/'+path+'.json',bounds,count});

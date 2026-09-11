@@ -8,6 +8,8 @@ ROOT=Path(__file__).resolve().parents[1]
 def validate():
     manifest=json.loads((ROOT/'electricity.json').read_text(encoding='utf-8'))
     if manifest.get('schema_version')!=2: return # existing Kent snapshot during rollout
+    assert manifest['items']==[]
+    assert len({s['path'] for s in manifest['shards']})==len(manifest['shards'])
     rows=[]
     for shard in manifest['shards']:
         path=shard['path']
@@ -15,6 +17,7 @@ def validate():
         records=json.loads((ROOT/path).read_text(encoding='utf-8'))['items']
         assert len(records)==shard['count']
         bb=shard['bounds'];assert len(bb)==4 and all(math.isfinite(v) for v in bb)
+        assert bb[0]<=bb[2] and bb[1]<=bb[3]
         for row in records:
             for lat,lng in row.get('geometry',[[row['lat'],row['lng']]]):
                 assert bb[0]<=lat<=bb[2] and bb[1]<=lng<=bb[3]
@@ -31,6 +34,7 @@ def validate():
         assert r['checked'] and r['basis'] and r['location_note']
     countries=Counter(r['nation'] for r in rows)
     assert dict(countries)==manifest['country_counts']
+    assert dict(Counter(r['category'] for r in rows))==manifest['category_counts']
     for nation in ('England','Scotland','Wales','Northern Ireland'):
         assert countries[nation]>10
         assert any(r['nation']==nation and r['category']=='generate' for r in rows)

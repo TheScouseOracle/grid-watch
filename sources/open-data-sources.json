@@ -7,7 +7,9 @@
       "purpose": [
         "data-centre locations",
         "high-voltage substations",
-        "base-map tiles"
+        "base-map tiles",
+        "nuclear site locations",
+        "high-voltage route geometry"
       ],
       "licence": "ODbL 1.0",
       "licence_url": "https://www.openstreetmap.org/copyright",
@@ -119,6 +121,17 @@
       "licence": "Open Government Licence v3.0",
       "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
       "enabled": true
+    },
+    {
+      "id": "repd",
+      "name": "DESNZ Renewable Energy Planning Database",
+      "purpose": [
+        "UK solar, wind and battery project records"
+      ],
+      "licence": "Open Government Licence v3.0",
+      "licence_url": "https://www.data.gov.uk/dataset/a5b0ed13-c960-49ce-b1f6-3a6bbe0db1b7/repd",
+      "enabled": true,
+      "coverage_note": "Quarterly UK extract; projects above 150 kW, with a 1 MW threshold before 2021. Reported status and approximate points, not proof of live supply or exhaustive coverage."
     }
   ]
 }

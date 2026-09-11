@@ -130,5 +130,6 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 .electricity-filter{display:flex;gap:8px;align-items:center;border:1px solid var(--paper-line);padding:10px;cursor:pointer;font-size:14px}
 .electricity-filter span{padding-left:8px}.electricity-filter small{display:block;font-size:14px}
 #electricity-panel input{width:20px;height:20px;flex-shrink:0;accent-color:var(--red)}
+#electricity-stage{font:inherit;max-width:100%;min-height:44px;padding:6px;border:1px solid var(--paper-line);background:white;color:var(--ink)}
 #electricity-panel p{margin:12px 0}#electricity-list .row p{margin:8px 0;font-size:14px}
 #electricity-list a,.leaflet-popup-content a{overflow-wrap:anywhere}
