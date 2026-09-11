@@ -1,0 +1,47 @@
+name: Refresh nationwide electricity
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 6 * * 0'
+  push:
+    branches: [main, feat/nationwide-electricity]
+    paths:
+      - scripts/update_electricity.py
+      - .github/workflows/update-electricity.yml
+      - sources/electricity-context.json
+permissions:
+  contents: write
+concurrency:
+  group: electricity-refresh-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install pyproj==3.7.2
+      - name: Collect all four nations before replacing published data
+        run: python scripts/update_electricity.py
+      - name: Validate national data and frontend
+        run: |
+          python scripts/check_electricity_data.py
+          node scripts/check_electricity.cjs
+          node scripts/check_frontend.cjs
+          node scripts/check_navigation.cjs
+      - name: Commit verified electricity snapshot
+        run: |
+          git config user.name 'grid-watch-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add electricity.json electricity/
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: refresh nationwide electricity snapshot'
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi

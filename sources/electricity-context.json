@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "id": "sea-link-minster-context",
+      "name": "Sea Link — Minster area",
+      "category": "transmit",
+      "type": "Proposed HVDC reinforcement",
+      "lat": 51.33,
+      "lng": 1.3,
+      "status": "Project assessment consultation — 1 September 2026",
+      "source": "https://www.ofgem.gov.uk/consultation/sea-link-project-assessment",
+      "source_id": "ofgem",
+      "licence": "Open Government Licence v3.0 — © Crown copyright",
+      "licence_url": "https://www.ofgem.gov.uk/c-ofgem-2026",
+      "checked": "2026-09-11",
+      "basis": "Ofgem describes a proposed 2 GW Suffolk–Kent link, converter stations at Saxmundham and Minster, cables and network reinforcement. This is transfer capacity, not generation or consumption.",
+      "location_note": "Broad Minster-area reference point only. Not the converter station footprint or an approved cable alignment. Open the project documents for routes.",
+      "nation": "England",
+      "stage": "proposed"
+    },
+    {
+      "id": "dungeness-b-historical",
+      "name": "Dungeness B — former generation",
+      "category": "generate",
+      "type": "Nuclear (closed)",
+      "lat": 50.913,
+      "lng": 0.963,
+      "status": "Generation ended in 2021",
+      "source": "https://www.gov.uk/government/news/decommissioning-agreement-reached-on-advanced-gas-cool-reactor-agr-nuclear-power-stations",
+      "source_id": "govuk",
+      "licence": "Open Government Licence v3.0 — © Crown copyright",
+      "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "checked": "2026-09-11",
+      "basis": "Government confirmed closure in June 2021. Historical generation context; this marker must not be interpreted as current electricity supply.",
+      "location_note": "Approximate Dungeness nuclear-site area, not a surveyed boundary.",
+      "nation": "England",
+      "stage": "closed"
+    }
+  ]
+}
