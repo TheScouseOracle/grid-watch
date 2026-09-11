@@ -109,6 +109,16 @@
       "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
       "enabled": true,
       "coverage_note": "Publication states England and Wales. Only Crown-authored text is summarised; third-party material is excluded. No site-level assessment is inferred."
+    },
+    {
+      "id": "govuk",
+      "name": "GOV.UK Dungeness closure announcement",
+      "purpose": [
+        "historical nuclear-generation context"
+      ],
+      "licence": "Open Government Licence v3.0",
+      "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "enabled": true
     }
   ]
 }

@@ -60,7 +60,7 @@ details.disc{margin-top:30px;border:2px solid var(--ink);background:#fff;}
 details.disc summary{cursor:pointer;font-weight:800;padding:14px 16px;list-style:none;display:flex;justify-content:space-between;align-items:center;}
 details.disc summary::-webkit-details-marker{display:none;}
 details.disc summary::after{content:"+";font-weight:800;}
-details.disc[open] summary::after{content:"–";}
+details.disc[open] > summary::after{content:"–";}
 details.disc .body{padding:0 16px 16px;font-size:14px;color:var(--ink);}
 details.disc .body p{margin-top:10px;max-width:66ch;}
 details.disc .body a{color:var(--red);}
@@ -122,3 +122,13 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var
 .context-record p{margin-top:8px;}
 .actions .btn{white-space:normal;text-align:left;}
 @media(max-width:480px){.mast{flex-wrap:wrap;}.ribbon{white-space:normal;}.investigation-section>summary{padding:16px;}.section-body{padding:0 16px 18px;}}
+
+/* Electricity controls extend the existing paper, ink and red theme. */
+.electricity-switch{display:flex;gap:10px;align-items:center;font-weight:700;margin:18px 0;min-height:44px}
+#electricity-filters{border:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin:16px 0}
+#electricity-filters legend{font-weight:700;margin-bottom:8px}
+.electricity-filter{display:flex;gap:8px;align-items:center;border:1px solid var(--paper-line);padding:10px;cursor:pointer;font-size:14px}
+.electricity-filter span{padding-left:8px}.electricity-filter small{display:block;font-size:14px}
+#electricity-panel input{width:20px;height:20px;flex-shrink:0;accent-color:var(--red)}
+#electricity-panel p{margin:12px 0}#electricity-list .row p{margin:8px 0;font-size:14px}
+#electricity-list a,.leaflet-popup-content a{overflow-wrap:anywhere}

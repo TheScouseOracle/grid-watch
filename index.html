@@ -15,10 +15,10 @@
     <div class="kicker">Who's plugging into your patch?</div>
     <h1>Britain's data-centre buildout, mapped</h1>
     <p>Enter a UK postcode to explore openly mapped data centres, major electricity infrastructure, planning activity and public-support evidence around that area. Grid Watch is a discovery and investigation tool: a map marker is a starting point for checking the evidence, not proof that different sites are connected.</p>
-    <div class="context"><b>📍 Search by postcode</b><br>Enter a full UK postcode below. The hotspot buttons underneath are ready-made examples; typing a city name on its own will not search yet.</div>
+    <div class="context"><b>📍 Search by postcode</b><br>Enter a full UK postcode below. The example buttons underneath are ready-made examples; typing a city name on its own will not search yet.</div>
     <div class="field"><input id="pc" type="text" placeholder="Full UK postcode, e.g. L19 3PF" aria-label="Enter a full UK postcode" autocomplete="postal-code" /><button class="btn" id="go">Explore my area</button></div>
     <div id="msg" class="msg hidden" role="status"></div>
-    <div class="examples"><b>🔥 Or explore major UK data-centre hotspots:</b> <button data-pc="SL1 1XW">Slough</button> · <button data-pc="E14 5AB">London Docklands</button> · <button data-pc="M1 1AE">Manchester</button> · <button data-pc="NP20 1PA">Newport</button></div>
+    <div class="examples"><b>Or explore an example area:</b> <button data-pc="SL1 1XW">Slough</button> · <button data-pc="E14 5AB">London Docklands</button> · <button data-pc="M1 1AE">Manchester</button> · <button data-pc="NP20 1PA">Newport</button> · <button data-pc="TN29 9PX">Romney Marsh</button> · <button data-pc="CT12 4EA">East Kent</button></div>
     <div class="context"><b>How to read power figures:</b> ⚡ Connected/operational means evidence supports a live site; 🔌 Contracted/accepted means a connection has been secured but is not current consumption; 🟡 Proposed/requested is a project or application figure; ◌ Estimated is explicitly an estimate.</div>
 
     <div class="sec"><h2>💷 Public support & incentives</h2><div class="subhead">Grid Watch now also tracks open government evidence on mechanisms that can support data-centre and AI Growth Zone development — including grid access, energy-price support, planning measures and public finance. Programme-level support is kept separate from proof that an individual project received it.</div></div>
@@ -57,7 +57,23 @@
       <div class="context"><b>The Scouse Oracle rule:</b> The map is the starting point of the investigation — not the conclusion.</div>
     </div></details>
 
+    <details class="disc" id="electricity-panel"><summary>⚡ Explore the electricity system</summary><div class="body">
+      <p><b>GENERATE → STORE → CONNECT → TRANSMIT → CONSUME</b></p>
+      <p>Five roles in one shared network. The arrows explain the categories; they are not a traced supply route. Batteries charge and discharge, and electricity does not have to pass through storage.</p>
+      <label class="electricity-switch"><input type="checkbox" id="electricity-toggle"> Show electricity-system map</label>
+      <fieldset id="electricity-filters"><legend>Choose project types</legend></fieldset>
+      <p class="context"><b>Nearby does not mean connected.</b> A planning document, connection agreement or power-purchase agreement must explicitly support a relationship before Grid Watch claims one. Even a commercial agreement does not trace the physical electricity. MW capacity is not continuous output or measured consumption.</p>
+      <p id="electricity-status" role="status">Electricity-system view is off. The original map is shown.</p>
+      <details class="disc"><summary>Kent example &amp; source leads</summary><div class="body">
+        <p>Start at <b>TN29 9PX</b> for Romney Marsh / Dungeness and Sellindge. Search <b>CT12 4EA</b> for Minster / Richborough and Canterbury. The map keeps the existing 45 km search area.</p>
+        <p>OpenStreetMap supplies mapped generation, battery storage and high-voltage line geometry. These are community records, not verified operating or connection agreements. Lines show mapped infrastructure, not electricity flowing to a named consumer.</p>
+        <p><b>Solar proposals to investigate:</b> <a href="https://www.folkestone-hythe.gov.uk/planning/romney-marsh-solar-farm-planning-applications/3" target="_blank" rel="noreferrer">South Kent Energy Park</a> · <a href="https://www.folkestone-hythe.gov.uk/planning/romney-marsh-solar-farm-planning-applications/4" target="_blank" rel="noreferrer">Shepway Energy Park</a>. These council pages are reading leads, not imported open-licensed project records. Proposed boundaries and battery capacities are not guessed.</p>
+        <p><a href="https://www.nationalgrid.com/the-great-grid-upgrade/sea-link" target="_blank" rel="noreferrer">Sea Link project and route documents</a> · <a href="https://www.nationalgrid.com/richborough-energy-park-battery-connects-grid-site-former-coal-plant" target="_blank" rel="noreferrer">Richborough battery connection evidence</a>. Read these primary sources to investigate specific infrastructure relationships; neither establishes supply to a data centre.</p>
+        <p>Additional Kent records were checked on 11 September 2026 and require periodic review. Other major consumers are not comprehensively mapped. An empty CONSUME category does not mean there is no local demand.</p>
+      </div></details>
+    </div></details>
     <div id="map"></div>
+    <div id="electricity-list"></div>
     <div class="sec"><h2>Open-evidence verified register</h2><div class="subhead">Only records whose reusable evidence meets the strict open-data policy can appear here.</div><div id="r-curated"></div></div>
     <div class="sec"><h2>🖥️ Open map data-centre sites near you</h2><div class="subhead">These are data-centre features from OpenStreetMap (ODbL). Sites can range in scale. Where the map supplies an explicit Wikidata ID, Grid Watch can add a CC0 ownership chain without guessing identities.</div><div id="r-osm"></div></div>
     <details class="disc" id="substations"><summary>⚡ Substations near you</summary><div class="body"><p><b>These are substations, not data centres.</b> Grid Watch maps 132 kV+ substations near your postcode. Proximity does not prove a data centre is connected to a particular substation.</p><div id="r-grid-context"></div><div id="r-grid"></div></div></details>
@@ -82,5 +98,7 @@
   </div></details>
   <div class="foot"><b>The Scouse Oracle · Grid Watch</b> — open-data public-interest mapping of Britain's data-centre, electricity and public-support buildout.</div>
 </div>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="investigation.js"></script><script src="app.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="investigation.js"></script><script src="electricity.js"></script><script src="app.js"></script>
 </body></html>
+
+

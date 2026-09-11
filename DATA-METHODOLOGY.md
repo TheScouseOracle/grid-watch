@@ -70,6 +70,20 @@ Further regional reading can be added to `water_context` with its scope, source,
 
 ## Completeness and coverage
 
+## Electricity-system layer — Kent pilot
+
+The optional map view separates GENERATE, STORE, CONNECT, TRANSMIT and CONSUME. It replaces only the visible map overlays while enabled; the original result cards, data and investigation routes are retained. Category arrows describe roles, not a physical or commercial supply chain. Battery charging/discharging does not mean every generator uses storage. No proximity-based relationship is created or added to an evidence profile.
+
+`electricity.json` is a manually reviewed snapshot collected on 11 September 2026, not part of the daily refresh. OSM extraction uses bounding box south 50.88, west 0.75, north 51.42, east 1.5: power=plant; battery generators; and power=line ways tagged 275000/400000 volts. The pilot retains solar, wind, nuclear and battery source tags. Source tags and actual line geometries are retained as discovery evidence, not operating-status verification. Plant markers use geometry bounding-box centres; lines are individual OSM segments, not counts of independent projects. The 45 km filter uses feature centres. This is not comprehensive Kent infrastructure coverage.
+
+Substations and data centres reuse the existing postcode-filtered OSM and curated datasets. OSM provenance is linked individually, with ODbL attribution. Source snapshot dates are not independent site-review dates. General major industrial demand is not yet comprehensively inventoried.
+
+Sea Link uses Ofgem's 1 September 2026 project-assessment page, whose Crown copyright material is explicitly OGL under the page's linked copyright policy. Its broad Minster reference point is editorial area context, not an exact converter site or route. Its 2 GW figure is proposed transfer capacity. Dungeness B uses the OGL GOV.UK closure announcement and an explicitly approximate site-area point; it is historical generation, never live supply.
+
+South Kent and Shepway solar proposals remain linked primary-source reading leads. The council's terms do not supply an open reuse licence, so project boundaries and capacity records are not imported. National Grid reading links likewise do not license bulk ingestion or establish a data-centre supply claim. These leads do not appear in the strict-open verified register. Source review does not mean planning status was independently verified beyond the cited snapshot.
+
+Validate with `node scripts/check_electricity.cjs` alongside the existing frontend, navigation and open-data checks. Any future extension must preserve explicit source URLs, licence basis, checked dates, location precision and status limitations. Do not draw guessed corridors or automatic supplier-to-consumer edges.
+
 Open-data-only does **not** mean complete. No single statutory UK register lists every private, edge, enterprise, operating and proposed data centre. Grid Watch therefore reports source provenance, licensing and coverage gaps instead of claiming 100% market coverage.
 
 ## Reuse and attribution
