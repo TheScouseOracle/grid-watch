@@ -11,6 +11,7 @@ on:
       - sources/electricity-context.json
 permissions:
   contents: write
+  pages: write
 concurrency:
   group: electricity-refresh-${{ github.ref }}
   cancel-in-progress: false
@@ -45,3 +46,9 @@ jobs:
             git pull --rebase origin "$GITHUB_REF_NAME"
             git push origin "HEAD:$GITHUB_REF_NAME"
           fi
+      - name: Request publication of the refreshed main branch
+        if: github.ref == 'refs/heads/main'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.request('POST /repos/{owner}/{repo}/pages/builds', context.repo);

@@ -83,13 +83,14 @@ def fetch_osm(nation, code):
     (way["power"~"^(line|cable)$"]["voltage"~"(^|;)(110000|132000|220000|275000|400000)(;|$)"](area.region);
     way["construction:power"~"^(line|cable)$"]["voltage"](area.region);way["proposed:power"~"^(line|cable)$"]["voltage"](area.region););out geom;'''
     last=None
-    for endpoint in ENDPOINTS:
+    for attempt in range(4):
+        endpoint=ENDPOINTS[attempt % len(ENDPOINTS)]
         try:
             raw=json.loads(download(endpoint,urllib.parse.urlencode({'data':query}).encode()))
             if raw.get('remark') or not raw.get('elements'): raise ValueError('Empty or partial Overpass response')
             return raw
         except Exception as exc:
-            last=exc; print('Retrying',nation,str(exc),flush=True); time.sleep(3)
+            last=exc; print('Retrying',nation,str(exc),flush=True); time.sleep(30*(attempt+1))
     raise RuntimeError(f'{nation}: {last}')
 
 def osm_records(raw,nation,checked):
@@ -105,7 +106,7 @@ def osm_records(raw,nation,checked):
         if lat is None or lng is None: continue
         status='Community-mapped; operating status not independently verified'; phase='unknown'
         for prefix,label,st in [('decommissioned:','Mapped decommissioned','closed'),('demolished:','Mapped demolished','closed'),('disused:','Mapped disused','closed'),('abandoned:','Mapped abandoned','inactive'),('construction:','Mapped under construction','construction'),('proposed:','Mapped proposal','proposed')]:
-            if any(k.startswith(prefix) for k in t): status,phase=label,st;break
+            if any(k in t for k in (prefix+'power',prefix+'plant:source')): status,phase=label,st;break
         if t.get('power') in ('construction','proposed'): phase=t['power'];status='Mapped '+phase
         row=dict(id=f"osm-{e['type']}-{e['id']}",name=t.get('name') or ('Nuclear site' if nuclear else 'High-voltage route segment'),category='generate' if nuclear else 'transmit',type='Nuclear' if nuclear else 'High-voltage '+t.get('power','route')+' segment',lat=round(lat,6),lng=round(lng,6),nation=nation,status=status,stage=phase,source=f"https://www.openstreetmap.org/{e['type']}/{e['id']}",source_id='osm',licence='ODbL 1.0 — © OpenStreetMap contributors',licence_url='https://www.openstreetmap.org/copyright',checked=checked,basis='OpenStreetMap tags and geometry. No named consumer or supply relationship is inferred. High-voltage routes can include distribution infrastructure.',location_note='Approximate mapped centre; not a surveyed site boundary.' if nuclear else 'Mapped route geometry; individual segments are not separate projects.')
         if not nuclear: row['geometry']=[[round(p['lat'],6),round(p['lon'],6)] for p in geometry];row['voltage']=t.get('voltage','Not mapped')
@@ -147,6 +148,7 @@ def main():
     print('REPD:',len(rows),'mapped records; omissions:',omitted,flush=True)
     seen={r['id'] for r in rows};snapshots={}
     for nation,code in NATIONS.items():
+        time.sleep(20) # Respect public Overpass capacity between country queries.
         print('Collecting routes and nuclear sites:',nation,flush=True)
         raw=fetch_osm(nation,code);snapshots[nation]=raw.get('osm3s',{}).get('timestamp_osm_base')
         for row in osm_records(raw,nation,checked):
@@ -158,4 +160,3 @@ def main():
     publish(rows,dict(generated_at=datetime.now(timezone.utc).isoformat(),repd_download=csv_url,osm_snapshots=snapshots,omitted=omitted,coverage_note='UK REPD solar, wind and battery records, OSM nuclear sites and high-voltage route segments. Records are not unique projects. Offshore routes and unreported projects may be missing.'))
 
 if __name__=='__main__': main()
-

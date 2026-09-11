@@ -23,3 +23,5 @@ jobs:
         run: node scripts/check_navigation.cjs
       - name: Check electricity layer and provenance
         run: node scripts/check_electricity.cjs
+      - name: Validate regional electricity snapshot
+        run: python scripts/check_electricity_data.py
