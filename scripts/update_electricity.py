@@ -45,7 +45,8 @@ def repd_records(raw, csv_url, checked):
     from pyproj import Transformer
     # REPD supplies British National Grid eastings/northings, including NI.
     transform=Transformer.from_crs('EPSG:27700','EPSG:4326',always_xy=True)
-    decoded=raw.decode('utf-8-sig',errors='strict')
+    try: decoded=raw.decode('utf-8-sig',errors='strict')
+    except UnicodeDecodeError: decoded=raw.decode('cp1252',errors='strict')
     reader=csv.DictReader(io.StringIO(decoded))
     required={'Ref ID','Site Name','Technology Type','Development Status','Country','X-coordinate','Y-coordinate'}
     if not required.issubset(reader.fieldnames or []): raise ValueError('REPD columns changed')
@@ -157,3 +158,4 @@ def main():
     publish(rows,dict(generated_at=datetime.now(timezone.utc).isoformat(),repd_download=csv_url,osm_snapshots=snapshots,omitted=omitted,coverage_note='UK REPD solar, wind and battery records, OSM nuclear sites and high-voltage route segments. Records are not unique projects. Offshore routes and unreported projects may be missing.'))
 
 if __name__=='__main__': main()
+
