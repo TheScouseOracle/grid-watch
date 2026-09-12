@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T08:59:00.435341+00:00",
+  "generated_at": "2026-09-12T08:44:00.488409+00:00",
   "coverage_note": "Mapped 132 kV+ substations from OpenStreetMap. A nearby substation does not prove a data centre is connected to it.",
   "source": "OpenStreetMap via Overpass API",
   "licence": "ODbL 1.0 — © OpenStreetMap contributors",
