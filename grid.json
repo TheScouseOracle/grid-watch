@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T08:44:00.488409+00:00",
+  "generated_at": "2026-09-13T09:39:57.492733+00:00",
   "coverage_note": "Mapped 132 kV+ substations from OpenStreetMap. A nearby substation does not prove a data centre is connected to it.",
   "source": "OpenStreetMap via Overpass API",
   "licence": "ODbL 1.0 — © OpenStreetMap contributors",
@@ -4059,6 +4059,18 @@
       "licence": "ODbL 1.0"
     },
     {
+      "id": "osm-grid-way-1395910275",
+      "name": "Dungeness Substation",
+      "operator": null,
+      "voltage_v": 275000,
+      "voltage_label": "275 kV",
+      "lat": 50.9142017,
+      "lng": 0.9638788,
+      "source": "https://www.openstreetmap.org/way/1395910275",
+      "source_type": "OpenStreetMap",
+      "licence": "ODbL 1.0"
+    },
+    {
       "id": "osm-grid-way-39679810",
       "name": "Ealing Substation",
       "operator": "National Grid Electricity Transmission",
@@ -4583,18 +4595,6 @@
       "lat": 57.2180331,
       "lng": -2.3888318,
       "source": "https://www.openstreetmap.org/way/1393285232",
-      "source_type": "OpenStreetMap",
-      "licence": "ODbL 1.0"
-    },
-    {
-      "id": "osm-grid-way-1395910275",
-      "name": "High-voltage substation",
-      "operator": null,
-      "voltage_v": 275000,
-      "voltage_label": "275 kV",
-      "lat": 50.9142017,
-      "lng": 0.9638788,
-      "source": "https://www.openstreetmap.org/way/1395910275",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
     },
@@ -18797,11 +18797,11 @@
     {
       "id": "osm-grid-way-305010872",
       "name": "Stornoway Substation",
-      "operator": "Scottish Hydro Electric",
+      "operator": "Scottish and Southern Electricity Networks",
       "voltage_v": 132000,
       "voltage_label": "132 kV",
-      "lat": 58.2033376,
-      "lng": -6.4227644,
+      "lat": 58.2031072,
+      "lng": -6.4233264,
       "source": "https://www.openstreetmap.org/way/305010872",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
