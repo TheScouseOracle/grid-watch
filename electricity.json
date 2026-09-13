@@ -3,7 +3,7 @@
   "items": [],
   "shards": [
     {
-      "path": "electricity/49_-2_335aced7b322c550.json",
+      "path": "electricity/49_-2_cf939c907b117db1.json",
       "count": 1,
       "bounds": [
         49.474586,
@@ -13,7 +13,7 @@
       ]
     },
     {
-      "path": "electricity/50_-6_343baf081ccc363b.json",
+      "path": "electricity/50_-6_4225cc88bb5c7775.json",
       "count": 117,
       "bounds": [
         50.044743,
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "path": "electricity/50_-5_d578f130e9a8280e.json",
+      "path": "electricity/50_-5_b5e3069ffc8e5763.json",
       "count": 377,
       "bounds": [
         50.306936,
@@ -33,7 +33,7 @@
       ]
     },
     {
-      "path": "electricity/50_-4_b72493842bf57628.json",
+      "path": "electricity/50_-4_f633cd017eb9caf6.json",
       "count": 316,
       "bounds": [
         50.226005,
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "path": "electricity/50_-3_c4edd2b95ef775bc.json",
+      "path": "electricity/50_-3_4c122d52a2ae7e8a.json",
       "count": 280,
       "bounds": [
         50.552048,
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "path": "electricity/50_-2_953287929441e832.json",
+      "path": "electricity/50_-2_44eaea06a1d531eb.json",
       "count": 552,
       "bounds": [
         50.392999,
@@ -63,7 +63,7 @@
       ]
     },
     {
-      "path": "electricity/50_-1_8752323bb83ccb1c.json",
+      "path": "electricity/50_-1_35809dcae0b872c4.json",
       "count": 164,
       "bounds": [
         50.639994,
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "path": "electricity/50_0_88ff8be5e1196711.json",
+      "path": "electricity/50_0_43e5032e640d5348.json",
       "count": 191,
       "bounds": [
         50.783203,
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "path": "electricity/51_-6_58e42b632e843a38.json",
+      "path": "electricity/51_-6_6bdf19925d4dd54f.json",
       "count": 36,
       "bounds": [
         51.664421,
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "path": "electricity/51_-5_8f6cf222b5320e5e.json",
+      "path": "electricity/51_-5_c12aacd2bd2fe4ea.json",
       "count": 354,
       "bounds": [
         51.002518,
@@ -103,7 +103,7 @@
       ]
     },
     {
-      "path": "electricity/51_-4_bd0d34719db6c541.json",
+      "path": "electricity/51_-4_3341eb55f704cb67.json",
       "count": 1301,
       "bounds": [
         51.000279,
@@ -113,7 +113,7 @@
       ]
     },
     {
-      "path": "electricity/51_-3_c0de1f44932dc620.json",
+      "path": "electricity/51_-3_9fffe0f3b4ce13ce.json",
       "count": 1525,
       "bounds": [
         51.009926,
@@ -123,7 +123,7 @@
       ]
     },
     {
-      "path": "electricity/51_-2_3f69c51a36abe5b2.json",
+      "path": "electricity/51_-2_21bd062d3b045f85.json",
       "count": 784,
       "bounds": [
         50.945105,
@@ -133,7 +133,7 @@
       ]
     },
     {
-      "path": "electricity/51_-1_88b866ce2ad4be3c.json",
+      "path": "electricity/51_-1_a4fc58b8f7e2fa74.json",
       "count": 1880,
       "bounds": [
         50.918366,
@@ -143,7 +143,7 @@
       ]
     },
     {
-      "path": "electricity/51_0_9a5fa464a0c16659.json",
+      "path": "electricity/51_0_f370208c5bc5d6b3.json",
       "count": 1889,
       "bounds": [
         50.936898,
@@ -153,7 +153,7 @@
       ]
     },
     {
-      "path": "electricity/51_1_34d2f0daf8dede04.json",
+      "path": "electricity/51_1_0af0ad2e63c8b59f.json",
       "count": 291,
       "bounds": [
         51.084462,
@@ -163,7 +163,7 @@
       ]
     },
     {
-      "path": "electricity/51_2_9cf2a07da593833f.json",
+      "path": "electricity/51_2_0fe883cc86c7a260.json",
       "count": 1,
       "bounds": [
         51.879992,
@@ -173,7 +173,7 @@
       ]
     },
     {
-      "path": "electricity/52_-5_fbb3ae9d400b9210.json",
+      "path": "electricity/52_-5_dbf26e67047bfb6a.json",
       "count": 85,
       "bounds": [
         52.003262,
@@ -183,7 +183,7 @@
       ]
     },
     {
-      "path": "electricity/52_-4_6cef869198590472.json",
+      "path": "electricity/52_-4_9b676264ab15aa30.json",
       "count": 158,
       "bounds": [
         52.015216,
@@ -193,7 +193,7 @@
       ]
     },
     {
-      "path": "electricity/52_-3_3111383a4acd7d5d.json",
+      "path": "electricity/52_-3_9e37959663648f59.json",
       "count": 1066,
       "bounds": [
         52.001192,
@@ -203,8 +203,8 @@
       ]
     },
     {
-      "path": "electricity/52_-2_56604d86406b41e9.json",
-      "count": 2252,
+      "path": "electricity/52_-2_220035df0744cd03.json",
+      "count": 2253,
       "bounds": [
         51.850817,
         -2.10934,
@@ -213,7 +213,7 @@
       ]
     },
     {
-      "path": "electricity/52_-1_f0ed064a6e6cf6c6.json",
+      "path": "electricity/52_-1_512f0503d4de2a42.json",
       "count": 1037,
       "bounds": [
         51.93791,
@@ -223,7 +223,7 @@
       ]
     },
     {
-      "path": "electricity/52_0_5297b405bdbbc192.json",
+      "path": "electricity/52_0_53557bf8cff218c0.json",
       "count": 524,
       "bounds": [
         51.935816,
@@ -233,7 +233,7 @@
       ]
     },
     {
-      "path": "electricity/52_1_8a56a39ba40bd912.json",
+      "path": "electricity/52_1_4750df27d56f2bd9.json",
       "count": 749,
       "bounds": [
         51.914109,
@@ -243,7 +243,7 @@
       ]
     },
     {
-      "path": "electricity/52_2_9480878755db29bb.json",
+      "path": "electricity/52_2_fb6c941c9b7e4397.json",
       "count": 9,
       "bounds": [
         52.136962,
@@ -253,7 +253,7 @@
       ]
     },
     {
-      "path": "electricity/52_3_c6fb9e1bccccd67f.json",
+      "path": "electricity/52_3_d3d16989eb04d274.json",
       "count": 1,
       "bounds": [
         52.683758,
@@ -263,7 +263,7 @@
       ]
     },
     {
-      "path": "electricity/53_-5_3d5935e5a4dc0d19.json",
+      "path": "electricity/53_-5_5f1c73fe150b000d.json",
       "count": 74,
       "bounds": [
         52.969624,
@@ -273,7 +273,7 @@
       ]
     },
     {
-      "path": "electricity/53_-4_b01133782b11c32e.json",
+      "path": "electricity/53_-4_7765a27e3b9ed126.json",
       "count": 525,
       "bounds": [
         53.004089,
@@ -283,7 +283,7 @@
       ]
     },
     {
-      "path": "electricity/53_-3_2a803c661ef1bbfb.json",
+      "path": "electricity/53_-3_3e7e028e36443ef7.json",
       "count": 1644,
       "bounds": [
         52.927873,
@@ -293,7 +293,7 @@
       ]
     },
     {
-      "path": "electricity/53_-2_abdb20324ab4ac4d.json",
+      "path": "electricity/53_-2_e12383e5e639b9ef.json",
       "count": 1528,
       "bounds": [
         52.857441,
@@ -303,7 +303,7 @@
       ]
     },
     {
-      "path": "electricity/53_-1_b843326a49e44e36.json",
+      "path": "electricity/53_-1_2300f2c7c01eed1e.json",
       "count": 1138,
       "bounds": [
         52.931591,
@@ -313,7 +313,7 @@
       ]
     },
     {
-      "path": "electricity/53_0_18735f4e68b9cc1f.json",
+      "path": "electricity/53_0_42a67cbc4b472012.json",
       "count": 85,
       "bounds": [
         52.841074,
@@ -323,7 +323,7 @@
       ]
     },
     {
-      "path": "electricity/53_1_8942bc96ed64d6f4.json",
+      "path": "electricity/53_1_cf329a25fdc18eb8.json",
       "count": 11,
       "bounds": [
         52.947589,
@@ -333,7 +333,7 @@
       ]
     },
     {
-      "path": "electricity/54_-9_1a02fc71a21e5cb2.json",
+      "path": "electricity/54_-9_b6f5e821745422c9.json",
       "count": 3,
       "bounds": [
         54.417776,
@@ -343,7 +343,7 @@
       ]
     },
     {
-      "path": "electricity/54_-8_72b9bdc8fe522d98.json",
+      "path": "electricity/54_-8_9f98de071685543a.json",
       "count": 252,
       "bounds": [
         54.162923,
@@ -353,8 +353,8 @@
       ]
     },
     {
-      "path": "electricity/54_-7_7db61c75c8173eea.json",
-      "count": 345,
+      "path": "electricity/54_-7_20d56c7e09131df8.json",
+      "count": 346,
       "bounds": [
         54.057337,
         -7.254072,
@@ -363,8 +363,8 @@
       ]
     },
     {
-      "path": "electricity/54_-6_89d1cf7a62e529c5.json",
-      "count": 157,
+      "path": "electricity/54_-6_fda38a00cf1b5340.json",
+      "count": 158,
       "bounds": [
         53.047896,
         -6.161252,
@@ -373,7 +373,7 @@
       ]
     },
     {
-      "path": "electricity/54_-5_1b693a69e26e5f2f.json",
+      "path": "electricity/54_-5_ad81570c3e657954.json",
       "count": 49,
       "bounds": [
         54.07944,
@@ -383,7 +383,7 @@
       ]
     },
     {
-      "path": "electricity/54_-4_547ff99955af1643.json",
+      "path": "electricity/54_-4_007a67651d9095d4.json",
       "count": 181,
       "bounds": [
         53.966963,
@@ -393,7 +393,7 @@
       ]
     },
     {
-      "path": "electricity/54_-3_d24659805d66487a.json",
+      "path": "electricity/54_-3_e4a9246aeb3cd285.json",
       "count": 427,
       "bounds": [
         54.006583,
@@ -403,7 +403,7 @@
       ]
     },
     {
-      "path": "electricity/54_-2_9afb0fe8e41fdf50.json",
+      "path": "electricity/54_-2_776669c26d49c3c9.json",
       "count": 1027,
       "bounds": [
         53.901006,
@@ -413,7 +413,7 @@
       ]
     },
     {
-      "path": "electricity/54_-1_f1bace213274d71a.json",
+      "path": "electricity/54_-1_30874bf469df63b0.json",
       "count": 102,
       "bounds": [
         53.269576,
@@ -423,7 +423,7 @@
       ]
     },
     {
-      "path": "electricity/54_0_02bffc6c2ba6aba0.json",
+      "path": "electricity/54_0_8dfa4cd21ec84ad1.json",
       "count": 2,
       "bounds": [
         54.601253,
@@ -433,7 +433,7 @@
       ]
     },
     {
-      "path": "electricity/55_-8_29ff663e6b8b24cd.json",
+      "path": "electricity/55_-8_87727e09f5d8579e.json",
       "count": 29,
       "bounds": [
         54.980827,
@@ -443,7 +443,7 @@
       ]
     },
     {
-      "path": "electricity/55_-7_1b4ec09bfc4d5ac8.json",
+      "path": "electricity/55_-7_cf087ad226bf60ad.json",
       "count": 62,
       "bounds": [
         54.992545,
@@ -453,7 +453,7 @@
       ]
     },
     {
-      "path": "electricity/55_-6_a760177d5dec332a.json",
+      "path": "electricity/55_-6_d3534b3fdcf6fea6.json",
       "count": 66,
       "bounds": [
         55.02221,
@@ -463,7 +463,7 @@
       ]
     },
     {
-      "path": "electricity/55_-5_384fd5149132978f.json",
+      "path": "electricity/55_-5_4707611e60a417dd.json",
       "count": 965,
       "bounds": [
         54.953392,
@@ -473,7 +473,7 @@
       ]
     },
     {
-      "path": "electricity/55_-4_ac2cc07aba3fa731.json",
+      "path": "electricity/55_-4_65668ec0e922d748.json",
       "count": 588,
       "bounds": [
         54.988613,
@@ -483,7 +483,7 @@
       ]
     },
     {
-      "path": "electricity/55_-3_6c5b42ce12b42455.json",
+      "path": "electricity/55_-3_f55d0cd691b494b8.json",
       "count": 313,
       "bounds": [
         55.001504,
@@ -493,7 +493,7 @@
       ]
     },
     {
-      "path": "electricity/55_-2_04acd26f8ccfecce.json",
+      "path": "electricity/55_-2_d1ac5a91a7b18e56.json",
       "count": 213,
       "bounds": [
         54.851927,
@@ -503,7 +503,7 @@
       ]
     },
     {
-      "path": "electricity/55_-1_ff28ad1ed2bc642a.json",
+      "path": "electricity/55_-1_cc42297f64959019.json",
       "count": 1,
       "bounds": [
         54.049815,
@@ -513,7 +513,7 @@
       ]
     },
     {
-      "path": "electricity/55_1_dcb4bea127e84506.json",
+      "path": "electricity/55_1_b65a84d6f9bee622.json",
       "count": 1,
       "bounds": [
         55.967337,
@@ -523,7 +523,7 @@
       ]
     },
     {
-      "path": "electricity/55_2_8b686c8421b068d3.json",
+      "path": "electricity/55_2_b2b0cb0c069a8615.json",
       "count": 2,
       "bounds": [
         55.209993,
@@ -533,7 +533,7 @@
       ]
     },
     {
-      "path": "electricity/56_-7_2961412f4920511d.json",
+      "path": "electricity/56_-7_ca3ca43d1ed1eb07.json",
       "count": 4,
       "bounds": [
         56.493152,
@@ -543,7 +543,7 @@
       ]
     },
     {
-      "path": "electricity/56_-6_43ad41e6fd37cb93.json",
+      "path": "electricity/56_-6_a5e117e74d1f3b70.json",
       "count": 79,
       "bounds": [
         56.011061,
@@ -553,7 +553,7 @@
       ]
     },
     {
-      "path": "electricity/56_-5_b7449e552d0b56a7.json",
+      "path": "electricity/56_-5_4c1e3e24447a1cd4.json",
       "count": 142,
       "bounds": [
         55.931101,
@@ -563,7 +563,7 @@
       ]
     },
     {
-      "path": "electricity/56_-4_ba24421e6db1e0e5.json",
+      "path": "electricity/56_-4_045820bd0e3a0a3e.json",
       "count": 560,
       "bounds": [
         55.996419,
@@ -573,7 +573,7 @@
       ]
     },
     {
-      "path": "electricity/56_-3_d88d776d89307022.json",
+      "path": "electricity/56_-3_aa5b4129dd6c9bc7.json",
       "count": 314,
       "bounds": [
         55.959885,
@@ -583,7 +583,7 @@
       ]
     },
     {
-      "path": "electricity/56_-2_3dc2aef7787d39e2.json",
+      "path": "electricity/56_-2_03f262709a777aa3.json",
       "count": 4,
       "bounds": [
         56.443139,
@@ -593,7 +593,7 @@
       ]
     },
     {
-      "path": "electricity/56_-1_93807e913978cb82.json",
+      "path": "electricity/56_-1_cbc73fb36952d108.json",
       "count": 1,
       "bounds": [
         56.554548,
@@ -603,7 +603,7 @@
       ]
     },
     {
-      "path": "electricity/57_-8_06cadc14fd79bc7f.json",
+      "path": "electricity/57_-8_abb80fe333f1e915.json",
       "count": 3,
       "bounds": [
         57.233745,
@@ -613,7 +613,7 @@
       ]
     },
     {
-      "path": "electricity/57_-7_72de7fa6a4fa3b27.json",
+      "path": "electricity/57_-7_aad59074977b5c80.json",
       "count": 23,
       "bounds": [
         57.009477,
@@ -623,7 +623,7 @@
       ]
     },
     {
-      "path": "electricity/57_-6_b674e6ba45086b7b.json",
+      "path": "electricity/57_-6_a5898f74ce5a4763.json",
       "count": 13,
       "bounds": [
         57.062841,
@@ -633,7 +633,7 @@
       ]
     },
     {
-      "path": "electricity/57_-5_0287c314dcaac2db.json",
+      "path": "electricity/57_-5_f579c9b8b086afb2.json",
       "count": 542,
       "bounds": [
         57.011945,
@@ -643,7 +643,7 @@
       ]
     },
     {
-      "path": "electricity/57_-4_158cbc2c53b48fec.json",
+      "path": "electricity/57_-4_65d69c54636a2186.json",
       "count": 124,
       "bounds": [
         57.211674,
@@ -653,7 +653,7 @@
       ]
     },
     {
-      "path": "electricity/57_-3_4ec8fbc8ab8f9a18.json",
+      "path": "electricity/57_-3_e1978f267dffaa1b.json",
       "count": 576,
       "bounds": [
         56.924357,
@@ -663,7 +663,7 @@
       ]
     },
     {
-      "path": "electricity/57_-2_71bcb70828fed2b2.json",
+      "path": "electricity/57_-2_dad831dd01034064.json",
       "count": 84,
       "bounds": [
         57.140896,
@@ -673,7 +673,7 @@
       ]
     },
     {
-      "path": "electricity/57_-1_1a5f2d162ae08d8d.json",
+      "path": "electricity/57_-1_630fba8b763e70fd.json",
       "count": 1,
       "bounds": [
         57.607875,
@@ -683,7 +683,7 @@
       ]
     },
     {
-      "path": "electricity/57_1_68aa39da3cc8dc77.json",
+      "path": "electricity/57_1_4fd94a5a647b1a95.json",
       "count": 1,
       "bounds": [
         57.191474,
@@ -693,8 +693,8 @@
       ]
     },
     {
-      "path": "electricity/58_-7_660668c0ca10c51c.json",
-      "count": 20,
+      "path": "electricity/58_-7_a11bfc268cc0144f.json",
+      "count": 21,
       "bounds": [
         57.845549,
         -6.848087,
@@ -703,7 +703,7 @@
       ]
     },
     {
-      "path": "electricity/58_-6_4fde7324360ddd61.json",
+      "path": "electricity/58_-6_1c1d460e9e70c615.json",
       "count": 2,
       "bounds": [
         58.169743,
@@ -713,7 +713,7 @@
       ]
     },
     {
-      "path": "electricity/58_-5_15896df3abed965a.json",
+      "path": "electricity/58_-5_8bf76148476732df.json",
       "count": 63,
       "bounds": [
         58.001948,
@@ -723,7 +723,7 @@
       ]
     },
     {
-      "path": "electricity/58_-4_1f3217d633bbb9c1.json",
+      "path": "electricity/58_-4_6118a09fff71b558.json",
       "count": 209,
       "bounds": [
         58.020063,
@@ -733,7 +733,7 @@
       ]
     },
     {
-      "path": "electricity/58_-3_f9e8e25c684922f3.json",
+      "path": "electricity/58_-3_7c9a65885d4e177d.json",
       "count": 16,
       "bounds": [
         57.596403,
@@ -743,7 +743,7 @@
       ]
     },
     {
-      "path": "electricity/59_-4_4519af614f531515.json",
+      "path": "electricity/59_-4_aece168c53c3ac29.json",
       "count": 13,
       "bounds": [
         59.005491,
@@ -753,7 +753,7 @@
       ]
     },
     {
-      "path": "electricity/59_-3_766802ba70a0a99e.json",
+      "path": "electricity/59_-3_ed81cea450802d85.json",
       "count": 11,
       "bounds": [
         59.081885,
@@ -763,7 +763,7 @@
       ]
     },
     {
-      "path": "electricity/60_-3_ad8864c256035ea2.json",
+      "path": "electricity/60_-3_c2d87582a422b474.json",
       "count": 1,
       "bounds": [
         60.135006,
@@ -773,7 +773,7 @@
       ]
     },
     {
-      "path": "electricity/60_-2_5261f770a44786e0.json",
+      "path": "electricity/60_-2_e7ba946f44e6042f.json",
       "count": 36,
       "bounds": [
         60.045718,
@@ -783,27 +783,27 @@
       ]
     }
   ],
-  "count": 28572,
+  "count": 28576,
   "licence": "Mixed attributed OGL and ODbL records",
   "coverage": "United Kingdom",
   "country_counts": {
-    "Scotland": 4806,
-    "England": 20407,
+    "Scotland": 4807,
+    "England": 20408,
     "Wales": 2530,
-    "Northern Ireland": 829
+    "Northern Ireland": 831
   },
   "category_counts": {
     "store": 2669,
     "generate": 10305,
-    "transmit": 15598
+    "transmit": 15602
   },
-  "generated_at": "2026-09-11T08:52:29.050711+00:00",
+  "generated_at": "2026-09-13T11:58:22.658482+00:00",
   "repd_download": "https://assets.publishing.service.gov.uk/media/6a6cbdc00c36759b5ccaa305/REPD_Publication_Q2_2026.csv",
   "osm_snapshots": {
-    "England": "2026-09-11T08:47:02Z",
-    "Scotland": "2026-09-11T08:50:01Z",
-    "Wales": "2026-09-11T08:50:01Z",
-    "Northern Ireland": "2026-09-11T08:51:02Z"
+    "England": "2026-09-13T11:50:11Z",
+    "Scotland": "2026-09-13T11:52:21Z",
+    "Wales": "2026-09-13T11:53:20Z",
+    "Northern Ireland": "2026-05-31T22:37:44Z"
   },
   "omitted": {
     "unrecognised_country": 1,
