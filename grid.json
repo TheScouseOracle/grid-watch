@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-16T09:24:25.018180+00:00",
+  "generated_at": "2026-09-17T09:34:40.911289+00:00",
   "coverage_note": "Mapped 132 kV+ substations from OpenStreetMap. A nearby substation does not prove a data centre is connected to it.",
   "source": "OpenStreetMap via Overpass API",
   "licence": "ODbL 1.0 — © OpenStreetMap contributors",
-  "count": 1713,
+  "count": 1712,
   "national_context": {
     "as_of": "2026-07-29",
     "demand_connection_applications_gw": 125,
@@ -1455,18 +1455,6 @@
       "licence": "ODbL 1.0"
     },
     {
-      "id": "osm-grid-way-681875115",
-      "name": "High-voltage substation",
-      "operator": null,
-      "voltage_v": 400000,
-      "voltage_label": "400 kV",
-      "lat": 50.8983459,
-      "lng": -1.4402046,
-      "source": "https://www.openstreetmap.org/way/681875115",
-      "source_type": "OpenStreetMap",
-      "licence": "ODbL 1.0"
-    },
-    {
       "id": "osm-grid-way-785730495",
       "name": "High-voltage substation",
       "operator": null,
@@ -2051,6 +2039,18 @@
       "lat": 50.8468264,
       "lng": -1.8953249,
       "source": "https://www.openstreetmap.org/way/90099036",
+      "source_type": "OpenStreetMap",
+      "licence": "ODbL 1.0"
+    },
+    {
+      "id": "osm-grid-way-681875115",
+      "name": "Marchwood",
+      "operator": "NGET",
+      "voltage_v": 400000,
+      "voltage_label": "400 kV",
+      "lat": 50.8983459,
+      "lng": -1.4402046,
+      "source": "https://www.openstreetmap.org/way/681875115",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
     },
@@ -12923,18 +12923,6 @@
       "lat": 51.6071656,
       "lng": 0.5556161,
       "source": "https://www.openstreetmap.org/way/1026414472",
-      "source_type": "OpenStreetMap",
-      "licence": "ODbL 1.0"
-    },
-    {
-      "id": "osm-grid-way-1083006694",
-      "name": "High-voltage substation",
-      "operator": null,
-      "voltage_v": 132000,
-      "voltage_label": "132 kV",
-      "lat": 50.9409452,
-      "lng": -1.4833688,
-      "source": "https://www.openstreetmap.org/way/1083006694",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
     },

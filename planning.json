@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16T09:23:32.657537+00:00",
+  "updated": "2026-09-17T09:33:27.976572+00:00",
   "policy": "Open-data-only planning layer. Every enabled upstream dataset has an explicit open licence.",
   "coverage_by_nation": {
     "England": {
@@ -7,21 +7,21 @@
       "source": "https://www.planning.data.gov.uk/dataset/planning-application",
       "licence": "Open Government Licence v3.0 — © Crown copyright and database right",
       "coverage": "Planning Data planning-application specification is in development and participating-authority coverage is incomplete.",
-      "updated": "2026-09-16T09:23:28.791215+00:00"
+      "updated": "2026-09-17T09:33:23.308305+00:00"
     },
     "Scotland": {
       "count": 0,
       "source": "https://data.spatialhub.scot/en/dataset/planning_applications_official-is",
       "licence": "Open Government Licence v3.0",
       "coverage": "Official Scotland planning-application dataset; publisher states all 34 planning authorities provide data daily.",
-      "updated": "2026-09-16T09:23:29.040166+00:00"
+      "updated": "2026-09-17T09:33:23.542827+00:00"
     },
     "Northern Ireland": {
       "count": 0,
       "source": "https://admin.opendatani.gov.uk/dataset/northern-ireland-planning-statistics-annual-dataset",
       "licence": "Open Government Licence v3.0",
       "coverage": "Validated annual planning dataset. It is not a live daily planning feed.",
-      "updated": "2026-09-16T09:23:32.591028+00:00"
+      "updated": "2026-09-17T09:33:27.914022+00:00"
     },
     "Wales": {
       "count": 0,
