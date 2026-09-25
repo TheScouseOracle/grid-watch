@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T09:27:20.904970+00:00",
+  "generated_at": "2026-09-25T09:43:16.089645+00:00",
   "coverage_note": "Mapped 132 kV+ substations from OpenStreetMap. A nearby substation does not prove a data centre is connected to it.",
   "source": "OpenStreetMap via Overpass API",
   "licence": "ODbL 1.0 — © OpenStreetMap contributors",
@@ -2903,6 +2903,18 @@
       "lat": 55.9085696,
       "lng": -3.0361557,
       "source": "https://www.openstreetmap.org/way/96905262",
+      "source_type": "OpenStreetMap",
+      "licence": "ODbL 1.0"
+    },
+    {
+      "id": "osm-grid-way-1158204483",
+      "name": "Sofia Wind Farm Converter Station",
+      "operator": null,
+      "voltage_v": 400000,
+      "voltage_label": "400 kV",
+      "lat": 54.5754813,
+      "lng": -1.1087394,
+      "source": "https://www.openstreetmap.org/way/1158204483",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
     },
@@ -6491,18 +6503,6 @@
       "lat": 51.1449549,
       "lng": 0.8668399,
       "source": "https://www.openstreetmap.org/way/91229857",
-      "source_type": "OpenStreetMap",
-      "licence": "ODbL 1.0"
-    },
-    {
-      "id": "osm-grid-way-1328627564",
-      "name": "Ashorne Solar Farm Substation (Under Construction)",
-      "operator": null,
-      "voltage_v": 132000,
-      "voltage_label": "132 kV",
-      "lat": 52.2535884,
-      "lng": -1.5201681,
-      "source": "https://www.openstreetmap.org/way/1328627564",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
     },
