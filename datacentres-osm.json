@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T09:39:56.058111+00:00",
+  "generated_at": "2026-09-27T10:03:51.332239+00:00",
   "source": "OpenStreetMap via Overpass API",
   "licence": "ODbL 1.0 — © OpenStreetMap contributors",
   "coverage_note": "UK-wide community-mapped data-centre features. Coverage is substantial but not guaranteed complete.",
@@ -2998,8 +2998,8 @@
       "status": "Mapped existing site",
       "lat": 52.5473033,
       "lng": -2.0305574,
-      "postcode": null,
-      "city": null,
+      "postcode": "WS10 7WP",
+      "city": "Wednesbury",
       "source": "https://www.openstreetmap.org/way/1302091424",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0",
