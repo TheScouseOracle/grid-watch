@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-27T10:07:17.520585+00:00",
+  "generated_at": "2026-09-29T10:54:46.507603+00:00",
   "coverage_note": "Mapped 132 kV+ substations from OpenStreetMap. A nearby substation does not prove a data centre is connected to it.",
   "source": "OpenStreetMap via Overpass API",
   "licence": "ODbL 1.0 — © OpenStreetMap contributors",
-  "count": 1712,
+  "count": 1713,
   "national_context": {
     "as_of": "2026-07-29",
     "demand_connection_applications_gw": 125,
@@ -5267,6 +5267,18 @@
       "lat": 52.527,
       "lng": -1.895577,
       "source": "https://www.openstreetmap.org/way/1501795879",
+      "source_type": "OpenStreetMap",
+      "licence": "ODbL 1.0"
+    },
+    {
+      "id": "osm-grid-way-1562780880",
+      "name": "Persley Substation",
+      "operator": "SSEN Transmission",
+      "voltage_v": 275000,
+      "voltage_label": "275 kV",
+      "lat": 57.1742273,
+      "lng": -2.1389603,
+      "source": "https://www.openstreetmap.org/way/1562780880",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
     },
@@ -16616,8 +16628,8 @@
       "operator": "SSEN Transmission",
       "voltage_v": 132000,
       "voltage_label": "132 kV",
-      "lat": 57.1742155,
-      "lng": -2.13804,
+      "lat": 57.1740809,
+      "lng": -2.1377207,
       "source": "https://www.openstreetmap.org/way/52980661",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-27T10:06:20.688572+00:00",
+  "generated_at": "2026-09-29T10:53:36.845639+00:00",
   "source": "Wikidata",
   "licence": "CC0 1.0",
   "method": "Only OSM records with explicit Wikidata identifiers are enriched; parent chains follow P749. Missing or ambiguous ownership remains unknown.",
-  "count": 83,
+  "count": 77,
   "items": [
     {
       "site_id": "osm-way-1161721011",
@@ -176,7 +176,7 @@
       "confidence": "open-linked-data; no name guessing"
     },
     {
-      "site_id": "osm-way-459025630",
+      "site_id": "osm-way-23571724",
       "source_qid": "Q138447238",
       "source_role": "operator",
       "chain": [
@@ -196,7 +196,7 @@
       "confidence": "open-linked-data; no name guessing"
     },
     {
-      "site_id": "osm-way-23571724",
+      "site_id": "osm-way-459025630",
       "source_qid": "Q138447238",
       "source_role": "operator",
       "chain": [
@@ -750,27 +750,6 @@
       "confidence": "open-linked-data; no name guessing"
     },
     {
-      "site_id": "osm-way-459613192",
-      "source_qid": "Q851641",
-      "source_role": "operator",
-      "chain": [
-        {
-          "qid": "Q851641",
-          "name": "Equinix",
-          "country_qid": "Q30",
-          "headquarters_qid": "Q505549",
-          "source": "https://www.wikidata.org/wiki/Q851641",
-          "country": "United States",
-          "headquarters": "Redwood City"
-        }
-      ],
-      "ultimate_parent": "Equinix",
-      "ultimate_parent_qid": "Q851641",
-      "ultimate_parent_country": "United States",
-      "licence": "CC0 1.0",
-      "confidence": "open-linked-data; no name guessing"
-    },
-    {
       "site_id": "osm-node-12303136063",
       "source_qid": "Q851641",
       "source_role": "operator",
@@ -884,27 +863,6 @@
       "confidence": "open-linked-data; no name guessing"
     },
     {
-      "site_id": "osm-way-1493499783",
-      "source_qid": "Q1673079",
-      "source_role": "operator",
-      "chain": [
-        {
-          "qid": "Q1673079",
-          "name": "Iron Mountain Incorporated",
-          "country_qid": "Q30",
-          "headquarters_qid": "Q100",
-          "source": "https://www.wikidata.org/wiki/Q1673079",
-          "country": "United States",
-          "headquarters": "Boston"
-        }
-      ],
-      "ultimate_parent": "Iron Mountain Incorporated",
-      "ultimate_parent_qid": "Q1673079",
-      "ultimate_parent_country": "United States",
-      "licence": "CC0 1.0",
-      "confidence": "open-linked-data; no name guessing"
-    },
-    {
       "site_id": "osm-way-166407577",
       "source_qid": "Q851641",
       "source_role": "operator",
@@ -1006,6 +964,27 @@
       "confidence": "open-linked-data; no name guessing"
     },
     {
+      "site_id": "osm-way-458775803",
+      "source_qid": "Q5063092",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q5063092",
+          "name": "Lumen Technologies",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q947115",
+          "source": "https://www.wikidata.org/wiki/Q5063092",
+          "country": "United States",
+          "headquarters": "Monroe"
+        }
+      ],
+      "ultimate_parent": "Lumen Technologies",
+      "ultimate_parent_qid": "Q5063092",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
       "site_id": "osm-way-459600829",
       "source_qid": "Q5063092",
       "source_role": "operator",
@@ -1084,6 +1063,27 @@
       ],
       "ultimate_parent": "Microsoft",
       "ultimate_parent_qid": "Q2283",
+      "ultimate_parent_country": "United States",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-23571722",
+      "source_qid": "Q334204",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q334204",
+          "name": "Morgan Stanley",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q60",
+          "source": "https://www.wikidata.org/wiki/Q334204",
+          "country": "United States",
+          "headquarters": "New York City"
+        }
+      ],
+      "ultimate_parent": "Morgan Stanley",
+      "ultimate_parent_qid": "Q334204",
       "ultimate_parent_country": "United States",
       "licence": "CC0 1.0",
       "confidence": "open-linked-data; no name guessing"
@@ -1312,7 +1312,7 @@
       "confidence": "open-linked-data; no name guessing"
     },
     {
-      "site_id": "osm-way-93845197",
+      "site_id": "osm-way-254132701",
       "source_qid": "Q138441246",
       "source_role": "operator",
       "chain": [
@@ -1332,62 +1332,22 @@
       "confidence": "open-linked-data; no name guessing"
     },
     {
-      "site_id": "osm-way-23571722",
-      "source_qid": "Q334204",
+      "site_id": "osm-way-93845197",
+      "source_qid": "Q138441246",
       "source_role": "operator",
       "chain": [
         {
-          "qid": "Q334204",
-          "name": "Morgan Stanley",
-          "country_qid": "Q30",
-          "headquarters_qid": "Q60",
-          "source": "https://www.wikidata.org/wiki/Q334204",
-          "country": "United States",
-          "headquarters": "New York City"
+          "qid": "Q138441246",
+          "name": "Redcentric",
+          "country_qid": "Q145",
+          "headquarters_qid": null,
+          "source": "https://www.wikidata.org/wiki/Q138441246",
+          "country": "United Kingdom"
         }
       ],
-      "ultimate_parent": "Morgan Stanley",
-      "ultimate_parent_qid": "Q334204",
-      "ultimate_parent_country": "United States",
-      "licence": "CC0 1.0",
-      "confidence": "open-linked-data; no name guessing"
-    },
-    {
-      "site_id": "osm-way-15516422",
-      "source_qid": "Q2033167",
-      "source_role": "operator",
-      "chain": [
-        {
-          "qid": "Q2033167",
-          "name": "Sky UK",
-          "country_qid": "Q145",
-          "headquarters_qid": "Q2432955",
-          "source": "https://www.wikidata.org/wiki/Q2033167",
-          "country": "United Kingdom",
-          "headquarters": "Isleworth"
-        },
-        {
-          "qid": "Q918390",
-          "name": "Sky Group",
-          "country_qid": "Q145",
-          "headquarters_qid": "Q2432955",
-          "source": "https://www.wikidata.org/wiki/Q918390",
-          "country": "United Kingdom",
-          "headquarters": "Isleworth"
-        },
-        {
-          "qid": "Q1113804",
-          "name": "Comcast",
-          "country_qid": "Q30",
-          "headquarters_qid": "Q1345",
-          "source": "https://www.wikidata.org/wiki/Q1113804",
-          "country": "United States",
-          "headquarters": "Philadelphia"
-        }
-      ],
-      "ultimate_parent": "Comcast",
-      "ultimate_parent_qid": "Q1113804",
-      "ultimate_parent_country": "United States",
+      "ultimate_parent": "Redcentric",
+      "ultimate_parent_qid": "Q138441246",
+      "ultimate_parent_country": "United Kingdom",
       "licence": "CC0 1.0",
       "confidence": "open-linked-data; no name guessing"
     },
@@ -1727,48 +1687,6 @@
       "confidence": "open-linked-data; no name guessing"
     },
     {
-      "site_id": "osm-way-1452591984",
-      "source_qid": "Q133440987",
-      "source_role": "operator",
-      "chain": [
-        {
-          "qid": "Q133440987",
-          "name": "Vantage Data Centers",
-          "country_qid": "Q30",
-          "headquarters_qid": "Q16554",
-          "source": "https://www.wikidata.org/wiki/Q133440987",
-          "country": "United States",
-          "headquarters": "Denver"
-        }
-      ],
-      "ultimate_parent": "Vantage Data Centers",
-      "ultimate_parent_qid": "Q133440987",
-      "ultimate_parent_country": "United States",
-      "licence": "CC0 1.0",
-      "confidence": "open-linked-data; no name guessing"
-    },
-    {
-      "site_id": "osm-way-1452591985",
-      "source_qid": "Q133440987",
-      "source_role": "operator",
-      "chain": [
-        {
-          "qid": "Q133440987",
-          "name": "Vantage Data Centers",
-          "country_qid": "Q30",
-          "headquarters_qid": "Q16554",
-          "source": "https://www.wikidata.org/wiki/Q133440987",
-          "country": "United States",
-          "headquarters": "Denver"
-        }
-      ],
-      "ultimate_parent": "Vantage Data Centers",
-      "ultimate_parent_qid": "Q133440987",
-      "ultimate_parent_country": "United States",
-      "licence": "CC0 1.0",
-      "confidence": "open-linked-data; no name guessing"
-    },
-    {
       "site_id": "osm-way-26794336",
       "source_qid": "Q133440987",
       "source_role": "operator",
@@ -1790,70 +1708,7 @@
       "confidence": "open-linked-data; no name guessing"
     },
     {
-      "site_id": "osm-way-1072007436",
-      "source_qid": "Q133440987",
-      "source_role": "operator",
-      "chain": [
-        {
-          "qid": "Q133440987",
-          "name": "Vantage Data Centers",
-          "country_qid": "Q30",
-          "headquarters_qid": "Q16554",
-          "source": "https://www.wikidata.org/wiki/Q133440987",
-          "country": "United States",
-          "headquarters": "Denver"
-        }
-      ],
-      "ultimate_parent": "Vantage Data Centers",
-      "ultimate_parent_qid": "Q133440987",
-      "ultimate_parent_country": "United States",
-      "licence": "CC0 1.0",
-      "confidence": "open-linked-data; no name guessing"
-    },
-    {
-      "site_id": "osm-way-1072007403",
-      "source_qid": "Q133440987",
-      "source_role": "operator",
-      "chain": [
-        {
-          "qid": "Q133440987",
-          "name": "Vantage Data Centers",
-          "country_qid": "Q30",
-          "headquarters_qid": "Q16554",
-          "source": "https://www.wikidata.org/wiki/Q133440987",
-          "country": "United States",
-          "headquarters": "Denver"
-        }
-      ],
-      "ultimate_parent": "Vantage Data Centers",
-      "ultimate_parent_qid": "Q133440987",
-      "ultimate_parent_country": "United States",
-      "licence": "CC0 1.0",
-      "confidence": "open-linked-data; no name guessing"
-    },
-    {
       "site_id": "osm-way-1198641381",
-      "source_qid": "Q133440987",
-      "source_role": "operator",
-      "chain": [
-        {
-          "qid": "Q133440987",
-          "name": "Vantage Data Centers",
-          "country_qid": "Q30",
-          "headquarters_qid": "Q16554",
-          "source": "https://www.wikidata.org/wiki/Q133440987",
-          "country": "United States",
-          "headquarters": "Denver"
-        }
-      ],
-      "ultimate_parent": "Vantage Data Centers",
-      "ultimate_parent_qid": "Q133440987",
-      "ultimate_parent_country": "United States",
-      "licence": "CC0 1.0",
-      "confidence": "open-linked-data; no name guessing"
-    },
-    {
-      "site_id": "osm-way-1481464835",
       "source_qid": "Q133440987",
       "source_role": "operator",
       "chain": [
