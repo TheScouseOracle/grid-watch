@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T10:53:36.845639+00:00",
+  "generated_at": "2026-10-01T11:06:40.843168+00:00",
   "source": "Wikidata",
   "licence": "CC0 1.0",
   "method": "Only OSM records with explicit Wikidata identifiers are enriched; parent chains follow P749. Missing or ambiguous ownership remains unknown.",
@@ -964,27 +964,6 @@
       "confidence": "open-linked-data; no name guessing"
     },
     {
-      "site_id": "osm-way-458775803",
-      "source_qid": "Q5063092",
-      "source_role": "operator",
-      "chain": [
-        {
-          "qid": "Q5063092",
-          "name": "Lumen Technologies",
-          "country_qid": "Q30",
-          "headquarters_qid": "Q947115",
-          "source": "https://www.wikidata.org/wiki/Q5063092",
-          "country": "United States",
-          "headquarters": "Monroe"
-        }
-      ],
-      "ultimate_parent": "Lumen Technologies",
-      "ultimate_parent_qid": "Q5063092",
-      "ultimate_parent_country": "United States",
-      "licence": "CC0 1.0",
-      "confidence": "open-linked-data; no name guessing"
-    },
-    {
       "site_id": "osm-way-459600829",
       "source_qid": "Q5063092",
       "source_role": "operator",
@@ -1348,6 +1327,45 @@
       "ultimate_parent": "Redcentric",
       "ultimate_parent_qid": "Q138441246",
       "ultimate_parent_country": "United Kingdom",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-15516422",
+      "source_qid": "Q2033167",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q2033167",
+          "name": "Sky UK",
+          "country_qid": "Q145",
+          "headquarters_qid": "Q2432955",
+          "source": "https://www.wikidata.org/wiki/Q2033167",
+          "country": "United Kingdom",
+          "headquarters": "Isleworth"
+        },
+        {
+          "qid": "Q918390",
+          "name": "Sky Group",
+          "country_qid": "Q145",
+          "headquarters_qid": "Q2432955",
+          "source": "https://www.wikidata.org/wiki/Q918390",
+          "country": "United Kingdom",
+          "headquarters": "Isleworth"
+        },
+        {
+          "qid": "Q1113804",
+          "name": "Comcast",
+          "country_qid": "Q30",
+          "headquarters_qid": "Q1345",
+          "source": "https://www.wikidata.org/wiki/Q1113804",
+          "country": "United States",
+          "headquarters": "Philadelphia"
+        }
+      ],
+      "ultimate_parent": "Comcast",
+      "ultimate_parent_qid": "Q1113804",
+      "ultimate_parent_country": "United States",
       "licence": "CC0 1.0",
       "confidence": "open-linked-data; no name guessing"
     },
