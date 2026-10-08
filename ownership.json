@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-06T11:23:49.271207+00:00",
+  "generated_at": "2026-10-08T11:29:39.103173+00:00",
   "source": "Wikidata",
   "licence": "CC0 1.0",
   "method": "Only OSM records with explicit Wikidata identifiers are enriched; parent chains follow P749. Missing or ambiguous ownership remains unknown.",
-  "count": 83,
+  "count": 85,
   "items": [
     {
       "site_id": "osm-way-1161721011",
@@ -1229,7 +1229,49 @@
       "confidence": "open-linked-data; no name guessing"
     },
     {
-      "site_id": "osm-way-182622783",
+      "site_id": "osm-way-61995368",
+      "source_qid": "Q1054787",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q1054787",
+          "name": "NTT, Inc.",
+          "country_qid": "Q17",
+          "headquarters_qid": "Q1332496",
+          "source": "https://www.wikidata.org/wiki/Q1054787",
+          "country": "Japan",
+          "headquarters": "Ōtemachi"
+        }
+      ],
+      "ultimate_parent": "NTT, Inc.",
+      "ultimate_parent_qid": "Q1054787",
+      "ultimate_parent_country": "Japan",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-595216849",
+      "source_qid": "Q1054787",
+      "source_role": "operator",
+      "chain": [
+        {
+          "qid": "Q1054787",
+          "name": "NTT, Inc.",
+          "country_qid": "Q17",
+          "headquarters_qid": "Q1332496",
+          "source": "https://www.wikidata.org/wiki/Q1054787",
+          "country": "Japan",
+          "headquarters": "Ōtemachi"
+        }
+      ],
+      "ultimate_parent": "NTT, Inc.",
+      "ultimate_parent_qid": "Q1054787",
+      "ultimate_parent_country": "Japan",
+      "licence": "CC0 1.0",
+      "confidence": "open-linked-data; no name guessing"
+    },
+    {
+      "site_id": "osm-way-989525011",
       "source_qid": "Q1054787",
       "source_role": "operator",
       "chain": [
