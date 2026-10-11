@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T10:40:55.910712+00:00",
+  "generated_at": "2026-10-11T10:53:34.583735+00:00",
   "source": "OpenStreetMap via Overpass API",
   "licence": "ODbL 1.0 — © OpenStreetMap contributors",
   "coverage_note": "UK-wide community-mapped data-centre features. Coverage is substantial but not guaranteed complete.",
@@ -3536,8 +3536,8 @@
       "wikidata": null,
       "ref": null,
       "status": "Mapped existing site",
-      "lat": 54.6047086,
-      "lng": -5.9201917,
+      "lat": 54.6047294,
+      "lng": -5.9202189,
       "postcode": "BT1 3FE",
       "city": "Belfast",
       "source": "https://www.openstreetmap.org/node/13179027944",
