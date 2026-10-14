@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-11T10:55:17.819520+00:00",
+  "generated_at": "2026-10-14T09:36:23.566008+00:00",
   "coverage_note": "Mapped 132 kV+ substations from OpenStreetMap. A nearby substation does not prove a data centre is connected to it.",
   "source": "OpenStreetMap via Overpass API",
   "licence": "ODbL 1.0 — © OpenStreetMap contributors",
-  "count": 1713,
+  "count": 1716,
   "national_context": {
     "as_of": "2026-07-29",
     "demand_connection_applications_gw": 125,
@@ -495,6 +495,18 @@
       "licence": "ODbL 1.0"
     },
     {
+      "id": "osm-grid-way-109189893",
+      "name": "Chetney Marsh",
+      "operator": "National Grid",
+      "voltage_v": 400000,
+      "voltage_label": "400 kV",
+      "lat": 51.4205926,
+      "lng": 0.6999829,
+      "source": "https://www.openstreetmap.org/way/109189893",
+      "source_type": "OpenStreetMap",
+      "licence": "ODbL 1.0"
+    },
+    {
       "id": "osm-grid-way-49922626",
       "name": "Chickerell Substation",
       "operator": "National Grid",
@@ -668,8 +680,8 @@
       "operator": "SP Energy Networks",
       "voltage_v": 400000,
       "voltage_label": "400 kV",
-      "lat": 55.9149848,
-      "lng": -2.5397649,
+      "lat": 55.9149968,
+      "lng": -2.539785,
       "source": "https://www.openstreetmap.org/way/262523325",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
@@ -711,6 +723,18 @@
       "licence": "ODbL 1.0"
     },
     {
+      "id": "osm-grid-way-94583940",
+      "name": "Deeside Power",
+      "operator": null,
+      "voltage_v": 400000,
+      "voltage_label": "400 kV",
+      "lat": 53.2311215,
+      "lng": -3.0740391,
+      "source": "https://www.openstreetmap.org/way/94583940",
+      "source_type": "OpenStreetMap",
+      "licence": "ODbL 1.0"
+    },
+    {
       "id": "osm-grid-way-422486984",
       "name": "Denny North Substation",
       "operator": "SP Energy Networks",
@@ -741,7 +765,7 @@
       "voltage_v": 400000,
       "voltage_label": "400 kV",
       "lat": 51.6256467,
-      "lng": -1.2591979,
+      "lng": -1.2594051,
       "source": "https://www.openstreetmap.org/way/263863442",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
@@ -1191,18 +1215,6 @@
       "licence": "ODbL 1.0"
     },
     {
-      "id": "osm-grid-way-94583940",
-      "name": "High-voltage substation",
-      "operator": null,
-      "voltage_v": 400000,
-      "voltage_label": "400 kV",
-      "lat": 53.2311215,
-      "lng": -3.0740391,
-      "source": "https://www.openstreetmap.org/way/94583940",
-      "source_type": "OpenStreetMap",
-      "licence": "ODbL 1.0"
-    },
-    {
       "id": "osm-grid-way-142738881",
       "name": "High-voltage substation",
       "operator": null,
@@ -1211,18 +1223,6 @@
       "lat": 53.3314339,
       "lng": -2.3213061,
       "source": "https://www.openstreetmap.org/way/142738881",
-      "source_type": "OpenStreetMap",
-      "licence": "ODbL 1.0"
-    },
-    {
-      "id": "osm-grid-way-142738882",
-      "name": "High-voltage substation",
-      "operator": null,
-      "voltage_v": 400000,
-      "voltage_label": "400 kV",
-      "lat": 53.3279946,
-      "lng": -2.3074457,
-      "source": "https://www.openstreetmap.org/way/142738882",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
     },
@@ -1443,18 +1443,6 @@
       "licence": "ODbL 1.0"
     },
     {
-      "id": "osm-grid-way-1049638569",
-      "name": "High-voltage substation",
-      "operator": null,
-      "voltage_v": 400000,
-      "voltage_label": "400 kV",
-      "lat": 51.2865427,
-      "lng": -2.899964,
-      "source": "https://www.openstreetmap.org/way/1049638569",
-      "source_type": "OpenStreetMap",
-      "licence": "ODbL 1.0"
-    },
-    {
       "id": "osm-grid-way-1238104263",
       "name": "High-voltage substation",
       "operator": null,
@@ -1511,18 +1499,6 @@
       "lat": 51.5396943,
       "lng": -2.6683417,
       "source": "https://www.openstreetmap.org/way/1416074698",
-      "source_type": "OpenStreetMap",
-      "licence": "ODbL 1.0"
-    },
-    {
-      "id": "osm-grid-way-1435146021",
-      "name": "High-voltage substation",
-      "operator": null,
-      "voltage_v": 400000,
-      "voltage_label": "400 kV",
-      "lat": 53.638389,
-      "lng": -0.2385896,
-      "source": "https://www.openstreetmap.org/way/1435146021",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
     },
@@ -1631,6 +1607,18 @@
       "lat": 53.6567748,
       "lng": -0.2603607,
       "source": "https://www.openstreetmap.org/way/701436399",
+      "source_type": "OpenStreetMap",
+      "licence": "ODbL 1.0"
+    },
+    {
+      "id": "osm-grid-way-1435146021",
+      "name": "Humber Refinery",
+      "operator": null,
+      "voltage_v": 400000,
+      "voltage_label": "400 kV",
+      "lat": 53.638389,
+      "lng": -0.2385896,
+      "source": "https://www.openstreetmap.org/way/1435146021",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
     },
@@ -1875,6 +1863,18 @@
       "licence": "ODbL 1.0"
     },
     {
+      "id": "osm-grid-way-142738882",
+      "name": "Lady Lane",
+      "operator": null,
+      "voltage_v": 400000,
+      "voltage_label": "400 kV",
+      "lat": 53.3279946,
+      "lng": -2.3074457,
+      "source": "https://www.openstreetmap.org/way/142738882",
+      "source_type": "OpenStreetMap",
+      "licence": "ODbL 1.0"
+    },
+    {
       "id": "osm-grid-way-34656007",
       "name": "Landulph Substation",
       "operator": null,
@@ -1924,7 +1924,7 @@
     },
     {
       "id": "osm-grid-way-160173034",
-      "name": "Levington Wood CSEC",
+      "name": "Lewingdown Wood CSEC",
       "operator": null,
       "voltage_v": 400000,
       "voltage_label": "400 kV",
@@ -1940,8 +1940,8 @@
       "operator": "National Grid Electricity Transmission",
       "voltage_v": 400000,
       "voltage_label": "400 kV",
-      "lat": 50.9411629,
-      "lng": 0.120572,
+      "lat": 50.9418131,
+      "lng": 0.1203909,
       "source": "https://www.openstreetmap.org/way/555563722",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
@@ -2003,6 +2003,18 @@
       "lat": 50.9170723,
       "lng": -1.0399635,
       "source": "https://www.openstreetmap.org/way/20851038",
+      "source_type": "OpenStreetMap",
+      "licence": "ODbL 1.0"
+    },
+    {
+      "id": "osm-grid-way-1049638569",
+      "name": "loxton",
+      "operator": null,
+      "voltage_v": 400000,
+      "voltage_label": "400 kV",
+      "lat": 51.2865427,
+      "lng": -2.899964,
+      "source": "https://www.openstreetmap.org/way/1049638569",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
     },
@@ -2151,6 +2163,18 @@
       "licence": "ODbL 1.0"
     },
     {
+      "id": "osm-grid-way-160173033",
+      "name": "Moulsford Down CSEC",
+      "operator": null,
+      "voltage_v": 400000,
+      "voltage_label": "400 kV",
+      "lat": 51.5350917,
+      "lng": -1.1603511,
+      "source": "https://www.openstreetmap.org/way/160173033",
+      "source_type": "OpenStreetMap",
+      "licence": "ODbL 1.0"
+    },
+    {
       "id": "osm-grid-way-103829261",
       "name": "National Grid",
       "operator": "National Grid",
@@ -2159,18 +2183,6 @@
       "lat": 51.4423059,
       "lng": 0.4075969,
       "source": "https://www.openstreetmap.org/way/103829261",
-      "source_type": "OpenStreetMap",
-      "licence": "ODbL 1.0"
-    },
-    {
-      "id": "osm-grid-way-109189893",
-      "name": "National Grid",
-      "operator": "National Grid",
-      "voltage_v": 400000,
-      "voltage_label": "400 kV",
-      "lat": 51.4205926,
-      "lng": 0.6999829,
-      "source": "https://www.openstreetmap.org/way/109189893",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
     },
@@ -2217,7 +2229,7 @@
       "voltage_v": 400000,
       "voltage_label": "400 kV",
       "lat": 55.9176642,
-      "lng": -2.5395477,
+      "lng": -2.5394485,
       "source": "https://www.openstreetmap.org/way/1078525352",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
@@ -2331,37 +2343,13 @@
       "licence": "ODbL 1.0"
     },
     {
-      "id": "osm-grid-way-1379653265",
-      "name": "NGET",
-      "operator": "NGET",
-      "voltage_v": 400000,
-      "voltage_label": "400 kV",
-      "lat": 51.1526169,
-      "lng": -2.974852,
-      "source": "https://www.openstreetmap.org/way/1379653265",
-      "source_type": "OpenStreetMap",
-      "licence": "ODbL 1.0"
-    },
-    {
-      "id": "osm-grid-way-1379654298",
-      "name": "NGET",
-      "operator": "NGET",
-      "voltage_v": 400000,
-      "voltage_label": "400 kV",
-      "lat": 51.1521811,
-      "lng": -2.9698047,
-      "source": "https://www.openstreetmap.org/way/1379654298",
-      "source_type": "OpenStreetMap",
-      "licence": "ODbL 1.0"
-    },
-    {
       "id": "osm-grid-way-28691559",
       "name": "Ninfield Substation",
       "operator": null,
       "voltage_v": 400000,
       "voltage_label": "400 kV",
-      "lat": 50.8812773,
-      "lng": 0.4485446,
+      "lat": 50.8814217,
+      "lng": 0.4485647,
       "source": "https://www.openstreetmap.org/way/28691559",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
@@ -2571,6 +2559,30 @@
       "licence": "ODbL 1.0"
     },
     {
+      "id": "osm-grid-way-1379654298",
+      "name": "Puriton East",
+      "operator": "NGET",
+      "voltage_v": 400000,
+      "voltage_label": "400 kV",
+      "lat": 51.1521811,
+      "lng": -2.9698047,
+      "source": "https://www.openstreetmap.org/way/1379654298",
+      "source_type": "OpenStreetMap",
+      "licence": "ODbL 1.0"
+    },
+    {
+      "id": "osm-grid-way-1379653265",
+      "name": "Puriton West",
+      "operator": "NGET",
+      "voltage_v": 400000,
+      "voltage_label": "400 kV",
+      "lat": 51.1526169,
+      "lng": -2.974852,
+      "source": "https://www.openstreetmap.org/way/1379653265",
+      "source_type": "OpenStreetMap",
+      "licence": "ODbL 1.0"
+    },
+    {
       "id": "osm-grid-way-635744120",
       "name": "Rampion Wind Farm Onshore Substation",
       "operator": null,
@@ -2715,18 +2727,6 @@
       "licence": "ODbL 1.0"
     },
     {
-      "id": "osm-grid-way-1484569035",
-      "name": "Rye House AIS",
-      "operator": null,
-      "voltage_v": 400000,
-      "voltage_label": "400 kV",
-      "lat": 51.7590378,
-      "lng": 0.0085861,
-      "source": "https://www.openstreetmap.org/way/1484569035",
-      "source_type": "OpenStreetMap",
-      "licence": "ODbL 1.0"
-    },
-    {
       "id": "osm-grid-way-1484569048",
       "name": "Rye House Generation AIS",
       "operator": null,
@@ -2747,6 +2747,18 @@
       "lat": 51.7586188,
       "lng": 0.0105284,
       "source": "https://www.openstreetmap.org/way/1484569034",
+      "source_type": "OpenStreetMap",
+      "licence": "ODbL 1.0"
+    },
+    {
+      "id": "osm-grid-way-1484569035",
+      "name": "Rye House Transformer Station",
+      "operator": "NGET",
+      "voltage_v": 400000,
+      "voltage_label": "400 kV",
+      "lat": 51.7590378,
+      "lng": 0.0085861,
+      "source": "https://www.openstreetmap.org/way/1484569035",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
     },
@@ -3047,18 +3059,6 @@
       "lat": 55.7517882,
       "lng": -4.0798778,
       "source": "https://www.openstreetmap.org/relation/7894974",
-      "source_type": "OpenStreetMap",
-      "licence": "ODbL 1.0"
-    },
-    {
-      "id": "osm-grid-way-160173033",
-      "name": "Streatley CSEC",
-      "operator": null,
-      "voltage_v": 400000,
-      "voltage_label": "400 kV",
-      "lat": 51.5350917,
-      "lng": -1.1603511,
-      "source": "https://www.openstreetmap.org/way/160173033",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
     },
@@ -5432,7 +5432,7 @@
       "operator": null,
       "voltage_v": 275000,
       "voltage_label": "275 kV",
-      "lat": 56.5225885,
+      "lat": 56.5225943,
       "lng": -2.9736708,
       "source": "https://www.openstreetmap.org/way/1078526934",
       "source_type": "OpenStreetMap",
@@ -5588,8 +5588,8 @@
       "operator": null,
       "voltage_v": 275000,
       "voltage_label": "275 kV",
-      "lat": 56.5212823,
-      "lng": -2.9778963,
+      "lat": 56.521292,
+      "lng": -2.9779861,
       "source": "https://www.openstreetmap.org/way/111528318",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
@@ -7643,6 +7643,18 @@
       "lat": 57.2480245,
       "lng": -5.9360104,
       "source": "https://www.openstreetmap.org/way/51338029",
+      "source_type": "OpenStreetMap",
+      "licence": "ODbL 1.0"
+    },
+    {
+      "id": "osm-grid-way-1418948709",
+      "name": "Broken Cross substation",
+      "operator": null,
+      "voltage_v": 132000,
+      "voltage_label": "132 kV",
+      "lat": 55.6236099,
+      "lng": -3.8487502,
+      "source": "https://www.openstreetmap.org/way/1418948709",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
     },
@@ -13491,6 +13503,30 @@
       "licence": "ODbL 1.0"
     },
     {
+      "id": "osm-grid-way-1550368743",
+      "name": "High-voltage substation",
+      "operator": null,
+      "voltage_v": 132000,
+      "voltage_label": "132 kV",
+      "lat": 55.6253261,
+      "lng": -3.8505008,
+      "source": "https://www.openstreetmap.org/way/1550368743",
+      "source_type": "OpenStreetMap",
+      "licence": "ODbL 1.0"
+    },
+    {
+      "id": "osm-grid-way-1567601999",
+      "name": "High-voltage substation",
+      "operator": null,
+      "voltage_v": 132000,
+      "voltage_label": "132 kV",
+      "lat": 55.6108979,
+      "lng": -3.8483221,
+      "source": "https://www.openstreetmap.org/way/1567601999",
+      "source_type": "OpenStreetMap",
+      "licence": "ODbL 1.0"
+    },
+    {
       "id": "osm-grid-relation-13982870",
       "name": "High-voltage substation",
       "operator": null,
@@ -18020,8 +18056,8 @@
       "operator": null,
       "voltage_v": 132000,
       "voltage_label": "132 kV",
-      "lat": 51.1776859,
-      "lng": -0.1314164,
+      "lat": 51.1775949,
+      "lng": -0.1315633,
       "source": "https://www.openstreetmap.org/way/26711240",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
