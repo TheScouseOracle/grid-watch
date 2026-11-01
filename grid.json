@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T10:29:12.908752+00:00",
+  "generated_at": "2026-11-01T11:24:25.898517+00:00",
   "coverage_note": "Mapped 132 kV+ substations from OpenStreetMap. A nearby substation does not prove a data centre is connected to it.",
   "source": "OpenStreetMap via Overpass API",
   "licence": "ODbL 1.0 — © OpenStreetMap contributors",
@@ -315,13 +315,25 @@
       "licence": "ODbL 1.0"
     },
     {
+      "id": "osm-grid-way-97551518",
+      "name": "Branxton CSEC N",
+      "operator": "SP Energy Networks",
+      "voltage_v": 400000,
+      "voltage_label": "400 kV",
+      "lat": 55.950945,
+      "lng": -2.4198883,
+      "source": "https://www.openstreetmap.org/way/97551518",
+      "source_type": "OpenStreetMap",
+      "licence": "ODbL 1.0"
+    },
+    {
       "id": "osm-grid-way-97551523",
-      "name": "Branxton Substation",
+      "name": "Branxton CSEC S",
       "operator": "SP Energy Networks",
       "voltage_v": 400000,
       "voltage_label": "400 kV",
       "lat": 55.948824,
-      "lng": -2.4167491,
+      "lng": -2.4167403,
       "source": "https://www.openstreetmap.org/way/97551523",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
@@ -2927,18 +2939,6 @@
       "lat": 54.5754813,
       "lng": -1.1087394,
       "source": "https://www.openstreetmap.org/way/1158204483",
-      "source_type": "OpenStreetMap",
-      "licence": "ODbL 1.0"
-    },
-    {
-      "id": "osm-grid-way-97551518",
-      "name": "SP Energy Networks",
-      "operator": "SP Energy Networks",
-      "voltage_v": 400000,
-      "voltage_label": "400 kV",
-      "lat": 55.9509336,
-      "lng": -2.4199021,
-      "source": "https://www.openstreetmap.org/way/97551518",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
     },
