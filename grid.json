@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-01T11:24:25.898517+00:00",
+  "generated_at": "2026-11-05T12:32:09.253793+00:00",
   "coverage_note": "Mapped 132 kV+ substations from OpenStreetMap. A nearby substation does not prove a data centre is connected to it.",
   "source": "OpenStreetMap via Overpass API",
   "licence": "ODbL 1.0 — © OpenStreetMap contributors",
-  "count": 1718,
+  "count": 1719,
   "national_context": {
     "as_of": "2026-07-29",
     "demand_connection_applications_gw": 125,
@@ -1563,6 +1563,18 @@
       "licence": "ODbL 1.0"
     },
     {
+      "id": "osm-grid-way-1574960539",
+      "name": "High-voltage substation",
+      "operator": null,
+      "voltage_v": 400000,
+      "voltage_label": "400 kV",
+      "lat": 53.5986578,
+      "lng": -0.7530151,
+      "source": "https://www.openstreetmap.org/way/1574960539",
+      "source_type": "OpenStreetMap",
+      "licence": "ODbL 1.0"
+    },
+    {
       "id": "osm-grid-relation-11554563",
       "name": "High-voltage substation",
       "operator": null,
@@ -1755,14 +1767,14 @@
       "licence": "ODbL 1.0"
     },
     {
-      "id": "osm-grid-relation-7881280",
+      "id": "osm-grid-way-1574960538",
       "name": "Keadby Substation",
-      "operator": null,
+      "operator": "NGET",
       "voltage_v": 400000,
       "voltage_label": "400 kV",
-      "lat": 53.5980462,
-      "lng": -0.7559326,
-      "source": "https://www.openstreetmap.org/relation/7881280",
+      "lat": 53.5979435,
+      "lng": -0.7561742,
+      "source": "https://www.openstreetmap.org/way/1574960538",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
     },
@@ -1804,7 +1816,7 @@
     },
     {
       "id": "osm-grid-way-205132633",
-      "name": "Killingholme Substation",
+      "name": "Killingholme GIS",
       "operator": null,
       "voltage_v": 400000,
       "voltage_label": "400 kV",
@@ -17060,8 +17072,8 @@
       "operator": "National Grid Electricity Distribution Plc",
       "voltage_v": 132000,
       "voltage_label": "132 kV",
-      "lat": 51.7979381,
-      "lng": -3.2373575,
+      "lat": 51.7979402,
+      "lng": -3.2373303,
       "source": "https://www.openstreetmap.org/way/95895668",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
