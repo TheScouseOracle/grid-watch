@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T12:32:09.253793+00:00",
+  "generated_at": "2026-11-18T13:18:23.916542+00:00",
   "coverage_note": "Mapped 132 kV+ substations from OpenStreetMap. A nearby substation does not prove a data centre is connected to it.",
   "source": "OpenStreetMap via Overpass API",
   "licence": "ODbL 1.0 — © OpenStreetMap contributors",
@@ -680,7 +680,7 @@
       "operator": "National Grid Electricity Transmission",
       "voltage_v": 400000,
       "voltage_label": "400 kV",
-      "lat": 53.8004562,
+      "lat": 53.8004573,
       "lng": -0.4151569,
       "source": "https://www.openstreetmap.org/way/33917128",
       "source_type": "OpenStreetMap",
@@ -2369,7 +2369,7 @@
     {
       "id": "osm-grid-way-28691559",
       "name": "Ninfield Substation",
-      "operator": null,
+      "operator": "National Grid Electricity Transmission",
       "voltage_v": 400000,
       "voltage_label": "400 kV",
       "lat": 50.8814217,
@@ -9093,7 +9093,7 @@
       "voltage_v": 132000,
       "voltage_label": "132 kV",
       "lat": 51.4502448,
-      "lng": 0.2126304,
+      "lng": 0.2126608,
       "source": "https://www.openstreetmap.org/way/832403607",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
@@ -9629,7 +9629,7 @@
     {
       "id": "osm-grid-relation-9559960",
       "name": "East Cowes Substation",
-      "operator": null,
+      "operator": "Scottish and Southern Electricity Networks",
       "voltage_v": 132000,
       "voltage_label": "132 kV",
       "lat": 50.7457694,
@@ -9653,7 +9653,7 @@
     {
       "id": "osm-grid-way-89822325",
       "name": "East Wootton Substation",
-      "operator": null,
+      "operator": "Scottish and Southern Electricity Networks",
       "voltage_v": 132000,
       "voltage_label": "132 kV",
       "lat": 50.7100188,
@@ -15260,7 +15260,7 @@
       "operator": null,
       "voltage_v": 132000,
       "voltage_label": "132 kV",
-      "lat": 51.7365355,
+      "lat": 51.736535,
       "lng": -2.5369959,
       "source": "https://www.openstreetmap.org/relation/8160182",
       "source_type": "OpenStreetMap",
@@ -17132,8 +17132,8 @@
       "operator": "Scottish and Southern Electricity Networks",
       "voltage_v": 132000,
       "voltage_label": "132 kV",
-      "lat": 51.4587918,
-      "lng": -0.9270477,
+      "lat": 51.4588094,
+      "lng": -0.9270805,
       "source": "https://www.openstreetmap.org/way/178783378",
       "source_type": "OpenStreetMap",
       "licence": "ODbL 1.0"
@@ -20465,7 +20465,7 @@
     {
       "id": "osm-grid-way-238523057",
       "name": "Woodside Substation",
-      "operator": null,
+      "operator": "National Grid Electricity Transmission",
       "voltage_v": 132000,
       "voltage_label": "132 kV",
       "lat": 52.4897104,
