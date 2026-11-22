@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-20T13:10:34.746994+00:00",
+  "generated_at": "2026-11-22T12:43:07.065445+00:00",
   "coverage_note": "Mapped 132 kV+ substations from OpenStreetMap. A nearby substation does not prove a data centre is connected to it.",
   "source": "OpenStreetMap via Overpass API",
   "licence": "ODbL 1.0 — © OpenStreetMap contributors",
-  "count": 1719,
+  "count": 1720,
   "national_context": {
     "as_of": "2026-07-29",
     "demand_connection_applications_gw": 125,
@@ -1227,6 +1227,18 @@
       "licence": "ODbL 1.0"
     },
     {
+      "id": "osm-grid-way-42799627",
+      "name": "High-voltage substation",
+      "operator": null,
+      "voltage_v": 400000,
+      "voltage_label": "400 kV",
+      "lat": 51.6108624,
+      "lng": -2.669091,
+      "source": "https://www.openstreetmap.org/way/42799627",
+      "source_type": "OpenStreetMap",
+      "licence": "ODbL 1.0"
+    },
+    {
       "id": "osm-grid-way-142738881",
       "name": "High-voltage substation",
       "operator": null,
@@ -2132,7 +2144,7 @@
       "operator": "National Grid",
       "voltage_v": 400000,
       "voltage_label": "400 kV",
-      "lat": 51.3934219,
+      "lat": 51.3934059,
       "lng": -2.1506717,
       "source": "https://www.openstreetmap.org/way/103915328",
       "source_type": "OpenStreetMap",
